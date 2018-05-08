@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - ug007</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/41/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>UG007 mod</title>
+ <link>http://mdworld.nl/cms/content/ug007-mod</link>
+ <description>&lt;p&gt;Some time back I bought a UG007 Android Stick on &lt;a href=&quot;http://dx.com&quot;&gt;dx.com&lt;/a&gt;. It&#039;s WIFI reception is not enough for my purposes, so I&#039;m trying to enhance the signal analogously to &lt;a href=&quot;http://vondroid.com/threads/increasing-wifi-signal-in-tv-sticks.5055/&quot;&gt;this tutorial&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/ug007-mod&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/ug007">ug007</category>
+ <pubDate>Thu, 02 May 2013 10:44:34 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">221 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

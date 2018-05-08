@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - jas</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/27/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Alive again</title>
+ <link>http://mdworld.nl/cms/content/alive-again</link>
+ <description>Started the server again after half a year (since moving out of the old house), that is since March. After updating all the packages (I&#039;m actually running Debian Lenny 5.0.3), it was just a matter of updating the entire chain of IP addresses (server, router, modem, DNS), and everything works again. Albeit quite slow, because of the 256MB RAM. Only now I&#039;m able to update the blog entries for the other machines.</description>
+ <comments>http://mdworld.nl/cms/content/alive-again#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <pubDate>Sun, 08 Nov 2009 19:09:04 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">90 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>eth0</title>
+ <link>http://mdworld.nl/cms/content/eth0</link>
+ <description>Still no trace to be found of eth0, and no errors are logged. Then I remembered, after I installed the old RAM, I also thought it was a good plan to reset the BIOS to failsafe settings. After rebooting found that &quot;VIA  onchip LAN&quot; was disabled! Enabled and booted in &quot;default&quot; mode (non single-user). Eth0 started normally. Started top at 17:22.</description>
+ <comments>http://mdworld.nl/cms/content/eth0#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/tiefighter">tiefighter</category>
+ <pubDate>Thu, 19 Mar 2009 16:15:54 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">86 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Still Running...</title>
+ <link>http://mdworld.nl/cms/content/still-running</link>
+ <description>Top is still running, see if rebooting into normal mode also works, so rebooted. I see that again (just like the last boot) eth0 can&#039;t be brought up.</description>
+ <comments>http://mdworld.nl/cms/content/still-running#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <pubDate>Wed, 18 Mar 2009 18:32:16 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">85 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Starting...</title>
+ <link>http://mdworld.nl/cms/content/starting</link>
+ <description>Started succesfully in single user mode, started top.</description>
+ <comments>http://mdworld.nl/cms/content/starting#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/tiefighter">tiefighter</category>
+ <pubDate>Sun, 15 Mar 2009 10:05:13 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">84 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Another Test</title>
+ <link>http://mdworld.nl/cms/content/another-test</link>
+ <description>tried a memtest86+, but froze at walltime 0:00:25</description>
+ <comments>http://mdworld.nl/cms/content/another-test#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/tiefighter">tiefighter</category>
+ <pubDate>Sun, 15 Mar 2009 10:03:34 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">83 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Backup RAM</title>
+ <link>http://mdworld.nl/cms/content/backup-ram-0</link>
+ <description>Changed RAM to old 256 MB dimm &amp;amp; started, immediate kernel panic in start up.</description>
+ <comments>http://mdworld.nl/cms/content/backup-ram-0#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <pubDate>Sun, 15 Mar 2009 10:00:01 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">82 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>No workie</title>
+ <link>http://mdworld.nl/cms/content/no-workie</link>
+ <description>Thought the distro upgrade might help, but it didn&#039;t. Still no improvements. Tried memtest86 (a lot), smartctl and cpuburn, nothing suggests any problems. Except for the teensy fact it won&#039;t stay on for more than 24 hours at the time.</description>
+ <comments>http://mdworld.nl/cms/content/no-workie#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/tiefighter">tiefighter</category>
+ <pubDate>Tue, 10 Feb 2009 19:00:23 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">81 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Lenny Beta</title>
+ <link>http://mdworld.nl/cms/content/lenny-beta</link>
+ <description>Wow, I just accedentally installed the testversion of Lenny. I thought it was already released :P</description>
+ <comments>http://mdworld.nl/cms/content/lenny-beta#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <pubDate>Fri, 06 Feb 2009 23:53:17 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">80 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Panic! Panic!</title>
+ <link>http://mdworld.nl/cms/content/panic-panic</link>
+ <description>Repeated kernel panic&#039;s, that sucks! Randomly, the server goes offline, apparently it throws kernel panics. Maybe it&#039;s the RAM?</description>
+ <comments>http://mdworld.nl/cms/content/panic-panic#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/tiefighter">tiefighter</category>
+ <pubDate>Thu, 22 Jan 2009 17:55:16 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">79 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Pictures!</title>
+ <link>http://mdworld.nl/cms/content/pictures</link>
+ <description>I first started this blog june 5, 2008.&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/pictures&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/pictures#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/r2d2">r2d2</category>
+ <category domain="http://mdworld.nl/cms/category/tags/solo">solo</category>
+ <pubDate>Thu, 05 Jun 2008 14:44:20 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">71 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

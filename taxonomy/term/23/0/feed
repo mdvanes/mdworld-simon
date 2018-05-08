@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - r2d2</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/23/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Pictures!</title>
+ <link>http://mdworld.nl/cms/content/pictures</link>
+ <description>I first started this blog june 5, 2008.&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/pictures&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/pictures#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/r2d2">r2d2</category>
+ <category domain="http://mdworld.nl/cms/category/tags/solo">solo</category>
+ <pubDate>Thu, 05 Jun 2008 14:44:20 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">71 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>R2D2</title>
+ <link>http://mdworld.nl/cms/content/r2d2-9</link>
+ <description>Put R2D2 away in a closet. Didn&#039;t use it anyway (the harddrive is too noisy) and needed the space to store Tiefighter.</description>
+ <comments>http://mdworld.nl/cms/content/r2d2-9#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/r2d2">r2d2</category>
+ <pubDate>Tue, 06 Jul 2004 08:11:59 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">51 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>R2D2</title>
+ <link>http://mdworld.nl/cms/content/r2d2-8</link>
+ <description>The plan worked, the compact webpage was stable and accessible for 27 days. After that my ISP decided I&#039;ve had this IP long enough... Than suddenly, at night, I could hear harddisk access, what was going on? The file root.htm was open (showed in the table of open files, after typing status), but there couldn&#039;t be incoming traffic (unfortunately, I was to sleepy to check whether the light on one of either the NIC/hub/router was blinking). Anyway, the noise was keeping me up, so I shut it down.&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/r2d2-8&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/r2d2-8#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/r2d2">r2d2</category>
+ <pubDate>Fri, 31 Oct 2003 09:09:59 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">46 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>R2D2</title>
+ <link>http://mdworld.nl/cms/content/r2d2-7</link>
+ <description>Hooked r2d2 up to my new hub. One step closer to a permanent webserver. I only need a way to let Dr. DOS upload my darn dynamic IP periodically, so I can access it remotely. Web (80) and FTP (21) are routed to r2d2. I plan to upload a compact version of &lt;a href=&quot;http://www.mdworld.nl/&quot;&gt;my linkdump to it.&lt;/a&gt;</description>
+ <comments>http://mdworld.nl/cms/content/r2d2-7#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/r2d2">r2d2</category>
+ <pubDate>Sun, 23 Feb 2003 09:09:18 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">39 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>R2D2</title>
+ <link>http://mdworld.nl/cms/content/r2d2-6</link>
+ <description>Up and running EZ-NOS webserver using Caldera Dr.DOS. Still waiting for a hub to make it permanent. And a way to run it from the harddisk</description>
+ <comments>http://mdworld.nl/cms/content/r2d2-6#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/r2d2">r2d2</category>
+ <pubDate>Tue, 21 Jan 2003 09:08:46 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">35 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>R2D2</title>
+ <link>http://mdworld.nl/cms/content/r2d2-5</link>
+ <description>Genius pocket LAN adapter seems to be broken all along. Exchanged it.</description>
+ <comments>http://mdworld.nl/cms/content/r2d2-5#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/r2d2">r2d2</category>
+ <pubDate>Mon, 20 Jan 2003 09:08:01 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">34 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>R2D2</title>
+ <link>http://mdworld.nl/cms/content/r2d2-4</link>
+ <description>Installed MS DOS.</description>
+ <comments>http://mdworld.nl/cms/content/r2d2-4#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/r2d2">r2d2</category>
+ <pubDate>Sun, 01 Dec 2002 09:07:33 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">33 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>R2D2</title>
+ <link>http://mdworld.nl/cms/content/r2d2-3</link>
+ <description>Installed Minix, just to find out there are no drivers for the Genius under Unix, I should&#039;ve know better.</description>
+ <comments>http://mdworld.nl/cms/content/r2d2-3#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/r2d2">r2d2</category>
+ <pubDate>Sun, 01 Dec 2002 09:05:52 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">32 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>R2D2</title>
+ <link>http://mdworld.nl/cms/content/r2d2-2</link>
+ <description>Got a Genius pocket LAN adapter to link the parallel port to my UTP LAN. &lt;strong&gt;Decided to use it as a VERY SILENT and VERY LOW POWER webserver.&lt;/strong&gt;</description>
+ <comments>http://mdworld.nl/cms/content/r2d2-2#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/r2d2">r2d2</category>
+ <pubDate>Sun, 01 Dec 2002 09:05:15 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">31 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>R2D2</title>
+ <link>http://mdworld.nl/cms/content/r2d2-1</link>
+ <description>(approx. 2001) Installed Windows 3.11, It didn&#039;t work at all up to now, seemed to be combination of broken battery and bootsector.</description>
+ <comments>http://mdworld.nl/cms/content/r2d2-1#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/r2d2">r2d2</category>
+ <pubDate>Mon, 01 Jan 2001 09:04:41 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">24 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

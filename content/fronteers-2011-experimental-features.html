@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="ie ie6" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="ie ie7" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="ie ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+
+<meta name="keywords" content="mdworld, Martin van Es, MD Enterprises, fronteers, webdevelopment" />
+<meta name="description" content="This article discusses some experimental browser features from several talks at Fronteers 2011. Since these are experimental features it doesn&#039;t work predictably across all browsers. Try Firefox 10+ or Chrome 17+ to see it the way I intended it to work." />
+<link rel="shortcut icon" href="../themes/simon/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/files/css/css_949781c8a73045c6f9458633ed41d193.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="../sites/default/files/css/css_21f24221e70ef675167103b282b815d1.css" />
+<link type="text/css" rel="stylesheet" media="handheld" href="../sites/default/files/css/css_bcb90d40d05a52204eaf0fc65b2c7e6e.css" />
+<script type="text/javascript" src="../sites/default/files/js/js_3022830f3560163bcde900bfe847cfab.js"></script>
+<script type="text/javascript" src="../sites/all/modules/mdepolska/includes/mdepolska.js%3FX"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/cms/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+  <title>Fronteers 2011: Experimental Features | mdworld</title>
+</head>
+<body>
+	<div id="ie">
+		<div>
+			Warning: this browser doesn't support HTML5. Styling disabled.<br/>
+			Some browsers that do support HTML5:
+			<ul>
+				<li><a href="http://www.mozilla.com/firefox/">Firefox</a></li>
+				<li><a href="http://www.google.nl/chrome">Google Chrome</a></li>
+			</ul>
+
+		</div>
+	</div><!-- id=ie -->
+	<header>
+		<h1>mdworld - Fronteers 2011: Experimental Features</h1><ul class="links"><li class="menu-127 first last"><a href="../node.html" title="">Home</a></li>
+</ul>	<div id="blogroll">
+	</div><!-- id=blogroll -->
+	</header>
+
+	<div id="contentTop">
+						<div class="tabs"></div>
+		  
+  <article class="node">
+            <p>This article discusses some experimental browser features from several talks at <a href="http://fronteers.nl/congres/2011">Fronteers 2011</a>. Since these are experimental features it doesn't work predictably across all browsers. Try Firefox 10+ or Chrome 17+ to see it the way I intended it to work.</p>
+<style type="text/css">
+code
+{
+    background: none repeat scroll 0 0 #000000;
+    color: #FF8100;
+    display: inline;
+    font-family: monospace;
+}
+.fronteers2011 fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+}
+div#canvasWrapper {
+	background-color: #242424;
+	position: fixed;
+}
+#rendererStatus {
+	color: white;
+	font-size: 200%;
+	font-family: monospace;
+}
+#rendererStatus.webgl {
+	background: green;
+}
+#rendererStatus.canvas {
+	background: red;
+}
+#canvallaxbutton {
+        background: #8db11f;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        color: #242424;
+        margin-left: 200px;
+}
+#canvallaxbutton:hover {
+        background: #242424;
+        color: #fff;
+}
+</style><p>Showing/hiding a box of content used to require JavaScript until the introduction of the :hover pseudo class in CSS (setting a block to visible/invisible on hover, in this case). Now Bruce Lawson introduces the new HTML5 element &lt;details&gt;, an HTML native way to toggle content. For the moment, it only works in Chrome.<br />
+<details><summary>The summary for the &lt;details&gt; element. (Click the triangle)</summary><span><br />
+The code used is:<br />
+<code>&lt;details&gt;<br />
+&nbsp;&nbsp;&lt;summary&gt;The summary for the &lt;details&gt; element...&lt;/summary&gt;<br />
+&nbsp;&nbsp;&lt;span&gt;Droste effect prevention&lt;/span&gt;<br />
+&lt;/details&gt;</code><br />
+Browsers other than Chrome will simply show all the contents of the &lt;details&gt; element (and therefore this text) all the time.</span></details></p>
+<p>More or less along the lines of the &lt;details&gt; element, Alex Russel advocates the concept of web components. While it doesn't introduce anything that can't be done with JavaScript, it offers a cleaner approach to modify the behavior of HTML elements. It is a suggestion for defining custom HTML elements, and although some browsers already support this in some way (remember <a href="http://msdn.microsoft.com/en-us/library/ms531079%28v=vs.85%29.aspx">Microsoft HTC files</a>?), the WHATWG is still working on a standard, which is still very much in progress.</p>
+<p>Alex explains that the limited support for the extensibility of HTML elements causes cross-cutting concerns; sometimes you will even end up with a nearly empty HTML document, where everything, including DOM elements, are added dynamically with JavaScript. This is for instance the way Gmail and Google Documents work. One might argue whether or not this is a bad thing, if it works for Google, but from a theoretical standpoint, at least it is not pretty.</p>
+<p>In an <a href="mdegraph.html">earlier post</a> I've introduced my <a href="https://bitbucket.org/mdvanes/mdegraph">graph JavaScript library</a>, which also dynamically inserts a small amount of HTML elements. In my case, that is needed to overlay two canvas elements, one containing the graph and one containing the labels, to prevent having to redraw the graph every time a label needs to be shown on hover. I suppose the extensibility as suggested in web components allows the creation of a single &lt;x-graph-canvas&gt; custom element, that inherits from the &lt;canvas&gt; element and adding the functionality I now add with JavaScript.</p>
+<p>I must stress that I support his views that it is advisable to create custom HTML elements in certain cases, and I would love to show a demo here, but the spec is not supported in any browser yet. The details of the spec can be found on <a href="http://wiki.whatwg.org/wiki/Component_Model">the site of the WHATWG</a>.</p>
+<p>Alex also introduces scoped CSS, a much debated subject because of the possible impact it's lack of backwards compatibility may entail, as is mentioned on it's demo page on <a href="http://html5doctor.com/the-scoped-attribute/">html5doctor.com</a>. It would allow you to set CSS classes specific to only a part of the HTML document. For me this would be ideal, because I use Drupal as my CMS, and for every post with <a href="http://mdworld.nl/cms/content/fronteers-2011-css-part-1">crazy</a>/<a href="fronteers-2010-css.html">weird</a> styling I just include CSS in the top of the page, but this requires a lot of regression testing, and I am far to lazy to do that for my personal site.</p>
+<p>Bruce Lawson also discusses the lack of semantic need for multiple levels of headings. The H1 through H6 elements were created to make a semantical hierarchy within the HTML document. By now however, it becomes apparent that this is not always as trivial as it was dreamt up to be. E.g. when syndicated content is injected into the document, which contains its own H1, it doesn't have the same meaning as the H1 in your document's header. And even within your own document, sometimes it isn't so clear when to use what level of heading. In the future, browsers are supposed to phase out this distinction and determine the hierarchy based on other clues from the document, but for now it is still advised to use H1 etc., because screenreaders and indexers will fail to figure out the hierarchy of your site, at this time.</p>
+<p>Less experimental are the new form elements and attributes introduced by Robert Nyman, i.e. most new browsers already support them, one way or another. The <i>required</i> attribute on an input element within a form will prevent the form from submitting when the input doesn't contain characters, and the browser will show an error message:</p>
+<form action="fronteers-2011-experimental-features.html#" class="fronteers2011"><fieldset><input type="text" required="required" /> <input type="submit" value="test required" /></fieldset></form>
+<p>The <i>pattern</i> attribute can be used to limit the input on a text field. On the following input element the regex "\d{3}" requires you to enter 3 digits. </p>
+<form action="fronteers-2011-experimental-features.html#" class="fronteers2011"><fieldset><input type="text" pattern="\d{3}" x-moz-errormessage="You can only insert 3 digits!" placeholder="enter 3 digits" value="1" /> <input type="submit" value="test validation" /></fieldset></form>
+<p>But an input <i>required</i> validation is considered satisfied when only spaces are input (which is not always what you want), when <i>required</i> is used on an e-mail address, <a href="http://en.wikipedia.org/wiki/Diacritic">diacritics</a> aren't allowed and when <i>pattern</i> is used, empty fields are valid. So guess what? UX is hard!</p>
+<p>Unfortunately, this article is getting far too long as it is, so I'm going to refer you to <a href="http://www.slideshare.net/robnyman/html5-forms-kiss-time-fronteers">Robert's slides</a> for more details.</p>
+<p>In my humble opinion, the most spectacular example of an experimental feature currently possible in modern browsers would be rendering 3D objects in canvas. And sure enough, upon pressing the button below, in the background of this page you will find my pièce de résistance.</p>
+<p><input type="button" onclick="canvallax.reset();" value="Start Demo" id="canvallaxbutton" /></p>
+<p> I know, I'm hardly a 3D artist, and it shows. But after weeks (yes, weeks) of playing around with lighting, collision, vertices, faces and whatnot, I thought it was about time to wrap it all up, and leave you this demo. This only proves 3D can be done in the browser, making something beautiful is possible <a href="http://mrdoob.github.com/three.js/examples/webgl_materials_normalmap2.html">if you're skilled in 3D</a>.</p>
+<p>This demo uses the <a href="https://github.com/mrdoob/three.js">THREE.js</a> JavaScript library for creating 3D scenes in canvas. I find there are some lovely <a href="http://mrdoob.github.com/three.js/">demos without documentation</a> and some good <a href="http://www.aerotwist.com/lab/getting-started-with-three-js/">basic documentation without a demo</a>. So I tried to play around a bit to figure out the basics myself. Eventually, I used the cube in <a href="http://learningthreejs.com/blog/2011/08/06/lets-do-a-cube/">this tutorial</a> as the base for this demo.</p>
+<p>All the JavaScript to handle animating the contents of the background is included in a library I wrote specifically for this demo. It is called <a href="../../products/fronteers2011/ef/canvallax.js">canvallax.js</a>, a contraction of canvas and parallax (since <a href="http://webdesignerwall.com/trends/mind-blowing-parallax-scrolling-sites">scrolling parallax backgrounds</a> are so hip right now). A similar project is the jQuery plugin <a href="https://github.com/cameronmcefee/plax">plax</a> (used on the <a href="https://github.com/404">github 404 page</a>). Although that doesn't use 3D objects, it's far more robust and flexible, making it actually fit for use.</p>
+<p>When going into the details of the canvallax demo in the background, bear in mind that the foreground avatar, that moves around when you scroll and move the mouse, is "handcrafted". With that I mean, it's not an export from a 3D studio, I just typed in the vectors and faces myself, to get a better grasp of the 3D space. The definition is dynamically loaded from <a href="../../products/fronteers2011/ef/morgal.js">this json file</a> (<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">license</a>).</p>
+<p>The "skyline" layer is generated dynamically by a simple algorithm each page load. This algorithm draws a random path with some parameters and than extrudes this path to give it depth, a very simple way to make a 3D object.</p>
+<p>The "stars" layer uses particle systems to render a large amount of (small) objects at once. I actually use two different approaches, because the <a href="http://aerotwist.com/lab/creating-particles-with-three-js/">WebGL</a> and the <a href="http://creativejs.com/tutorials/three-js-part-1-make-a-star-field/">default canvas</a> renderer approach are mutually exclusive. Particle systems can also be used to generate smoke or sparks, for example.</p>
+<p>Unlike most demos you'll see, I have added an automated switch that tries the WebGL renderer first and if that fails (because the browser or the GPU doesn't support it) falls back to the default 3D canvas renderer. If that fails you're using IE :P But seriously, even an iPad with out-of-the-box Safari is capable of running this demo with the default 3D canvas renderer, albeit at a rather low FPS rate.</p>
+<p>The difference between the two renderers, besides the aforementioned different particle system implementations, is that WebGL uses your GPU directly, mostly resulting in higher FPS rates, but also alleviating the CPU for other tasks (<a href="http://www.aerotwist.com/lab/getting-started-with-three-js/">source</a>).</p>
+<p>If the browser is running in WebGL, below a green box is displayed. If the default 3D canvas renderer is used, a red box will be displayed. If WebGL is supported, you can disable it by unchecking the "Force enable WebGL" box to see what it looks (and performs) like with the default renderer.<br />
+<input type="checkbox" id="webgl" onclick="canvallax.reset();" checked="checked" />Force enable WebGL<br />
+<span id="rendererStatus"></span></p>
+<p>This 3D demo was inspired on the talk by Seb Lee-Delisle of <a href="http://creativejs.com">creativejs.com</a> fame.</p>
+<p>NB: Before any of you comes to me complaining the HTML for this post is not valid, I know. I have seen 3 errors, one relating to the custom CSS for this post (I do not have the intention to update my main styles for each post), one relating to a stray &lt;/p&gt; (which I consider a validation bug), and one relating to an experimental Mozilla attribute. Other than that, let me know of any errors!</p>
+<script type="text/javascript" src="../../products/fronteers2011/ef/Three.js"></script><script type="text/javascript" src="../../products/fronteers2011/ef/RequestAnimationFrame.js"></script><script type="text/javascript" src="../../products/fronteers2011/ef/Detector.js"></script><script type="text/javascript" src="../../products/fronteers2011/ef/canvallax.js"></script><!--<script>
+$(document).ready( function(){
+ // prevent drupal from executing the contents twice, despite the ready check above.
+console.log( $("#canvasWrapper").length );
+ if( $("#canvasWrapper").length == 0 )
+ {
+	canvallax.bootstrap();
+
+	// Update variable containing the horizontal mouse position that is accessable from the animation function
+	$(window).mousemove( function(event){
+		canvallax.mouseX = canvallax.getMouseX(event);
+	}).click( function(event){
+		canvallax.mouseX = canvallax.getMouseX(event);
+	});
+  }
+});		
+		</script>--><!--<script>
+$(document).ready( function(){
+ // prevent drupal from executing the contents twice, despite the ready check above.
+console.log( $("#canvasWrapper").length );
+ if( $("#canvasWrapper").length == 0 )
+ {
+	canvallax.bootstrap();
+
+	// Update variable containing the horizontal mouse position that is accessable from the animation function
+	$(window).mousemove( function(event){
+		canvallax.mouseX = canvallax.getMouseX(event);
+	}).click( function(event){
+		canvallax.mouseX = canvallax.getMouseX(event);
+	});
+  }
+});		
+		</script>--><div class="links"><ul class="links inline"><li class="taxonomy_term_6 first"><a href="../category/categories/mdworld.html" rel="tag" title="">mdworld</a></li>
+<li class="taxonomy_term_35"><a href="../category/tags/fronteers.html" rel="tag" title="">fronteers</a></li>
+<li class="taxonomy_term_36 last"><a href="../category/tags/webdevelopment.html" rel="tag" title="">webdevelopment</a></li>
+</ul></div>    <div class="author">by Martin @ 17:21 28 January 2012</div>
+  </article>
+	</div><!-- id=contentTop -->
+	<div id="contentBottom">
+			</div><!-- id=contentBottom -->
+
+	<aside>
+		  <div class="block block-block" id="block-block-1">
+    <h2 class="title"></h2>
+    <div class="content"><p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="../sites/default/files/images/delicious.png" /></a><br/></p>
+<!-- Unfixed: <p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="/cms/sites/default/files/images/delicious.png" /></a></br/></p>
+ --></div>
+ </div>
+	</aside>
+
+	<nav id="bulletin">
+            	  <div class="block block-mdebulletin" id="block-mdebulletin-0">
+    <h2 class="title"></h2>
+    <div class="content"><ul>
+<li><a class="bulletin-1" href='../../index.html' title='mdworld.nl'><img src='../sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="../themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='../sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+<br/><!-- Unfixed: <ul>
+<li><a class="bulletin-1" href='http://mdworld.nl' title='mdworld.nl'><img src='/cms/sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="/cms/themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='/cms/sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+ --></div>
+ </div>
+	</nav>
+	
+	<nav id="menu">
+		<ul class="links"><li class="menu-115 first"><a href="../../index.html" title="MDWorld.nl">mdworld</a></li>
+<li class="menu-116"><a href="../category/categories/mypc.html" title="">MyPC</a></li>
+<li class="menu-227"><a href="../category/categories/softcorp.html" title="Software I developed">SoftCorp</a></li>
+<li class="menu-119"><a href="../category/categories/moviecorp.html" title="">MovieCorp</a></li>
+<li class="menu-118"><a href="../category/categories/wow-blog-community.html" title="World of Warcraft fan blog">WoW</a></li>
+<li class="menu-117 last"><a href="../contact.html" title="">Contact</a></li>
+</ul>	</nav>
+	
+	<footer>
+		<p>MD Enterprises <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" src="../themes/simon/img/cc.png" /></a> 2003-2012 <a href="http://validator.w3.org/check?uri=referer"><img alt="HTML5" src="../themes/simon/img/mdworld_html5_16.png"/></a></p>
+		<div id="desktop"><a href="../node%3Fismobile=false.html">desktop version</a></div>
+	</footer>
+	<!-- Wget/1.16.1 (linux-gnu) -->
+		<script type="text/javascript">
+	<!--
+	var full_theme_path = "/cms/themes/simon";
+	
+		-->
+	</script>
+	  	<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-9626603-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+</html>

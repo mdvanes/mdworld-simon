@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - moviecorp</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/10/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>The 1 Second Film</title>
+ <link>http://mdworld.nl/cms/content/1-second-film</link>
+ <description>&lt;p&gt;I now support the &lt;a href=&quot;http://www.the1secondfilm.com&quot;&gt;The 1 Second Film&lt;/a&gt;, check out &lt;a href=&quot;http://the1secondfilm.com/crew/131633&quot;&gt;my profile&lt;/a&gt;. Please join and help us reach the goal of one million members. It&#039;s charity, so you can &lt;a href=&quot;http://www.the1secondfilm.com/donate&quot;&gt;donate&lt;/a&gt; too!&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/moviecorp">moviecorp</category>
+ <pubDate>Thu, 08 Apr 2010 11:32:16 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">155 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Operation Flying Fighter</title>
+ <link>http://mdworld.nl/cms/content/operation-flying-fighter</link>
+ <description>&lt;p&gt;- A short documentary on how to move a PC (to another building), while keeping it running, was directed, performed, recorded, produced and published by MD Enterprises MovieCorp in november 2005. [warning: it&#039;s in Dutch]&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/moviecorp">moviecorp</category>
+ <pubDate>Sun, 14 Mar 2010 14:37:31 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">13 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

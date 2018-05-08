@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="ie ie6" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="ie ie7" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="ie ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+
+<meta name="keywords" content="mdworld, Martin van Es, MD Enterprises, fronteers, webdevelopment" />
+<meta name="description" content="You can ask anyone that I used to be quite sceptical on building sites that depend on the use of JavaScript. Time has not stood still however." />
+<link rel="shortcut icon" href="../themes/simon/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/files/css/css_949781c8a73045c6f9458633ed41d193.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="../sites/default/files/css/css_21f24221e70ef675167103b282b815d1.css" />
+<link type="text/css" rel="stylesheet" media="handheld" href="../sites/default/files/css/css_bcb90d40d05a52204eaf0fc65b2c7e6e.css" />
+<script type="text/javascript" src="../sites/default/files/js/js_3022830f3560163bcde900bfe847cfab.js"></script>
+<script type="text/javascript" src="../sites/all/modules/mdepolska/includes/mdepolska.js%3FX"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/cms/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+  <title>Fronteers 2010: JavaScript | mdworld</title>
+</head>
+<body>
+	<div id="ie">
+		<div>
+			Warning: this browser doesn't support HTML5. Styling disabled.<br/>
+			Some browsers that do support HTML5:
+			<ul>
+				<li><a href="http://www.mozilla.com/firefox/">Firefox</a></li>
+				<li><a href="http://www.google.nl/chrome">Google Chrome</a></li>
+			</ul>
+
+		</div>
+	</div><!-- id=ie -->
+	<header>
+		<h1>mdworld - Fronteers 2010: JavaScript</h1><ul class="links"><li class="menu-127 first last"><a href="../node.html" title="">Home</a></li>
+</ul>	<div id="blogroll">
+	</div><!-- id=blogroll -->
+	</header>
+
+	<div id="contentTop">
+						<div class="tabs"></div>
+		  
+  <article class="node">
+            <p>You can ask anyone that I used to be quite sceptical on building sites that depend on the use of JavaScript. Time has not stood still however.</p>
+<style type="text/css">
+quote
+{
+  color: white;
+  font-family: serif;
+  font-style: italic;
+}
+.code
+{
+  background: #000;
+  color: rgb(255,129,0);
+  font-family: monospace;
+}
+</style><p>Enterprises like Google and Yahoo created JavaScript heavy web applications, JavaScript libraries like jQuery made handling JavaScript a lot less horrible, and last but not least browsers <a href="http://ieblog.members.winisp.net/images/Dean_PPB4_6.png">got better and faster JavaScript compilers</a>. The conclusion can only be that a modern webdeveloper can't work without knowing the basic JavaScript quirks.</p>
+<p>The basic JavaScript datatypes:<br />
+<span class="code"><br />
+typeof(42) // number<br />
+typeof(true) // boolean<br />
+typeof("42") // string<br />
+</span></p>
+<p>Object is also a JavaScript datatype, and <a href="http://helephant.com/2008/08/functions-are-first-class-objects-in-javascript/">functions are first-class objects</a> in JavaScript:<br />
+<span class="code"><br />
+function fuz(){};<br />
+typeof(fuz) // function<br/><br />
+function Foo(){ bar: "baz" };<br />
+var foo = new Foo();<br />
+typeof(foo) // object<br />
+</br/></span></p>
+<p>And there are the two special cases for undefined and null. Consider the following examples, with the non-existing element with id MAIN.<br />
+<span class="code"><br />
+var bap;<br />
+typeof(bap) // undefined<br/><br />
+bap = document.getElementById("MAIN");<br />
+typeof(bap) // object, but the contents are null<br />
+bap.click(); // bap is null error<br />
+</br/></span></p>
+<p>Consider the following example of how many = signs you can append in JavaScript, using string and number literals:<br />
+assignment, equality, identity<br />
+<span class="code"><br />
+var i = "42";<br/><br />
+if( i == "42" ) {}<br />
+if( i == "43" ) {}<br />
+if( i == 42 ) {}<br/><br />
+if( i === "42" ) {}<br />
+if( i === 42 ) {}<br />
+</br/></br/></span><br />
+The first line (with one =) <em>assigns</em> the value of "42" to the variable i.<br />
+The lines with == test for <em>equality</em>. Obviously, the string "42" is equal to the string "42" and not to the string "43". But because of automatic <a href="http://javascript.crockford.com/style2.html">type coercion</a>, the number 42 is also equal to the string "42".<br />
+Using === it is tested if variables are <em>identical</em>. So in that case the number 42 is not identical to the string "42".</p>
+<p>This is an anonymous function:<br />
+<span class="code">x.onclick = function() { alert("CLICK"); }</span><br />
+An anonymous function can only be called from where it is defined, because it is not referenced by a functionname. So it is a way to prevent reuse of a function. In this case, it's not possible to just assign the alert directly to the onclick, because in that case the alert statement is not assigned but executed.</p>
+<p>The use of self-invoking functions might not be clear on first sight, but you might encounter them in e.g. jQuery libraries. So at the very least it will help you recognize the style:<br />
+<span class="code">( function() { alert("EXECUTE"); } )();</span><br />
+As you can see, the rather untransparent syntax is wrapping the function in parentheses and suffixing it with an additional ();<br />
+When used, it will execute the contained function(s) without an explicit call in your HTML. In the example above, you might achieve the same result by just writing the alert statement without wrapping it in anything. But anonymous functions can also be used to limit the scope of certain variables to just the functions in the self-invoking wrapper. <a href="http://www.crockford.com/javascript/private.html">Many</a> <a href="http://www.hunlock.com/blogs/Functional_Javascript">excellent</a> <a href="http://www.mrspeaker.net/2009/11/05/self-invoking-functions/">posts</a> were done on this subject, if you like to know more.</p>
+<p>Javascript, unlike Java, <a href="http://en.wikipedia.org/wiki/JavaScript#History">with which it shares little in common but the name</a>, has no support for overloading. Calling a function with less parameters than it has defined, will leave the additional parameters 'undefined':<br />
+<span class="code"><br />
+function moo(cowName, cowColor)<br />
+{<br />
+&nbsp;&nbsp;console.log(cowName+", the "+cowColor+" cow, mooed.");<br />
+}<br />
+moo( "Robin", "red" ); // Robin, the red cow, mooed.<br />
+moo( "Uhura" ); // Uhura, the undefined cow, mooed.<br />
+</span></p>
+<p>As an alternative you can iterate over the 'arguments' object. It contains all the parameters passed to a function, even if you have not declared any parameters on the function definition:<br />
+<span class="code"><br />
+function bark()<br />
+{<br />
+&nbsp;&nbsp;var dogColor = "transparent";<br />
+&nbsp;&nbsp;if( arguments.length == 2 ) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;dogColor = arguments[1]; // only if 2 parameters were passed, overwrite the color with the supplied second parameter<br />
+&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;console.log(arguments[0]+", the "+dogColor+" dog, barked.");<br />
+}<br />
+bark( "Bobby", "black" ); // Bobby, the black dog, barked.<br />
+bark( "Tiberius" ); // Tiberius, the transparent dog, barked.<br />
+</span></p>
+<p>Javascript variable declarations are normally prefixed with the keyword 'var'. When not prefixed with 'var', instead of throwing an error, the keyword will become global. And when left out unintentionally, this might lead to hard to find bugs:<br />
+<span class="code"><br />
+function foo()<br />
+{<br />
+&nbsp;&nbsp;GLOBAL_VAR = "Global";<br />
+&nbsp;&nbsp;var localVar = "Local";<br />
+}<br />
+// GLOBAL_VAR is not yet a global variable<br />
+foo();<br />
+// Now GLOBAL_VAR is a global variable<br />
+log.console( "GLOBAL_VAR: "+GLOBAL_VAR );<br />
+log.console( "localVar: "+localVar ); // unknown variable error is thrown<br />
+</span></p>
+<p>[object notation]<br />
+To make code more readable, you can create objects in Javascript.  For instance, we have several types of pollers, SimplePoller and AdvancedPoller. Both have a status. Without objects, you would need a function getSimplePollerStatus and a getAdvancedPollerStatus. That's not very readable.<br />
+Also, defining objects will prevent function collision. In the previous example we know there are multiple pollers, but if we are working on a different source file and we don't know that one of the other source files also contains a function getStatus, we might define one ourselves. At runtime, the wrong function might be called. That would be function collision.<br />
+Definining an object for the AdvancedPoller with its own child function getStatus would improve readability and prevent function collision:<br />
+<span class="code"><br />
+function AdvancedPoller()<br />
+{<br />
+&nbsp;&nbsp;this.status = 200;<br />
+&nbsp;&nbsp;this.getStatus = function()<br />
+&nbsp;&nbsp;{ return this.status; }<br />
+}<br />
+var poller = new AdvancedPoller();<br />
+console.log(poller.getStatus());<br />
+</span></p>
+<p>To improve readability further Javascript functions can be grouped within namespaces. For a simple function that would like this:<br />
+<span class="code"><br />
+var util = {<br />
+&nbsp;&nbsp;foo : {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;bar : function()<br />
+&nbsp;&nbsp;&nbsp;&nbsp;{ console.log( "just ran util.foo.bar" ); }<br />
+&nbsp;&nbsp;}<br />
+}<br />
+util.foo.bar();</span></p>
+<p>For an object, the AdvancedPoller we defined earlier, it would look like this:<br />
+<span class="code"><br />
+var poll =<br />
+{<br />
+&nbsp;&nbsp;AdvancedPoller : function()<br />
+&nbsp;&nbsp;{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;this.status = 200;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;this.getStatus = function()<br />
+&nbsp;&nbsp;&nbsp;&nbsp;{ return this.status; }<br />
+&nbsp;&nbsp;}<br />
+}<br />
+var poller = new poll.AdvancedPoller();<br />
+console.log( poller.getStatus() );</span></p>
+<p>Prototyping is a mechanism in Javascript to extend functionality on existing objects. In the following example I define a function seconds on the Javascript core object Number. It returns an amount of seconds (i.e. time since epoch + the amount of seconds) equal to the value of the Number object.<br />
+<span class="code"><br />
+Number.prototype.seconds = function()<br />
+&nbsp;&nbsp;{ return new Date(this * 1000); }</span></p>
+<p>And here I extend the Javascript core object Date with the function fromNow, that returns the current date increased by the date value in the Date object:<br />
+<span class="code"><br />
+Date.prototype.fromNow = function()<br />
+{<br />
+&nbsp;&nbsp;var x = new Date();<br />
+&nbsp;&nbsp;x.setSeconds(x.getSeconds() + this.getSeconds() );<br />
+&nbsp;&nbsp;return x;<br />
+}<br />
+<span></span></span></p>
+<div id="holder17" class="holder" style="margin-top: 5px;"></div>
+<script type="text/javascript">
+Number.prototype.seconds = function()
+{    
+	return new Date( this * 1000 );
+}
+Date.prototype.fromNow = function()
+{
+	var x = new Date();
+	x.setSeconds( x.getSeconds() + this.getSeconds() );
+	return x;
+}
+document.getElementById("holder17").innerHTML = "A call to (6).seconds().fromNow() now results in:<br />" 
++ (6).seconds().fromNow() + "<br />Compare to the current date:<br /> " + new Date();
+</script><p>
+This example makes a very readable function call, but at a pretty high price. Extending functionality on core objects in this way, may lead to function collision, because the Javascript core objects are not under your control. To extend objects in this way, especially core objects, you may want to wrap them in (jQuery) objects first.</p>
+<p>So far the more curious, yet core functionality of Javascript. There are far more detailed guides on the web on the usage of these functions, and I left out some, but this is just meant as an introduction and to show that Javascript has grown up quite a bit in the past years.</p>
+<p>You may also be interested in the related articles on <a href="fronteers-2010-html.html">html</a> and <a href="fronteers-2010-css.html">css</a>.</p>
+<div class="links"><ul class="links inline"><li class="taxonomy_term_6 first"><a href="../category/categories/mdworld.html" rel="tag" title="">mdworld</a></li>
+<li class="taxonomy_term_35"><a href="../category/tags/fronteers.html" rel="tag" title="">fronteers</a></li>
+<li class="taxonomy_term_36 last"><a href="../category/tags/webdevelopment.html" rel="tag" title="">webdevelopment</a></li>
+</ul></div>    <div class="author">by Martin @ 22:41 18 November 2010</div>
+  </article>
+	</div><!-- id=contentTop -->
+	<div id="contentBottom">
+			</div><!-- id=contentBottom -->
+
+	<aside>
+		  <div class="block block-block" id="block-block-1">
+    <h2 class="title"></h2>
+    <div class="content"><p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="../sites/default/files/images/delicious.png" /></a><br/></p>
+<!-- Unfixed: <p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="/cms/sites/default/files/images/delicious.png" /></a></br/></p>
+ --></div>
+ </div>
+	</aside>
+
+	<nav id="bulletin">
+            	  <div class="block block-mdebulletin" id="block-mdebulletin-0">
+    <h2 class="title"></h2>
+    <div class="content"><ul>
+<li><a class="bulletin-1" href='../../index.html' title='mdworld.nl'><img src='../sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="../themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='../sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+<br/><!-- Unfixed: <ul>
+<li><a class="bulletin-1" href='http://mdworld.nl' title='mdworld.nl'><img src='/cms/sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="/cms/themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='/cms/sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+ --></div>
+ </div>
+	</nav>
+	
+	<nav id="menu">
+		<ul class="links"><li class="menu-115 first"><a href="../../index.html" title="MDWorld.nl">mdworld</a></li>
+<li class="menu-116"><a href="../category/categories/mypc.html" title="">MyPC</a></li>
+<li class="menu-227"><a href="../category/categories/softcorp.html" title="Software I developed">SoftCorp</a></li>
+<li class="menu-119"><a href="../category/categories/moviecorp.html" title="">MovieCorp</a></li>
+<li class="menu-118"><a href="../category/categories/wow-blog-community.html" title="World of Warcraft fan blog">WoW</a></li>
+<li class="menu-117 last"><a href="../contact.html" title="">Contact</a></li>
+</ul>	</nav>
+	
+	<footer>
+		<p>MD Enterprises <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" src="../themes/simon/img/cc.png" /></a> 2003-2012 <a href="http://validator.w3.org/check?uri=referer"><img alt="HTML5" src="../themes/simon/img/mdworld_html5_16.png"/></a></p>
+		<div id="desktop"><a href="../node%3Fismobile=false.html">desktop version</a></div>
+	</footer>
+	<!-- Wget/1.16.1 (linux-gnu) -->
+		<script type="text/javascript">
+	<!--
+	var full_theme_path = "/cms/themes/simon";
+	
+		-->
+	</script>
+	  	<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-9626603-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+</html>

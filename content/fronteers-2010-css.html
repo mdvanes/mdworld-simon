@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="ie ie6" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="ie ie7" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="ie ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+
+<meta name="keywords" content="mdworld, Martin van Es, MD Enterprises, fronteers, webdevelopment" />
+<meta name="description" content="Before I dive into some spectacular features of CSS3, let me say something about CSS attributes." />
+<link rel="shortcut icon" href="../themes/simon/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/files/css/css_949781c8a73045c6f9458633ed41d193.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="../sites/default/files/css/css_21f24221e70ef675167103b282b815d1.css" />
+<link type="text/css" rel="stylesheet" media="handheld" href="../sites/default/files/css/css_bcb90d40d05a52204eaf0fc65b2c7e6e.css" />
+<script type="text/javascript" src="../sites/default/files/js/js_3022830f3560163bcde900bfe847cfab.js"></script>
+<script type="text/javascript" src="../sites/all/modules/mdepolska/includes/mdepolska.js%3FX"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/cms/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+  <title>Fronteers 2010: CSS | mdworld</title>
+</head>
+<body>
+	<div id="ie">
+		<div>
+			Warning: this browser doesn't support HTML5. Styling disabled.<br/>
+			Some browsers that do support HTML5:
+			<ul>
+				<li><a href="http://www.mozilla.com/firefox/">Firefox</a></li>
+				<li><a href="http://www.google.nl/chrome">Google Chrome</a></li>
+			</ul>
+
+		</div>
+	</div><!-- id=ie -->
+	<header>
+		<h1>mdworld - Fronteers 2010: CSS</h1><ul class="links"><li class="menu-127 first last"><a href="../node.html" title="">Home</a></li>
+</ul>	<div id="blogroll">
+	</div><!-- id=blogroll -->
+	</header>
+
+	<div id="contentTop">
+						<div class="tabs"></div>
+		  
+  <article class="node">
+            <p>Before I dive into some spectacular features of CSS3, let me say something about CSS attributes.</p>
+<style type="text/css">
+quote
+{
+  color: white;
+  font-family: serif;
+  font-style: italic;
+}
+code
+{
+  display: inline;
+  background: #000;
+  color: rgb(255,129,0);
+  font-family: monospace;
+}
+#multicolumn
+{
+column-width: 20em;
+column-gap: 1em;
+column-rule: 2px solid #fff;
+-moz-column-width: 20em;
+-moz-column-gap: 1em;
+-moz-column-rule: 2px solid #fff;
+-o-column-width: 20em;
+-o-column-gap: 1em;
+-o-column-rule: 2px solid #fff;
+-webkit-column-width: 20em;
+-webkit-column-gap: 1em;
+-webkit-column-rule: 2px solid #fff;
+}
+#transition
+{
+border: 2px dotted #fff;
+height: 20px;
+overflow: hidden;
+transition-duration: 1s;
+-o-transition-duration: 1s;
+-moz-transition-duration: 1s;
+-webkit-transition-duration: 1s;
+width: 200px;
+}
+#transition:hover
+{
+height: 350px;
+width: 500px;
+}
+#widthwarning
+{
+  display: none;
+}
+@media (max-width: 800px)
+{
+  article
+  {
+    background: #5E72A2;
+  }
+  article:hover
+  {
+    background: #8759A6;
+  }
+  #widthwarning
+  {
+    background: #fff;
+    border: 5px solid red;
+    color: black;
+    display: block;
+  }
+}
+/* sample menu */
+
+.cssmenu li:hover {
+  background: black;
+  box-shadow: 2px 2px 2px  #888, inset 0px 20px 30px 0px #ccc;
+  -moz-box-shadow: 2px 2px 2px  #888, inset 0px 20px 30px 0px #ccc;
+  -webkit-box-shadow: 2px 2px 2px  #888, inset 0px 20px 30px 0px #ccc;
+}
+
+.cssmenu {
+  display: inline-block;
+  margin: 1em auto;
+  border-radius: 6px; -o-border-radius: 6px;  -moz-border-radius: 6px; -webkit-border-radius: 6px; 
+  background: #888; 
+  box-shadow: 2px 2px 2px  #888, inset 0px 20px 30px 0px #ccc;
+  -moz-box-shadow: 2px 2px 2px  #888, inset 0px 20px 30px 0px #ccc;
+  -webkit-box-shadow: 2px 2px 2px  #888, inset 0px 20px 30px 0px #ccc;
+  font: bold 13px/20px Arial;
+  color: #333;
+}
+
+.cssmenu ul { 
+  display: inline; margin: 0; padding: 0; text-align: left;
+}
+
+.cssmenu li { 
+  display: inline-block; 
+  text-shadow: 0px 1px #eee; 
+  border-right: 1px solid #777;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.cssmenu .search {
+  background: white;
+  border-radius: 10px; -o-border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px;
+  padding: 2px 10px 1px 20px;
+  margin: 0 10px;
+  box-shadow: inset 1px 1px 2px #444; 
+  font: 12px Arial;
+}
+</style><div id="widthwarning">
+Warning: The page width is currently below 800 pixels. This site in general is designed for a width of 1024 pixels and specifically this article loses some value when viewed by default in a width lower then 800 pixels.
+</div>
+<p>Apparently, the way CSS attributes should be sorted within a CSS class, is a much debated subject. Some people advocate sorting by functional category (in this case grouping first dimensions, then font attributes, then border attributes):<br />
+<code><br />
+div {<br />
+&nbsp;&nbsp;width: 10px;<br />
+&nbsp;&nbsp;height: 10px;<br/><br />
+&nbsp;&nbsp;color: red;<br />
+&nbsp;&nbsp;font-family: mono;<br/><br />
+&nbsp;&nbsp;border: 1px solid gold;<br />
+}</br/></br/></code></p>
+<p>I prefer to sort alphabetically, because it is universal by nature in contrast to sorting by functional category. Of course you could specify an order if you sort by functional category, but that would introduce additional documentation overhead...<br />
+So I would sort like this:<br />
+<code><br />
+div {<br />
+&nbsp;&nbsp;border: 1px solid gold;<br />
+&nbsp;&nbsp;color: red;<br />
+&nbsp;&nbsp;font-family: mono;<br />
+&nbsp;&nbsp;height: 10px;<br />
+&nbsp;&nbsp;width: 10px;<br />
+}</code></p>
+<p>Although it doesn't really matter which way you sort, it's obviously a good idea to sort consistently within your project.</p>
+<p>I make an exception for vendor prefixes. <a href="http://reference.sitepoint.com/css/vendorspecific">Vendor-prefixes</a> are prefixes for CSS attributes that browser vendors (or manufacturers) use to implement non-standard (or not yet standard) CSS features. Take for example <code>-moz-border-radius</code>. The vendor prefix -moz is used by Mozilla (for Firefox obviously) and it is their implementation of the border-radius attribute. Once border-radius becomes standard, you can just use border-radius, without the prefix. Because of vendor prefixes, a typical block of CSS attributes might look like this:</p>
+<p><code><br />
+div {<br />
+&nbsp;&nbsp;border-radius: 10px;<br />
+&nbsp;&nbsp;-moz-border-radius: 10px;<br />
+&nbsp;&nbsp;-o-border-radius: 10px;<br />
+&nbsp;&nbsp;-webkit-border-radius: 10px;<br />
+}<br />
+</code></p>
+<p>In this case, you might understand it to be wise not to sort the vender prefixes alphabetically, but to group them by attribute.</p>
+<p>Adobe Flash and images are often used as a workaround for shortcomings of HTML (e.g. to compensate for what now can be done in HTML5 with the &lt;video/> tag) and also for shortcomings for CSS. With CSS3 a lot of features have been added, so the use of images can be reduced even more. I'll give a couple of examples, so you can see for yourself (these examples where meticulously stolen from the presentation by Hakon Wium Lie).</p>
+<p><span style="border: 0.1em dotted blue; background: green;">background: green; border: 0.1em dotted blue;</span></p>
+<p><span style="text-shadow: 0px 0px 5px white;">text-shadow: 0px 0px 5px white;</span></p>
+<p><span style="border: 1px solid white; border-radius: 40px; -moz-border-radius: 40px; -webkit-border-radius: 40px; padding: 0 45px;">border-radius: 40px;</span></p>
+<p><span style="border: 1px solid white; border-radius: 150px / 50px; -moz-border-radius: 150px / 50px; -webkit-border-radius: 150px / 50px; padding: 0 20px;">border-radius: 150px / 50px;</span></p>
+<p><span style="border: 1px solid white; border-radius: 150px / 50px; box-shadow: 5px 5px 10px white; -moz-box-shadow: 5px 5px 10px white; -webkit-box-shadow: 5px 5px 10px white; padding: 0 20px;">box-shadow: 5px 5px 10px white;</span></p>
+<p><span style="border-radius: 150px / 50px; -moz-border-radius: 150px / 50px; -webkit-border-radius: 150px / 50px;<br />
+box-shadow: 0px 0px 5px 3px green inset; -moz-box-shadow: 0px 0px 5px 3px green  inset; -webkit-box-shadow: 0px 0px 5px 3px green inset; padding: 0 20px;">box-shadow: 0px 0px 5px 3px green inset;</span></p>
+<p><span style="border-radius: 150px / 50px; -moz-border-radius: 150px / 50px; -webkit-border-radius: 150px / 50px;<br />
+box-shadow: 0px 0px 5px 3px red, 0px 0px 7px 5px green inset; -moz-box-shadow: 0px 0px 5px 3px red, 0px 0px 7px 5px green inset; -webkit-box-shadow: 0px 0px 5px 3px red, 0px 0px 7px 5px green inset; padding: 0 20px;">0px 0px 5px 3px red, 0px 0px 7px 5px green inset</span></p>
+<p>This menu is an image on the Apple site, but pure CSS here:</p>
+<div class="cssmenu">
+<ul>
+<li>web</li>
+<li>design</li>
+<li>without</li>
+<li>images</li>
+</ul>
+<p>		<span class="search"><input type="search" value="Search" style="border: none; height: 11px;" /></span>
+		</p></div>
+<p>You may also want to check out this <a href="http://people.opera.com/howcome/2010/tests/operalogo.html">wicked Opera logo fully in CSS</a>.</p>
+<p>Although before CSS3 there were some hacks to support custom fonts, now the use of Web Fonts has been standardized:<br />
+<code><br />
+@font-face {<br />
+&nbsp;&nbsp;font-family: HellaFont;<br />
+&nbsp;&nbsp;src: url(hellafont.ttf)<br />
+&nbsp;&nbsp;format("truetype");<br />
+}<br/><br />
+&lt;h1 style="font-family: HellaFont;"&gt;<span style="font-family: HellaFont; font-size: 150%;">Custom Fonts Roxxorz!</span>&lt;/h1&gt;<br />
+</br/></code><br />
+You can see, I use this all around this site.</p>
+<p>It's well known that long lengths of text are more readable when divided across columns, preventing excess horizontal eye movement. This could be solved by using a &lt;table&gt;, but everyone knows that <a href="http://www.w3.org/TR/html5/tabular-data.html#the-table-element">tables</a> are for <a href="http://www.w3.org/TR/html5/tabular-data.html#tabular-data">tabular data</a>, and <a href="http://www.dynamicsitesolutions.com/html/tables-for-tabular-data-only/">this</a> is why.</p>
+<p>In CSS3 this can also be solved by using the column-width attribute. Unfortunately it is not widely supported yet (it doesn't work in Opera), so it is necessary to use vendor prefixes, e.g.:<br />
+<code><br />
+-moz-column-width: 10em;<br />
+-moz-column-gap: 1em;<br />
+-moz-column-rule: 2px solid #fff;<br />
+</code></p>
+<div id="multicolumn">
+The first draft by the W3C for the Multi Column Layout Module dates from 2001. Unfortunately, it's still not standardized. Firefox and Safari support it through their vendor prefixes.<br />
+This div is assigned a column width of 20em, and the browser distributes the content across columns of 10em with an amount of columns that fits the available space and a length that accommodates all content.<br />
+The column-gap attribute specifies the width of the gap between columns and column-rule, using the same syntax as the border attribute, specifies an optional vertical ruler.
+</div>
+<p>Although all kinds of easing of elements is available through a range of <a href="http://docs.jquery.com/UI/Effects/Fold">javascript</a> <a href="http://developer.yahoo.com/yui/3/examples/anim/easing.html">libraries</a>, this can also be implemented in pure CSS3 when limiting the events to those that can be defined by CSS, e.g. hover. </p>
+<div id="transition">
+Try hovering over this text.
+<p>Transition only works in Opera, but this is the CSS you would need:<br />
+<code><br />
+#transition {<br />
+&nbsp;&nbsp;border: 2px dotted #fff;<br />
+&nbsp;&nbsp;height: 20px;<br />
+&nbsp;&nbsp;overflow: hidden;<br />
+&nbsp;&nbsp;transition-duration: 1s;<br />
+&nbsp;&nbsp;-o-transition-duration: 1s;<br />
+&nbsp;&nbsp;width: 200px;<br />
+}<br />
+#transition:hover {<br />
+&nbsp;&nbsp;height: 350px;<br />
+&nbsp;&nbsp;width: 500px;<br />
+}<br />
+</code>
+</p></div>
+<p>CSS Media Queries may be known from constructions to override CSS classes for certain media, e.g. printing or handheld devices, like:<br />
+<code><br />
+&lt;link type="text/css" media="all" href="default_style.css"/&gt;<br />
+&lt;link type="text/css" media="print" href="print_style.css"/&gt;<br />
+</code><br />
+The media type 'handheld' is not of much use anymore these days, because there is no standard resolution for handhelds anymore, if there ever was one.</p>
+<p>A more advanced usage is available in CSS3, where conditions can be added to the query:<br />
+<code><br />
+@media (max-width: 800px) {<br />
+&nbsp;&nbsp;article<br />
+&nbsp;&nbsp;{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;background: #5E72A2;<br />
+&nbsp;&nbsp;}<br />
+}<br />
+</code><br />
+In this case, when the max-width of the available space drops below 800px, the element 'article' gets another background color then when it would be larger than 800px. Try to resize this page below a width of 800px and see what happens. This can be used to reformat a page for handheld devices purely by using CSS.</p>
+<p>Using a separate CSS for printing is not uncommon, but <a href="http://people.opera.com/howcome/2009/talks/img/paged-media-sample-1.png">this is an extreme example</a> of how the <a href="http://www.w3.org/TR/css3-page/">CSS3 Paged Media module</a> can be used to format a book. On a side note: I'm not under the impression that a lot of browsers support all of the CSS3 Paged Media functions.</p>
+<p>The progressive nature of implementation of standards like CSS3 and HTML5 can make it quite difficult to keep track of what features can be used in what browser. This is where the use of the javascript library <a href="http://www.modernizr.com">Modernizr</a> becomes apparent. When included in your document it detects support for CSS and HTML5 features, amongst others. For example, when the browser has support for box-shadow, the CSS class .box-shadow is added to the document body element. That makes it possible to render differently if the CSS class is not available (<a href="http://www.modernizr.com/docs/#boxshadow">source</a>):<br />
+<code><br />
+/* Simulated box shadow using borders: */<br />
+div.somediv {<br />
+&nbsp;&nbsp;border-bottom: 1px solid #666;<br />
+&nbsp;&nbsp;border-right: 1px solid #777;<br />
+}<br />
+.boxshadow div.somediv {<br />
+&nbsp;&nbsp;border: none;<br />
+&nbsp;&nbsp;box-shadow: #666 1px 1px 1px;<br />
+&nbsp;&nbsp;-moz-box-shadow: #666 1px 1px 1px;<br />
+&nbsp;&nbsp;-webkit-box-shadow: #666 1px 1px 1px;<br />
+}<br />
+</code><br />
+This means you can essentially stop thinking about development on a browser level and concentrate on what features you would like to support. HTML5 and CSS3 features can be gradually integrated without losing support for older browsers.</p>
+<p>You may also be interested in the related articles on <a href="fronteers-2010-html.html">html</a> and <a href="fronteers-2010-javascript.html">javascript</a>.</p>
+<div class="links"><ul class="links inline"><li class="taxonomy_term_6 first"><a href="../category/categories/mdworld.html" rel="tag" title="">mdworld</a></li>
+<li class="taxonomy_term_35"><a href="../category/tags/fronteers.html" rel="tag" title="">fronteers</a></li>
+<li class="taxonomy_term_36 last"><a href="../category/tags/webdevelopment.html" rel="tag" title="">webdevelopment</a></li>
+</ul></div>    <div class="author">by Martin @ 12:06 21 January 2011</div>
+  </article>
+	</div><!-- id=contentTop -->
+	<div id="contentBottom">
+			</div><!-- id=contentBottom -->
+
+	<aside>
+		  <div class="block block-block" id="block-block-1">
+    <h2 class="title"></h2>
+    <div class="content"><p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="../sites/default/files/images/delicious.png" /></a><br/></p>
+<!-- Unfixed: <p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="/cms/sites/default/files/images/delicious.png" /></a></br/></p>
+ --></div>
+ </div>
+	</aside>
+
+	<nav id="bulletin">
+            	  <div class="block block-mdebulletin" id="block-mdebulletin-0">
+    <h2 class="title"></h2>
+    <div class="content"><ul>
+<li><a class="bulletin-1" href='../../index.html' title='mdworld.nl'><img src='../sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="../themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='../sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+<br/><!-- Unfixed: <ul>
+<li><a class="bulletin-1" href='http://mdworld.nl' title='mdworld.nl'><img src='/cms/sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="/cms/themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='/cms/sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+ --></div>
+ </div>
+	</nav>
+	
+	<nav id="menu">
+		<ul class="links"><li class="menu-115 first"><a href="../../index.html" title="MDWorld.nl">mdworld</a></li>
+<li class="menu-116"><a href="../category/categories/mypc.html" title="">MyPC</a></li>
+<li class="menu-227"><a href="../category/categories/softcorp.html" title="Software I developed">SoftCorp</a></li>
+<li class="menu-119"><a href="../category/categories/moviecorp.html" title="">MovieCorp</a></li>
+<li class="menu-118"><a href="../category/categories/wow-blog-community.html" title="World of Warcraft fan blog">WoW</a></li>
+<li class="menu-117 last"><a href="../contact.html" title="">Contact</a></li>
+</ul>	</nav>
+	
+	<footer>
+		<p>MD Enterprises <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" src="../themes/simon/img/cc.png" /></a> 2003-2012 <a href="http://validator.w3.org/check?uri=referer"><img alt="HTML5" src="../themes/simon/img/mdworld_html5_16.png"/></a></p>
+		<div id="desktop"><a href="../node%3Fismobile=false.html">desktop version</a></div>
+	</footer>
+	<!-- Wget/1.16.1 (linux-gnu) -->
+		<script type="text/javascript">
+	<!--
+	var full_theme_path = "/cms/themes/simon";
+	
+		-->
+	</script>
+	  	<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-9626603-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+</html>

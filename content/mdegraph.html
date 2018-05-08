@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="ie ie6" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="ie ie7" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="ie ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+
+<meta name="keywords" content="mdworld, Martin van Es, MD Enterprises, softcorp" />
+<meta name="description" content="I&#039;ve released MdeGraph. It&#039;s a javascript library for creating canvas based graphs. Below is an example, with the same data as the (static) graph in this article." />
+<link rel="shortcut icon" href="../themes/simon/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/files/css/css_949781c8a73045c6f9458633ed41d193.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="../sites/default/files/css/css_21f24221e70ef675167103b282b815d1.css" />
+<link type="text/css" rel="stylesheet" media="handheld" href="../sites/default/files/css/css_bcb90d40d05a52204eaf0fc65b2c7e6e.css" />
+<script type="text/javascript" src="../sites/default/files/js/js_3022830f3560163bcde900bfe847cfab.js"></script>
+<script type="text/javascript" src="../sites/all/modules/mdepolska/includes/mdepolska.js%3FX"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/cms/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+  <title>MdeGraph | mdworld</title>
+</head>
+<body>
+	<div id="ie">
+		<div>
+			Warning: this browser doesn't support HTML5. Styling disabled.<br/>
+			Some browsers that do support HTML5:
+			<ul>
+				<li><a href="http://www.mozilla.com/firefox/">Firefox</a></li>
+				<li><a href="http://www.google.nl/chrome">Google Chrome</a></li>
+			</ul>
+
+		</div>
+	</div><!-- id=ie -->
+	<header>
+		<h1>softcorp - MdeGraph</h1><ul class="links"><li class="menu-127 first last"><a href="../node.html" title="">Home</a></li>
+</ul>	<div id="blogroll">
+	</div><!-- id=blogroll -->
+	</header>
+
+	<div id="contentTop">
+						<div class="tabs"></div>
+		  
+  <article class="node">
+            <p>I've released <a href="http://bitbucket.org/mdvanes/mdegraph">MdeGraph</a>. It's a javascript library for creating <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html">canvas</a> based graphs. Below is an example, with the same data as the (static) graph in <a href="specs-os-disk-size.html">this article</a>.</p>
+<style>
+#background
+{
+ background: #E2E3A6;
+ height: 330px;
+ width: 450px;
+}
+
+#graph1_innerWrapper
+{
+	height: 350px; /* required */
+	position: relative; /* required */
+}
+
+#graph1_static
+{
+	height: 330px; /* required */
+	left: 0; /* required */
+	position: absolute; /* required */
+	top: 0; /* required */
+	width: 440px; /* required */
+}
+
+#graph1_dynamic
+{
+	left: 0; /* required */
+	position: absolute; /* required */
+	top: 0; /* required */
+}
+</style><div id="background">
+<div id="wrapper"></div>
+</div>
+<p>As a demonstration of how these values are calculated client-side and realtime, you can adjust the value for the red line above the 1999 marker by choosing a value here:</p>
+<select id="wrapper_testnode">
+		<option value="0">0%</option><br />
+		<option value="2.5">2.5%</option><br />
+		<option value="4" selected="selected">4%</option><br />
+		<option value="5">5%</option><br />
+		<option value="7.5">7.5%</option><br />
+		<option value="10">10%</option><br />
+	</select>
+<script>
+var g = new graph.Graph(
+
+ {
+
+  "name":"graph1",
+
+  "wrapperId":"wrapper",
+
+  "xUnit":18,
+
+  "yUnit":26,
+
+  "xOffset":1991,
+
+  "yOffset":0,
+
+  "enableXTicks":true,
+
+  "enableBullets":true,
+
+  "enableBulletLabels":true,
+
+  "xLabels":[
+
+   {"x":1991,"text":"1991"}
+
+   , {"x":1993, "text":"1993"}
+
+   , {"x":1995, "text":"1995"}
+
+   , {"x":1997, "text":"1997"}
+
+   , {"x":1999, "text":"1999"}
+
+   , {"x":2001, "text":"2001"}
+
+   , {"x":2003, "text":"2003"}
+
+   , {"x":2005, "text":"2005"}
+
+   , {"x":2007, "text":"2007"}
+
+   , {"x":2009, "text":"2009"}
+
+   , {"x":2011, "text":"2011"} ],
+
+  "yLabels":[
+
+   {"y":0,"text":"0.00%"}
+
+   , {"y":2.5,"text":"2.50%"}
+
+   , {"y":5,"text":"5.00%"}
+
+   , {"y":7.5,"text":"7.50%"}
+
+   , {"y":10,"text":"10.00%"} ],
+
+  "lines":[
+
+   [ {"x":1993,"y":1.88,"label":"1.88%"}, 
+
+{"x":1995,"y":2.67,"label":"2.67%"}, 
+
+{"x":1998,"y":3.64, "label":"3.64%"}, 
+
+{"x":2001,"y":6.00, "label":"6.00%"},
+
+{"x":2004,"y":2.5, "label":"2.5%"}, 
+
+{"x":2007,"y":8, "label":"8%"}, 
+
+{"x":2009,"y":2.22, "label":"2.22%"} ],
+
+   [ {"x":1991,"y":0.8, "label":"0.8%"}, 
+
+{"x":1996,"y":0.84, "label":"0.84%"}, 
+
+{"x":1999,"y":4,"label":"Use dropdown below to move this bullet!"},
+
+{"x":2003,"y":3,"label":"medium label text aaaa"},
+
+{"x":2011,"y":0.33,"label":"label that goes past the end of the canvas"} ]
+
+  ]
+
+ }
+
+);
+
+$(document).ready(function() {
+ // prevent drupal from executing the contents twice, despite the ready check above.
+ if( $("#wrapper").html().length == 0 )
+ {
+   g.init();
+   var gCopy = g;
+   $("#wrapper_testnode").click(
+      function() {
+	 gCopy.lines[1][2].y = this.options[this.selectedIndex].value;
+	 gCopy.redraw();
+   });
+ }
+});
+</script><p>
+Update 28-11-2011: there seems to be an error in version 1.2 with calculating the position of the mouse, causing the labels to fail. Nevertheless, the example.html on my bitbucket page works fine. I'll see if I can fix that soon.</p>
+<p>Update 18-12-2011: fixed the positioning error in version 1.3, so enjoy labels upon hovering over the bullets!</p>
+<div class="links"><ul class="links inline"><li class="taxonomy_term_32 first last"><a href="../category/categories/softcorp.html" rel="tag" title="">softcorp</a></li>
+</ul></div>    <div class="author">by Martin @ 10:05 25 November 2011</div>
+  </article>
+	</div><!-- id=contentTop -->
+	<div id="contentBottom">
+			</div><!-- id=contentBottom -->
+
+	<aside>
+		  <div class="block block-block" id="block-block-1">
+    <h2 class="title"></h2>
+    <div class="content"><p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="../sites/default/files/images/delicious.png" /></a><br/></p>
+<!-- Unfixed: <p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="/cms/sites/default/files/images/delicious.png" /></a></br/></p>
+ --></div>
+ </div>
+	</aside>
+
+	<nav id="bulletin">
+            	  <div class="block block-mdebulletin" id="block-mdebulletin-0">
+    <h2 class="title"></h2>
+    <div class="content"><ul>
+<li><a class="bulletin-1" href='../../index.html' title='mdworld.nl'><img src='../sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="../themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='../sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+<br/><!-- Unfixed: <ul>
+<li><a class="bulletin-1" href='http://mdworld.nl' title='mdworld.nl'><img src='/cms/sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="/cms/themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='/cms/sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+ --></div>
+ </div>
+	</nav>
+	
+	<nav id="menu">
+		<ul class="links"><li class="menu-115 first"><a href="../../index.html" title="MDWorld.nl">mdworld</a></li>
+<li class="menu-116"><a href="../category/categories/mypc.html" title="">MyPC</a></li>
+<li class="menu-227"><a href="../category/categories/softcorp.html" title="Software I developed">SoftCorp</a></li>
+<li class="menu-119"><a href="../category/categories/moviecorp.html" title="">MovieCorp</a></li>
+<li class="menu-118"><a href="../category/categories/wow-blog-community.html" title="World of Warcraft fan blog">WoW</a></li>
+<li class="menu-117 last"><a href="../contact.html" title="">Contact</a></li>
+</ul>	</nav>
+	
+	<footer>
+		<p>MD Enterprises <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" src="../themes/simon/img/cc.png" /></a> 2003-2012 <a href="http://validator.w3.org/check?uri=referer"><img alt="HTML5" src="../themes/simon/img/mdworld_html5_16.png"/></a></p>
+		<div id="desktop"><a href="../node%3Fismobile=false.html">desktop version</a></div>
+	</footer>
+	<!-- Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.124 Safari/537.36 -->
+		<script type="text/javascript">
+	<!--
+	var full_theme_path = "/cms/themes/simon";
+	
+		-->
+	</script>
+	  	<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-9626603-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - tiefighter</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/26/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>eth0</title>
+ <link>http://mdworld.nl/cms/content/eth0</link>
+ <description>Still no trace to be found of eth0, and no errors are logged. Then I remembered, after I installed the old RAM, I also thought it was a good plan to reset the BIOS to failsafe settings. After rebooting found that &quot;VIA  onchip LAN&quot; was disabled! Enabled and booted in &quot;default&quot; mode (non single-user). Eth0 started normally. Started top at 17:22.</description>
+ <comments>http://mdworld.nl/cms/content/eth0#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/tiefighter">tiefighter</category>
+ <pubDate>Thu, 19 Mar 2009 16:15:54 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">86 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Starting...</title>
+ <link>http://mdworld.nl/cms/content/starting</link>
+ <description>Started succesfully in single user mode, started top.</description>
+ <comments>http://mdworld.nl/cms/content/starting#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/tiefighter">tiefighter</category>
+ <pubDate>Sun, 15 Mar 2009 10:05:13 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">84 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Another Test</title>
+ <link>http://mdworld.nl/cms/content/another-test</link>
+ <description>tried a memtest86+, but froze at walltime 0:00:25</description>
+ <comments>http://mdworld.nl/cms/content/another-test#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/tiefighter">tiefighter</category>
+ <pubDate>Sun, 15 Mar 2009 10:03:34 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">83 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>No workie</title>
+ <link>http://mdworld.nl/cms/content/no-workie</link>
+ <description>Thought the distro upgrade might help, but it didn&#039;t. Still no improvements. Tried memtest86 (a lot), smartctl and cpuburn, nothing suggests any problems. Except for the teensy fact it won&#039;t stay on for more than 24 hours at the time.</description>
+ <comments>http://mdworld.nl/cms/content/no-workie#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/tiefighter">tiefighter</category>
+ <pubDate>Tue, 10 Feb 2009 19:00:23 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">81 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Panic! Panic!</title>
+ <link>http://mdworld.nl/cms/content/panic-panic</link>
+ <description>Repeated kernel panic&#039;s, that sucks! Randomly, the server goes offline, apparently it throws kernel panics. Maybe it&#039;s the RAM?</description>
+ <comments>http://mdworld.nl/cms/content/panic-panic#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/tiefighter">tiefighter</category>
+ <pubDate>Thu, 22 Jan 2009 17:55:16 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">79 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Building the case</title>
+ <link>http://mdworld.nl/cms/content/building-case</link>
+ <description>after months of work I finally finished the tiny 18x18x8 cm case, made from painted black steel and green acrylic glass. Everything just about fitted in. And then... it got hot. It probably was the harddrive. And because I want it to be silent, I refuse to install a fan (not that it would fit into the case). So I bought a special mini-itx case. See the picture above. It works fine, I can control everything through tightVNC, but KVM are attached.
+
+- edit -
+
+12 july 2008: added pictures. Why didn&#039;t I add them?&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/building-case&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/building-case#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/tiefighter">tiefighter</category>
+ <pubDate>Tue, 06 Jul 2004 11:00:22 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">52 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Aquiring the parts</title>
+ <link>http://mdworld.nl/cms/content/aquiring-parts</link>
+ <description>bought the via epia M6000 motherboard (with the C3 Eden 600MHz cpu) and a silent PSU (very silent: its a block adapter without a fan). The motherboard supports DDR266, so I bought 128 MB PC2100, but it didn&#039;t work. After a couple of trips to the computershop I swapped it for 256MB DDR @ 333MHz and that works fine (odd)! Installed it into a old case, and ordered the acrylglass and lights...</description>
+ <comments>http://mdworld.nl/cms/content/aquiring-parts#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/tiefighter">tiefighter</category>
+ <pubDate>Tue, 11 May 2004 11:58:12 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">50 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - snoer</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/29/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Quantal Snoer and Wifi</title>
+ <link>http://mdworld.nl/cms/content/quantal-snoer-and-wifi</link>
+ <description>&lt;p&gt;Upgraded snoer to Ubuntu &lt;a href=&quot;http://releases.ubuntu.com/quantal/&quot;&gt;12.10 Quantal Quetzal&lt;/a&gt;. Other than the warning that my video card was no longer supported which could make the system unusable, there was no noticeable difference.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/quantal-snoer-and-wifi&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/snoer">snoer</category>
+ <pubDate>Thu, 21 Feb 2013 07:31:49 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">215 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Pangolin</title>
+ <link>http://mdworld.nl/cms/content/pangolin</link>
+ <description>&lt;p&gt;Upgraded snoer to &lt;a href=&quot;https://wiki.ubuntu.com/PrecisePangolin/&quot;&gt;Ubuntu 12.04 Precise Pangolin&lt;/a&gt;.&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/snoer">snoer</category>
+ <pubDate>Thu, 17 May 2012 13:00:00 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">205 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>A Crafty Project</title>
+ <link>http://mdworld.nl/cms/content/crafty-project</link>
+ <description>&lt;p&gt;I want to work out more and play more &lt;a href=&quot;http://eu.battle.net/wow/en/&quot;&gt;WoW&lt;/a&gt;, so why not combine the two?&lt;/p&gt;
+&lt;p&gt;Currently, snoer is used as a mediaplayer/streamer with XBMC installed, but it has a 80GB HDD, so if I make it dual-boot and resize XBMC to 30GB, the remaining 50GB should be enough for Ubuntu 11.10 (ca. 5GB?) and WoW (25GB on my desktop at the moment).&lt;/p&gt;
+&lt;p&gt;Then I just tape a spare keyboard to my hometrainer and I should be ready to grind in both RL and WoW at the same time!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/crafty-project&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/snoer">snoer</category>
+ <pubDate>Mon, 07 Nov 2011 14:46:53 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">194 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Snoer Transformed</title>
+ <link>http://mdworld.nl/cms/content/snoer-transformed</link>
+ <description>&lt;p&gt;Snoer is dead, long live snoer! The old D800 snoer has been replaced with a Dell Latitude D820. It has an Intel Core Duo processor, 80GB hard disk, and NVIDIA Quadro videocard.&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/snoer">snoer</category>
+ <pubDate>Wed, 10 Nov 2010 23:00:00 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">195 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Out of Reach</title>
+ <link>http://mdworld.nl/cms/content/out-reach-0</link>
+ <description>Because in our new house there is an actual steel reinforced concrete wall between my router and most of my house, there&#039;s no WLAN signal anywhere but in my study. That&#039;s why, with pain in my heart, I had to say goodbye to my old trusted Linksys WRT54g router and got a Linksys WRT320N dual channel 802.11n router. Because the old adapter I used in &lt;em&gt;snoer&lt;/em&gt; didn&#039;t support WPA, I also got a new USB adapter, a Linksys WUSB600N.
+
+Too bad, off course there&#039;s no Linux driver for the adapter.&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/out-reach-0&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/out-reach-0#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/organa">organa</category>
+ <category domain="http://mdworld.nl/cms/category/tags/snoer">snoer</category>
+ <pubDate>Mon, 28 Sep 2009 18:33:10 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">89 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Organa</title>
+ <link>http://mdworld.nl/cms/content/organa</link>
+ <description>This used to be my work laptop, Dell 800, pretty heavy specs. Got a new one from work (Dell 820, even heavier specs!!). I got the chance to buy it for a *special price*.&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/organa&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/organa#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/organa">organa</category>
+ <category domain="http://mdworld.nl/cms/category/tags/snoer">snoer</category>
+ <pubDate>Fri, 07 Jul 2006 07:22:33 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">59 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

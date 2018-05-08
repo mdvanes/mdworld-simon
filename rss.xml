@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld</title>
+ <link>http://mdworld.nl/cms</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>CDN, Relative URLs and local testing</title>
+ <link>http://mdworld.nl/cms/content/cdn-relative-urls-and-local-testing</link>
+ <description>&lt;p&gt;Of course I use this CDN refs to jquery and jquery-ui for my (new) sites, with fallbacks to local versions:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/cdn-relative-urls-and-local-testing&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/webdevelopment">webdevelopment</category>
+ <pubDate>Mon, 13 May 2013 12:31:56 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">225 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>UG007 mod</title>
+ <link>http://mdworld.nl/cms/content/ug007-mod</link>
+ <description>&lt;p&gt;Some time back I bought a UG007 Android Stick on &lt;a href=&quot;http://dx.com&quot;&gt;dx.com&lt;/a&gt;. It&#039;s WIFI reception is not enough for my purposes, so I&#039;m trying to enhance the signal analogously to &lt;a href=&quot;http://vondroid.com/threads/increasing-wifi-signal-in-tv-sticks.5055/&quot;&gt;this tutorial&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/ug007-mod&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/ug007">ug007</category>
+ <pubDate>Thu, 02 May 2013 10:44:34 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">221 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Play and Sass</title>
+ <link>http://mdworld.nl/cms/content/play-and-sass</link>
+ <description>&lt;p&gt;When working with the Play Framework, you have the choice to run develop your CSS in LESS, for which it has build-in support, or Sass, for which you&#039;ll have to install a plugin.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/play-and-sass&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/webdevelopment">webdevelopment</category>
+ <pubDate>Wed, 01 May 2013 12:32:31 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">220 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Fronteers 2012: CSS</title>
+ <link>http://mdworld.nl/cms/content/fronteers-2012-css</link>
+ <description>&lt;p&gt;Just like last year, this post is an reduced version of the talk by the inimitable Lea Verou with inline demo&#039;s. It&#039;s based on &lt;a href=&quot;https://vimeo.com/52882799&quot;&gt;the video recording of her talk&lt;/a&gt; and &lt;a href=&quot;http://lea.verou.me/more-css-secrets/&quot;&gt;her slides&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/fronteers-2012-css&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/fronteers-2012-css#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/fronteers">fronteers</category>
+ <category domain="http://mdworld.nl/cms/category/tags/webdevelopment">webdevelopment</category>
+ <pubDate>Tue, 09 Apr 2013 12:50:58 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">219 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Multiple jQuery versions</title>
+ <link>http://mdworld.nl/cms/content/multiple-jquery-versions</link>
+ <description>&lt;p&gt;Sometimes you find yourself in a situation where you need to use a new version of jQuery but the project already uses an older version and you&#039;re not at liberty to just update it. It&#039;s possible to use multiple versions of jQuery in the same document.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/multiple-jquery-versions&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/webdevelopment">webdevelopment</category>
+ <pubDate>Thu, 13 Sep 2012 09:26:52 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">211 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>On Sass and Compass</title>
+ <link>http://mdworld.nl/cms/content/sass-and-compass</link>
+ <description>&lt;p&gt;Yesterday, I attended a training on Sass and Compass by &lt;a href=&quot;http://roytomeij.com/&quot;&gt;Roy Tomeij&lt;/a&gt; organised by &lt;a href=&quot;http://fronteers.nl/&quot;&gt;Fronteers&lt;/a&gt;. &lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass&lt;/a&gt; is a CSS meta language and compiles to CSS, to make it easier to maintain than CSS yet still usable in the same browsers.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/sass-and-compass&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/fronteers">fronteers</category>
+ <category domain="http://mdworld.nl/cms/category/tags/webdevelopment">webdevelopment</category>
+ <pubDate>Wed, 12 Sep 2012 06:02:36 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">210 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Polska</title>
+ <link>http://mdworld.nl/cms/content/polska</link>
+ <description>&lt;p&gt;Today I release the very small drupal module Polska. Read below for details!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/polska&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/softcorp">softcorp</category>
+ <pubDate>Tue, 24 Jul 2012 20:24:49 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">207 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Insignificant 2</title>
+ <link>http://mdworld.nl/cms/content/insignificant-2</link>
+ <description>&lt;p&gt;I released version 2 of Insignificant!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/insignificant-2&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/softcorp">softcorp</category>
+ <pubDate>Sun, 19 Feb 2012 17:48:46 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">204 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Fronteers 2011: Experimental Features</title>
+ <link>http://mdworld.nl/cms/content/fronteers-2011-experimental-features</link>
+ <description>&lt;p&gt;This article discusses some experimental browser features from several talks at &lt;a href=&quot;http://fronteers.nl/congres/2011&quot;&gt;Fronteers 2011&lt;/a&gt;. Since these are experimental features it doesn&#039;t work predictably across all browsers. Try Firefox 10+ or Chrome 17+ to see it the way I intended it to work.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/fronteers-2011-experimental-features&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/fronteers">fronteers</category>
+ <category domain="http://mdworld.nl/cms/category/tags/webdevelopment">webdevelopment</category>
+ <pubDate>Sat, 28 Jan 2012 15:21:07 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">203 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Fronteers 2011: CSS</title>
+ <link>http://mdworld.nl/cms/content/fronteers-2011-css</link>
+ <description>&lt;div class=&quot;error&quot;&gt;Warning! This article might crash Internet Explorer!&lt;/div&gt;
+&lt;p&gt;This is the first in - what I hope will be - a series of articles on the useful information I received from visiting the &lt;a href=&quot;http://fronteers.nl/congres/2011&quot;&gt;Fronteers 2011 conference&lt;/a&gt; in Amsterdam last October. Like my &lt;a href=&quot;http://www.mdworld.nl/cms/category/tags/fronteers&quot;&gt;articles of last year&#039;s conference&lt;/a&gt;, I will not give a talk-by-talk summary, but rather pick out the subjects that interest me most and expand on those subjects, while referring to the original talks to give credits due.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/fronteers-2011-css&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/fronteers-2011-css#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/fronteers">fronteers</category>
+ <category domain="http://mdworld.nl/cms/category/tags/webdevelopment">webdevelopment</category>
+ <pubDate>Sat, 03 Dec 2011 20:47:18 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">192 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

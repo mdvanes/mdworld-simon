@@ -1,0 +1,77 @@
+/* reset HTML 5 */
+article, aside, footer, header, nav
+{
+	display: block;
+	clear: both;
+}
+
+/* resize for mobile use */
+html,body
+{
+	background: fixed #242424 url("../img/bg_hh.png") no-repeat 60px -50px; /* charcoal */
+}
+header
+{
+	width: 100%;
+}
+header h1
+{
+	font-size: 1.5em; 
+	margin-left: 0px; 
+}
+header ul.links
+{
+	margin-left: 0px;
+}
+header ul.links li
+{
+	font-size: 1.25em;
+}
+article
+{
+	width: 100%;
+}
+article div.author
+{
+	width: 100%; 
+}
+nav#menu
+{
+	margin-left: 0px; 
+	margin-right: 0px; 
+}
+nav#menu a
+{
+	font-size: 1.5em;
+	line-height: 0em;
+}
+footer #desktop
+{
+	display: block;
+}
+form#contact-mail-page .form-item input
+{
+	width: 200px;
+}
+form#contact-mail-page .form-item textarea
+{
+	width: 200px;
+}
+
+/* remove elements that cannot be rendered on mobile */
+div#ie
+{
+	display: none;
+}
+#blogroll
+{
+	display: none;
+}
+#bulletin
+{
+	display: none;
+}
+aside
+{
+	display: none;
+}

@@ -1,0 +1,65 @@
+/* style the error message */
+html,body
+{
+	color: #242424;
+}
+article
+{
+	margin-left: -300px;
+	margin-top: -100px;
+}
+article:hover
+{
+	background: none;
+}
+article h1
+{
+	font-size: 4em;
+}
+article p
+{
+	font-size: 1.5em;
+}
+article p a
+{
+	background: #242424;
+}
+footer
+{
+	margin-top: -400px;
+}
+
+/* remove the normal contents */
+header
+{
+	visibility: hidden; /* display: none doesn't work because of templateLayoutShowOnReady */
+}
+nav#bulletin
+{
+	visibility: hidden;
+}
+nav#menu
+{
+	visibility: hidden;
+}
+div.tabs
+{
+	display: none;
+}
+div.author
+{
+	display: none;
+}
+aside
+{
+	visibility: hidden;
+	min-height: 1px;
+}
+aside:hover
+{
+	background: none;
+}
+aside div.block
+{
+	display: none;
+}

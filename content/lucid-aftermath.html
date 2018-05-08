@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="ie ie6" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="ie ie7" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="ie ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+
+<meta name="keywords" content="mdworld, Martin van Es, MD Enterprises, mypc, dop" />
+<meta name="description" content="After upgrading to Lucid, I did have some problems:  Drupal Because in Lucid PHP was upped to 5.3.2, Drupal stopped working (with the illustrious error &quot;Function ereg() is deprecated in /var/www/drupal/include /file.inc on line 895.&quot;). Let&#039;s say downgrading PHP back to 5.2.10 is less than trivial..." />
+<link rel="shortcut icon" href="../themes/simon/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/files/css/css_949781c8a73045c6f9458633ed41d193.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="../sites/default/files/css/css_21f24221e70ef675167103b282b815d1.css" />
+<link type="text/css" rel="stylesheet" media="handheld" href="../sites/default/files/css/css_bcb90d40d05a52204eaf0fc65b2c7e6e.css" />
+<script type="text/javascript" src="../sites/default/files/js/js_3022830f3560163bcde900bfe847cfab.js"></script>
+<script type="text/javascript" src="../sites/all/modules/mdepolska/includes/mdepolska.js%3FX"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/cms/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+  <title>Lucid Aftermath | mdworld</title>
+</head>
+<body>
+	<div id="ie">
+		<div>
+			Warning: this browser doesn't support HTML5. Styling disabled.<br/>
+			Some browsers that do support HTML5:
+			<ul>
+				<li><a href="http://www.mozilla.com/firefox/">Firefox</a></li>
+				<li><a href="http://www.google.nl/chrome">Google Chrome</a></li>
+			</ul>
+
+		</div>
+	</div><!-- id=ie -->
+	<header>
+		<h1>mypc - Lucid Aftermath</h1><ul class="links"><li class="menu-127 first last"><a href="../node.html" title="">Home</a></li>
+</ul>	<div id="blogroll">
+	</div><!-- id=blogroll -->
+	</header>
+
+	<div id="contentTop">
+						<div class="tabs"></div>
+		  
+  <article class="node">
+            <p>After upgrading to Lucid, I did have some problems:</p>
+<p>Drupal<br />
+Because in Lucid PHP was upped to 5.3.2, Drupal stopped working (with the illustrious error "Function ereg() is deprecated in /var/www/drupal/include /file.inc on line 895."). Let's say downgrading PHP back to 5.2.10 is less than trivial...</p>
+<ul>
+<li>Remove the PHP 5.3.2 packages:
+<ul>
+<li>dpkg -l | grep php</li>
+<li>sudo apt-get remove php5 php5-cli ...etc...</li>
+</ul>
+</li>
+<li>create extra sources.list to acces karmic packages
+<ul>
+<li>sed s/lucid/karmic/g /etc/apt/sources.list | sudo tee</li>
+<li>/etc/apt/sources.list.d/karmic.list</li>
+</ul>
+</li>
+<li>sudo apt-get update</li>
+<li>create pin-list (so that it will not try to update to 5.3 again):<br />
+in a file /etc/apt/preferences.d/php all packages in this fashion:<br />
+Package: php5<br />
+Pin: release a=karmic<br />
+Pin-Priority: 991
+<p>Package: php5-adodb<br />
+Pin: release a=karmic<br />
+Pin-Priority: 991<br />
+...
+</p></li>
+<li>install php: sudo apt-get install php5 php5-mysql php5-curl php5-gd</li>
+<li>edit /etc/php5/apache2/php.ini: memory_limit from 16M to 64M</li>
+<li>restart apache: sudo /etc/init.d/apache2 restart</li>
+<li>clear browser</li>
+</ul>
+<p>I'm aware that some kind of script is circulating that should fix this downgrade, but I didn't get it to work properly. It just uninstalled half of my packages, which gave problems lateron. If you want to give it a try, you can find it <a href="http://mrkandy.wordpress.com/2010/04/16/install-php-5-2-x-in-ubuntu-10-04-lucid/">here</a>. I got most of my steps from that script and from <a href="http://www.nickveenhof.be/blog/reverting-or-downgrading-php-53-52-ubuntu-lucid-lynx-1004">this site</a>.</p>
+<p>Flash<br />
+Flash didn't work at all (I only tested Firefox), because the beta 64-bit player was installed, which segfaulted.</p>
+<p>First I tried this <a href="https://help.ubuntu.com/community/RestrictedFormats/Flash#x86_64">(source)</a>:</p>
+<ul>
+<li>sudo add-apt-repository ppa:sevenmachines/flash &amp;&amp; sudo apt-get</li>
+<li>update &amp;&amp; sudo apt-get install flashplugin64-installer</li>
+</ul>
+<p>But that didn't even make it past installation.</p>
+<p>Then I tried to install flashplugin-installer through synaptic, but it wasn't avaliable.</p>
+<p>Then I tried to install flashplugin-nonfree:<br />
+sudo apt-get install flashplugin-nonfree<br />
+There were no errors, but it didn't play any flash movies, either.</p>
+<p>Next try:</p>
+<ul>
+<li>I removed all flash packages with synaptic</li>
+<li>I went to youtube, installed flashplugin-installer through the popup bar that prompts you on installing missing plugins</li>
+<li>When I restarted firefox, youtube movies play, but mouseclicks were not accepted correctly. For instance, I can't scan through or change the resolution (depending on the youtube player skin).</li>
+</ul>
+<p>Finally I installed the Firefox plugin <a href="https://addons.mozilla.org/nl/firefox/addon/161939/?advanced=on">Flash-aid</a> (it installed 64-bit version: 10.0 r45) and now everything works normal again.</p>
+<div class="links"><ul class="links inline"><li class="taxonomy_term_7 first"><a href="../category/categories/mypc.html" rel="tag" title="">mypc</a></li>
+<li class="taxonomy_term_21 last"><a href="../category/tags/dop.html" rel="tag" title="">dop</a></li>
+</ul></div>    <div class="author">by Martin @ 17:59 10 June 2010</div>
+  </article>
+	</div><!-- id=contentTop -->
+	<div id="contentBottom">
+			</div><!-- id=contentBottom -->
+
+	<aside>
+		  <div class="block block-block" id="block-block-1">
+    <h2 class="title"></h2>
+    <div class="content"><p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="../sites/default/files/images/delicious.png" /></a><br/></p>
+<!-- Unfixed: <p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="/cms/sites/default/files/images/delicious.png" /></a></br/></p>
+ --></div>
+ </div>
+	</aside>
+
+	<nav id="bulletin">
+            	  <div class="block block-mdebulletin" id="block-mdebulletin-0">
+    <h2 class="title"></h2>
+    <div class="content"><ul>
+<li><a class="bulletin-1" href='../../index.html' title='mdworld.nl'><img src='../sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="../themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='../sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+<br/><!-- Unfixed: <ul>
+<li><a class="bulletin-1" href='http://mdworld.nl' title='mdworld.nl'><img src='/cms/sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="/cms/themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='/cms/sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+ --></div>
+ </div>
+	</nav>
+	
+	<nav id="menu">
+		<ul class="links"><li class="menu-115 first"><a href="../../index.html" title="MDWorld.nl">mdworld</a></li>
+<li class="menu-116"><a href="../category/categories/mypc.html" title="">MyPC</a></li>
+<li class="menu-227"><a href="../category/categories/softcorp.html" title="Software I developed">SoftCorp</a></li>
+<li class="menu-119"><a href="../category/categories/moviecorp.html" title="">MovieCorp</a></li>
+<li class="menu-118"><a href="../category/categories/wow-blog-community.html" title="World of Warcraft fan blog">WoW</a></li>
+<li class="menu-117 last"><a href="../contact.html" title="">Contact</a></li>
+</ul>	</nav>
+	
+	<footer>
+		<p>MD Enterprises <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" src="../themes/simon/img/cc.png" /></a> 2003-2012 <a href="http://validator.w3.org/check?uri=referer"><img alt="HTML5" src="../themes/simon/img/mdworld_html5_16.png"/></a></p>
+		<div id="desktop"><a href="../node%3Fismobile=false.html">desktop version</a></div>
+	</footer>
+	<!-- Wget/1.16.1 (linux-gnu) -->
+		<script type="text/javascript">
+	<!--
+	var full_theme_path = "/cms/themes/simon";
+	
+		-->
+	</script>
+	  	<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-9626603-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+</html>

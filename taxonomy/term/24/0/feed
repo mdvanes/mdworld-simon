@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - calrissian</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/24/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Calrissian</title>
+ <link>http://mdworld.nl/cms/content/calrissian-4</link>
+ <description>I gave up. I discarded this project alltogether and gave away the expensive parts to a &lt;a href=&quot;http://www.inglorion.net/&quot;&gt;friend&lt;/a&gt;. Click &lt;a href=&quot;http://www.mdworld.nl/mypc/calrissian.jpg&quot;&gt;here&lt;/a&gt; for a picture of calrissian.</description>
+ <comments>http://mdworld.nl/cms/content/calrissian-4#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/calrissian">calrissian</category>
+ <pubDate>Sun, 15 Jun 2003 08:30:24 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">43 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Calrissian</title>
+ <link>http://mdworld.nl/cms/content/calrissian-3</link>
+ <description>partitioning worked! using Apple HD SC Setup from &lt;a href=&quot;http://www.macgeek.org/downloads/&quot;&gt;the DTools75.zip disk&lt;/a&gt;. Followed instructions from &lt;a href=&quot;http://www.infernosoft.com/beowoof/installingLinux.html&quot;&gt;Beowoof&lt;/a&gt;. Copied bootdisk to harddrive and oh yes! Then I copied the (19!) installation floppy&#039;s. But the .smi won&#039;t open. I&#039;ll try to install Disccopy.</description>
+ <comments>http://mdworld.nl/cms/content/calrissian-3#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/calrissian">calrissian</category>
+ <pubDate>Wed, 29 Jan 2003 09:29:42 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">37 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Calrissian</title>
+ <link>http://mdworld.nl/cms/content/calrissian-2</link>
+ <description>&lt;a name=&quot;calrissian&quot;&gt;finally found bootdisks that can be installed from a PC (I have just one Mac) @ &lt;/a&gt;&lt;a href=&quot;http://www.macgeek.org/downloads/&quot;&gt;macgeek&lt;/a&gt;</description>
+ <comments>http://mdworld.nl/cms/content/calrissian-2#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/calrissian">calrissian</category>
+ <pubDate>Tue, 28 Jan 2003 09:26:33 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">36 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Calrissian</title>
+ <link>http://mdworld.nl/cms/content/calrissian-1</link>
+ <description>in a foolish attempt to create a bootdisk (to perform a reinstallation of MacOs, to perform a partitioning, to perform a mklinux installation) I crashed it in such a way, it won&#039;t boot from the harddisk.</description>
+ <comments>http://mdworld.nl/cms/content/calrissian-1#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/calrissian">calrissian</category>
+ <pubDate>Sun, 01 Dec 2002 09:01:08 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">30 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Calrissian</title>
+ <link>http://mdworld.nl/cms/content/calrissian-0</link>
+ <description>installed a second-hand scsi cd-drive. Only plays (non-copied) audio cd&#039;s. Well, just wasted EUR 8.</description>
+ <comments>http://mdworld.nl/cms/content/calrissian-0#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/calrissian">calrissian</category>
+ <pubDate>Sun, 01 Dec 2002 08:31:28 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">29 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Calrissian</title>
+ <link>http://mdworld.nl/cms/content/calrissian</link>
+ <description>acquired it. Mac OS 7.3 was installed on it. &lt;strong&gt;I decided it shall be used as a linux ssh server, so i can use it without a monitor.&lt;/strong&gt;</description>
+ <comments>http://mdworld.nl/cms/content/calrissian#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/calrissian">calrissian</category>
+ <pubDate>Tue, 01 Oct 2002 07:30:47 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">28 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>
