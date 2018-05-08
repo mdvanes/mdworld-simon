@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - robotics</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/33/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>BlueCactus</title>
+ <link>http://mdworld.nl/cms/content/bluecactus</link>
+ <description>&lt;p&gt;BlueCactus (we call him Slitty), the second project of MD Enterprises concerning autonomous robots.&lt;br /&gt;
+The old site is still here: &lt;a href=&quot;http://www.home.zonnet.nl/leeuwen795/bc.html&quot;&gt;BlueCactus Website&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/cms/sites/default/files/images/bluecactus_body.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;For a copy of the old site, read along past the break (in Dutch).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/bluecactus&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/robotics">robotics</category>
+ <pubDate>Mon, 01 Jul 2002 10:00:00 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">154 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Laika</title>
+ <link>http://mdworld.nl/cms/content/laika</link>
+ <description>&lt;p&gt;My first project concerning autonomous robots. I seem to have lost most information from before 2000, but suffice it to say, the robot was just a simple &lt;a href=&quot;http://en.wikipedia.org/wiki/Braitenberg_vehicles&quot;&gt;Braitenberg-vehicle&lt;/a&gt; (although we didn&#039;t know it was called that, when we build it), build with LEGO Robbert and I had laying around, and two &lt;a href=&quot;http://en.wikipedia.org/wiki/Photoresistor&quot; title&quot;Light Dependant Resistor&quot;&gt;LDR&lt;/a&gt;&#039;s. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/cms/sites/default/files/images/laika_front.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;It was build as a physics project in September 1999. I think we got a 7 or something (it had a major deviation to one side, don&#039;t remember what side, because the engines were different types).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/laika&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/robotics">robotics</category>
+ <pubDate>Fri, 01 Oct 1999 12:33:02 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">153 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

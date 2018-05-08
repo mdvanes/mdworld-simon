@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="ie ie6" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="ie ie7" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="ie ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+
+<meta name="keywords" content="mdworld, Martin van Es, MD Enterprises, fronteers, webdevelopment" />
+<meta name="description" content="Just like last year, this post is an reduced version of the talk by the inimitable Lea Verou with inline demo&#039;s. It&#039;s based on the video recording of her talk and her slides." />
+<link rel="shortcut icon" href="../themes/simon/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/files/css/css_949781c8a73045c6f9458633ed41d193.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="../sites/default/files/css/css_21f24221e70ef675167103b282b815d1.css" />
+<link type="text/css" rel="stylesheet" media="handheld" href="../sites/default/files/css/css_bcb90d40d05a52204eaf0fc65b2c7e6e.css" />
+<script type="text/javascript" src="../sites/default/files/js/js_3022830f3560163bcde900bfe847cfab.js"></script>
+<script type="text/javascript" src="../sites/all/modules/mdepolska/includes/mdepolska.js%3FX"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/cms/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+  <title>Fronteers 2012: CSS | mdworld</title>
+</head>
+<body>
+	<div id="ie">
+		<div>
+			Warning: this browser doesn't support HTML5. Styling disabled.<br/>
+			Some browsers that do support HTML5:
+			<ul>
+				<li><a href="http://www.mozilla.com/firefox/">Firefox</a></li>
+				<li><a href="http://www.google.nl/chrome">Google Chrome</a></li>
+			</ul>
+
+		</div>
+	</div><!-- id=ie -->
+	<header>
+		<h1>mdworld - Fronteers 2012: CSS</h1><ul class="links"><li class="menu-127 first last"><a href="../node.html" title="">Home</a></li>
+</ul>	<div id="blogroll">
+	</div><!-- id=blogroll -->
+	</header>
+
+	<div id="contentTop">
+						<div class="tabs"></div>
+		  
+  <article class="node">
+            <p>Just like last year, this post is an reduced version of the talk by the inimitable Lea Verou with inline demo's. It's based on <a href="https://vimeo.com/52882799">the video recording of her talk</a> and <a href="http://lea.verou.me/more-css-secrets/">her slides</a>.</p>
+<style>
+#nowrapper {
+  background: #ccc;
+  border: 1px solid white;
+  color: #000;
+  height: 200px;
+  overflow: hidden;
+  padding: 2px calc(50% - 100px);
+}
+
+#transition {
+  border: 2px dotted #fff;
+  height: 20px;
+  overflow: hidden;
+  transition-duration: 1s;
+  -o-transition-duration: 1s;
+  width: 200px;
+}
+#transition:hover {
+  height: 250px;
+  width: 100%;
+}
+#transition2 {
+  border: 2px dotted #fff;
+  height: 20px;
+  overflow: hidden;
+  transition: 1s width, 
+                   1s 1s height, 
+                   1s 2s background, 
+                   1s 2s color,
+                   1s 2s border;
+  width: 200px;
+}
+#transition2 .code {
+  background: transparent;
+}
+#transition2:hover {
+  background: #ccc;
+  border: 2px dotted #000;
+  color: #000;
+  height: 350px;
+  width: 100%;
+}
+
+.zebra {
+  background-image: linear-gradient(#000 50%, #333 50%);
+  background-origin: content-box;
+  background-size: 100% 2.4em; /* height should be 2* line height */
+  color: #ff8100;
+  font-family: monospace;
+  line-height: 1.2em;
+}
+
+#bubble1 {
+  border: 30px solid blue;
+  border-bottom: 30px solid #ccc;
+  height: 0;
+  width: 0;
+}
+#bubble2 {
+  border: 30px solid blue;
+  border-top: 0px solid blue;
+  border-bottom: 30px solid #ccc;
+  height: 0;
+  width: 0;
+}
+#bubble3 {
+  border: 30px solid transparent;
+  border-top: 0px solid transparent;
+  border-bottom: 30px solid #ccc;
+  height: 0;
+  width: 0;
+}
+.bubble4 {
+  background: #ccc;
+  border-radius: 5px;
+  color: #000;
+  padding: 10px;
+  position: relative;
+}
+.bubble4:before {
+  border: 30px solid transparent;
+  border-top: 0px solid transparent;
+  border-bottom: 30px solid #ccc;
+  content: ""; 
+  height: 0;
+  left: 190px;
+  position: absolute;
+  top: -30px;
+  width: 0;
+}
+.bubble4-text dd,
+.bubble4-text dt {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.bubble-shadow1 {
+  box-shadow: 1px -2px 5px #8DB11F;
+}
+.bubble-shadow2 {
+  -moz-filter: drop-shadow(1px -2px 5px #8DB11F);
+  -ms-filter: drop-shadow(1px -2px 5px #8DB11F);
+  -webkit-filter: drop-shadow(1px -2px 5px #8DB11F);
+  filter: drop-shadow(1px -2px 5px #8DB11F);
+}
+</style><h1>Center floating block without wrapper</h1>
+<p>It's an extremely common situation to want to center float your content in a fixed width column. The usual solution would be to make a full width wrapper element for your content and style it like this:</p>
+<pre class="code">
+.content-wrapper {
+   width: 100%;
+}
+.content {
+   margin: 0 auto;
+   width: 200px;
+}
+</pre><p>
+I'm sure making this wrapper everytime has bothered you as much as me and with the introduction of <a href="http://caniuse.com/#search=calc">calc()</a> for CSS, it can be left out! Just use:</p>
+<pre class="code">
+.content {
+   padding: 1em calc(50% - 100px;)
+}
+</pre><p>
+The 1em can be anything, since it is the vertical padding. The 100px is half of the intended width. What you're effectively expressing here is a full width element (default for all display: block; elements) with a left and right padding of 50% of the screen, but subtracting (half of) the width of the (virtual in this case) content column. This is the single most useful application of mixed unit calculations in runtime CSS, IMHO. It even works in IE9+.</p>
+<p>Example:</p>
+<div id="nowrapper">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id semper turpis. Donec convallis sollicitudin magna ut fermentum. Vestibulum nec diam sit amet velit gravida euismod. Maecenas rutrum nisi ut tortor mollis volutpat. Nullam lacus leo, sodales eget viverra ac, hendrerit tristique dui. Vivamus semper adipiscing fermentum. Phasellus ultricies vestibulum velit id ullamcorper. Maecenas cursus velit et nunc placerat lacinia. In vitae leo mi, eu scelerisque nibh. Praesent lacinia leo sit amet dui ullamcorper non posuere neque consequat. Nam ac adipiscing massa. Sed eu massa vitae nibh mollis varius. Vestibulum ut felis eget felis tincidunt porttitor at nec eros. Aliquam in hendrerit purus. Donec vehicula congue iaculis.
+</div>
+<h1>Multiple transitions</h1>
+<p>Already <a href="fronteers-2010-css.html">2 years back</a> I have mentioned CSS transitions, but now it is possible to append multiple transitions. Let's put it into practice using my old example:</p>
+<div id="transition">
+Try hovering over this text.
+<pre class="code">
+#transition {
+  border: 2px dotted #fff;
+  height: 20px;
+  overflow: hidden;
+  transition-duration: 1s;
+  -o-transition-duration: 1s;
+  width: 200px;
+}
+#transition:hover {
+  height: 250px;
+  width: 100%;
+}
+</pre></div>
+<p>As you can see, upon hover the box expands in the horizontal and vertical direction evenly and at the same time. Now it is possible to combine transitions, we can expand it first in width and then roll it out vertically. It works in IE, but only 10+.</p>
+<div id="transition2">
+Now, who dares hovering?!
+<pre class="code">
+#transition2 {
+  border: 2px dotted #fff;
+  height: 20px;
+  overflow: hidden;
+  transition: 1s width, 
+                   1s 1s height, 
+                   1s 2s background, 
+                   1s 2s color,
+                   1s 2s border;
+  /* the 1s directly before height is the delay 
+       for the second animation */
+  width: 200px;
+}
+#transition2:hover {
+  background: #ccc;
+  border: 2px dotted #000;
+  color: #000;
+  height: 250px;
+  width: 100%;
+}
+
+</pre></div>
+<p>This example reverts the animation the same way as it starts: first width then height. It is possible to do this backwards, but it would involve adding a class (e.g. current) with javascript after the animation ends and then overwriting the transition property to go backwards.</p>
+<h1>Scaling line backgrounds</h1>
+<p>Using CSS it is possible to set a separate background for alternating lines of text, without adding HTML elements for every line. This might be comfortable for displaying source code:</p>
+<pre class="zebra">
+.zebra {
+  background-image: linear-gradient(#000 50%, #333 50%);
+  background-origin: content-box;
+  background-size: 100% 2.4em;
+  color: #ff8100;
+  font-family: monospace;
+  line-height: 1.2em;
+}
+</pre><p>
+Let's go into this in a little more detail. A linear-gradient as background and the background-size property where also used in <a href="fronteers-2011-css.html">my previous article</a> to display diagonally striped backgrounds. The gradient uses 2 colors stops both at 50%, making two solid planes in the desired colors. Next, the background-size is set to 100% of the width but 2.4em, i.e. twice the line-height. This makes the background pattern of the two solid planes repeat every two lines. This is why it is essential that the background height is twice the line-height.</p>
+<p>As if this wasn't already briljant enough, it also automatically scales with the font-size. Because the background-size and line-height use the relative unit em, they both scale with the font-size. Try changing it:</p>
+<select onchange="$('.zebra').css('font-size',$(this).val());">
+<option value="80%">80%</option><br />
+<option value="100%" selected="selected">100%</option><br />
+<option value="120%">120%</option><br />
+</select>
+<h1>A speech bubble</h1>
+<p>What is a speech bubble without the tail pointing to its speaker? Well, just a bubble, I suppose. It is also a commonly used UI component to give information about some part of the UI, e.g. information for a specific input field. Most UI design I've seen use CSS for the bubble but an image for the tail, but it is possible to do this in pure CSS, and it is surprisingly easy.</p>
+<p>Imagine we want to make our tail point up. Let's first define a div with zero height but fat borders. I'll give the bottom border a different color:</p>
+<div id="bubble1"></div>
+<p>We just make the top border zero height:</p>
+<div id="bubble2"></div>
+<p>And then all the borders, except for the bottom, transparent:</p>
+<div id="bubble3"></div>
+<p>Adding this as a pseudo element to the actual bubble, gives us this:</p>
+<dl class="bubble4-text">
+<dt>Enter your name here:</dt>
+<dd><input/></input/></dd>
+</dl>
+<div class="bubble4">Really, you need me to explain what "Enter your name here" means?</div>
+<pre class="code">
+.bubble4 {
+  background: #ccc;
+  border-radius: 5px;
+  color: #000;
+  padding: 10px;
+  position: relative;
+}
+.bubble4:before {
+  border: 30px solid transparent;
+  border-top: 0px solid transparent;
+  border-bottom: 30px solid #ccc;
+  content: ""; 
+  height: 0;
+  left: 190px;
+  position: absolute;
+  top: -30px;
+  width: 0;
+}
+</pre><p>
+Normally, adding a box-shadow to this speech bubble, would leave the tail "unshadowed":</p>
+<dl class="bubble4-text">
+<dt>Enter your name here:</dt>
+<dd><input/></input/></dd>
+</dl>
+<div class="bubble4 bubble-shadow1">Really, you need me to explain what "Enter your name here" means?</div>
+<pre class="code">
+.bubble-shadow1 {
+  box-shadow: 1px -2px 5px #8DB11F;
+}
+</pre><p>
+A new CSS property, <a href="http://caniuse.com/#feat=css-filters">filter</a>, should be able to help here. It adds SVG filters to CSS. This doesn't work as well in FF as it does in webkit. Although there is a <a href="http://lea.verou.me/more-css-secrets/#slide50">workaround</a>, the clean solution I present here only works in webkit.</p>
+<dl class="bubble4-text">
+<dt>Enter your name here:</dt>
+<dd><input/></input/></dd>
+</dl>
+<div class="bubble4 bubble-shadow2">Really, you need me to explain what "Enter your name here" means?</div>
+<pre class="code">
+.bubble-shadow2 {
+  -moz-filter: drop-shadow(1px -2px 5px #8DB11F);
+  -ms-filter: drop-shadow(1px -2px 5px #8DB11F);
+  -webkit-filter: drop-shadow(1px -2px 5px #8DB11F);
+  filter: drop-shadow(1px -2px 5px #8DB11F);
+}
+</pre><div class="links"><ul class="links inline"><li class="taxonomy_term_6 first"><a href="../category/categories/mdworld.html" rel="tag" title="">mdworld</a></li>
+<li class="taxonomy_term_35"><a href="../category/tags/fronteers.html" rel="tag" title="">fronteers</a></li>
+<li class="taxonomy_term_36 last"><a href="../category/tags/webdevelopment.html" rel="tag" title="">webdevelopment</a></li>
+</ul>&gt; <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=comment%252Freply%252F219%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>    <div class="author">by Martin @ 14:50 9 April 2013</div>
+  </article>
+	</div><!-- id=contentTop -->
+	<div id="contentBottom">
+			</div><!-- id=contentBottom -->
+
+	<aside>
+		  <div class="block block-block" id="block-block-1">
+    <h2 class="title"></h2>
+    <div class="content"><p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="../sites/default/files/images/delicious.png" /></a><br/></p>
+<!-- Unfixed: <p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="/cms/sites/default/files/images/delicious.png" /></a></br/></p>
+ --></div>
+ </div>
+	</aside>
+
+	<nav id="bulletin">
+            	  <div class="block block-mdebulletin" id="block-mdebulletin-0">
+    <h2 class="title"></h2>
+    <div class="content"><ul>
+<li><a class="bulletin-1" href='../../index.html' title='mdworld.nl'><img src='../sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="../themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='../sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+<br/><!-- Unfixed: <ul>
+<li><a class="bulletin-1" href='http://mdworld.nl' title='mdworld.nl'><img src='/cms/sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="/cms/themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='/cms/sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+ --></div>
+ </div>
+	</nav>
+	
+	<nav id="menu">
+		<ul class="links"><li class="menu-115 first"><a href="../../index.html" title="MDWorld.nl">mdworld</a></li>
+<li class="menu-116"><a href="../category/categories/mypc.html" title="">MyPC</a></li>
+<li class="menu-227"><a href="../category/categories/softcorp.html" title="Software I developed">SoftCorp</a></li>
+<li class="menu-119"><a href="../category/categories/moviecorp.html" title="">MovieCorp</a></li>
+<li class="menu-118"><a href="../category/categories/wow-blog-community.html" title="World of Warcraft fan blog">WoW</a></li>
+<li class="menu-117 last"><a href="../contact.html" title="">Contact</a></li>
+</ul>	</nav>
+	
+	<footer>
+		<p>MD Enterprises <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" src="../themes/simon/img/cc.png" /></a> 2003-2012 <a href="http://validator.w3.org/check?uri=referer"><img alt="HTML5" src="../themes/simon/img/mdworld_html5_16.png"/></a></p>
+		<div id="desktop"><a href="../node%3Fismobile=false.html">desktop version</a></div>
+	</footer>
+	<!-- Wget/1.16.1 (linux-gnu) -->
+		<script type="text/javascript">
+	<!--
+	var full_theme_path = "/cms/themes/simon";
+	
+		-->
+	</script>
+	  	<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-9626603-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+</html>

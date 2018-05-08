@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="ie ie6" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="ie ie7" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="ie ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+
+<meta name="keywords" content="mdworld, Martin van Es, MD Enterprises, fronteers, webdevelopment" />
+<meta name="description" content="Warning! This article might crash Internet Explorer!   This is the first in - what I hope will be - a series of articles on the useful information I received from visiting the Fronteers 2011 conference in Amsterdam last October." />
+<link rel="shortcut icon" href="../themes/simon/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/files/css/css_949781c8a73045c6f9458633ed41d193.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="../sites/default/files/css/css_21f24221e70ef675167103b282b815d1.css" />
+<link type="text/css" rel="stylesheet" media="handheld" href="../sites/default/files/css/css_bcb90d40d05a52204eaf0fc65b2c7e6e.css" />
+<script type="text/javascript" src="../sites/default/files/js/js_3022830f3560163bcde900bfe847cfab.js"></script>
+<script type="text/javascript" src="../sites/all/modules/mdepolska/includes/mdepolska.js%3FX"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/cms/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+  <title>Fronteers 2011: CSS | mdworld</title>
+</head>
+<body>
+	<div id="ie">
+		<div>
+			Warning: this browser doesn't support HTML5. Styling disabled.<br/>
+			Some browsers that do support HTML5:
+			<ul>
+				<li><a href="http://www.mozilla.com/firefox/">Firefox</a></li>
+				<li><a href="http://www.google.nl/chrome">Google Chrome</a></li>
+			</ul>
+
+		</div>
+	</div><!-- id=ie -->
+	<header>
+		<h1>mdworld - Fronteers 2011: CSS</h1><ul class="links"><li class="menu-127 first last"><a href="../node.html" title="">Home</a></li>
+</ul>	<div id="blogroll">
+	</div><!-- id=blogroll -->
+	</header>
+
+	<div id="contentTop">
+						<div class="tabs"></div>
+		  
+  <article class="node">
+            <div class="error">Warning! This article might crash Internet Explorer!</div>
+<p>This is the first in - what I hope will be - a series of articles on the useful information I received from visiting the <a href="http://fronteers.nl/congres/2011">Fronteers 2011 conference</a> in Amsterdam last October. Like my <a href="http://www.mdworld.nl/cms/category/tags/fronteers">articles of last year's conference</a>, I will not give a talk-by-talk summary, but rather pick out the subjects that interest me most and expand on those subjects, while referring to the original talks to give credits due.</p>
+<style>
+code
+{
+    background: none repeat scroll 0 0 #000000;
+    color: #FF8100;
+    display: inline;
+    font-family: monospace;
+}
+.bounce
+{
+	border: 1px solid black;
+	height: 40px;
+	margin-bottom: 10px;
+	padding: 5px;
+	width: 300px;
+}
+.bounce div
+{
+	background: red;
+	height: 40px;
+	width: 40px;
+border-radius: 50%;
+}
+.bounce:hover div, .bounce_touch div
+{
+	margin-left: 250px;
+}
+#bounce1 div
+{
+	-moz-transition: 1.5s;
+	-webkit-transition: 1.5s;
+	-o-transition: 1.5s;
+	-ms-transition: 1.5s;
+	transition: 1.5s;
+}
+#bounce2 div
+{
+	-moz-transition: 1.5s linear;
+	-webkit-transition: 1.5s linear;
+	-o-transition: 1.5s linear;
+	-ms-transition: 1.5s linear;
+	transition: 1.5s linear;
+}
+#bounce3 div
+{
+	-moz-transition: 1.5s cubic-bezier(0, 1, 1, 2);
+	-webkit-transition: 1.5s cubic-bezier(0, 1, 1, 2);
+	-o-transition: 1.5s cubic-bezier(0, 1, 1, 2);
+	-ms-transition: 1.5s cubic-bezier(0, 1, 1, 2);
+	transition: 1.5s cubic-bezier(0, 1, 1, 2);
+}
+
+.shadow
+{
+	height: 50px;
+	width: 150px;
+	margin-bottom: 30px;
+	margin-left: 40px;
+}
+#shadow1
+{
+	box-shadow: 0 0 15px white;
+}
+#shadow2
+{
+	box-shadow: 0 0 10px 20px white;
+}
+#shadow3
+{
+	box-shadow: 0 0 0px 20px white;
+}
+#shadow4
+{
+	box-shadow: 0 0 0px 5px white, 0 0 0px 8px red, 0 0 0px 11px white;
+}
+
+.through
+{
+position: relative;
+	border: 1px solid black;
+	height: 50px;
+	text-align: center;
+	padding-top: 10px;
+font-size: 200%;
+	width: 300px;
+}
+.through div
+{
+position: absolute;
+background: #242424;
+opacity: 0.8;
+	height: 100%;
+	top: 0;
+	width: 150px;
+}
+#through2 div
+{
+	pointer-events: none;
+}
+
+body.leabg1
+{
+	background: -moz-linear-gradient( 0deg, navy, rgba(100,100,100,0.5) );
+	background: -webkit-linear-gradient( 0deg, navy, rgba(100,100,100,0.5) );
+	background: -o-linear-gradient( 0deg, navy, rgba(100,100,100,0.5) );
+	background: -ms-linear-gradient( 0deg, navy, rgba(100,100,100,0.5) );
+	background: linear-gradient( 0deg, navy, rgba(100,100,100,0.5) );
+}
+body.leabg2
+{
+	background: -moz-linear-gradient( 0deg, navy 60%, #343434 90% );
+	background: -webkit-linear-gradient( 0deg, navy 60%, #343434 90% );
+	background: -o-linear-gradient( 0deg, navy 60%, #343434 90% );
+	background: -ms-linear-gradient( 0deg, navy 60%, #343434 90% );
+	background: linear-gradient( 0deg, navy 60%, #343434 90% );
+}
+body.leabg3
+{
+	background: -moz-linear-gradient( 0deg, navy 60%, #343434 60% );
+	background: -webkit-linear-gradient( 0deg, navy 60%, #343434 60% );
+	background: -o-linear-gradient( 0deg, navy 60%, #343434 60% );
+	background: -ms-linear-gradient( 0deg, navy 60%, #343434 60% );
+	background: linear-gradient( 0deg, navy 60%, #343434 60% );
+}
+body.leabg4
+{
+	background: -moz-linear-gradient( 0deg, navy 50%, #343434 50% );
+	background: -webkit-linear-gradient( 0deg, navy 50%, #343434 50% );
+	background: -o-linear-gradient( 0deg, navy 50%, #343434 50% );
+	background: -ms-linear-gradient( 0deg, navy 50%, #343434 50% );
+	background: linear-gradient( 0deg, navy 50%, #343434 50% );
+	background-size: 200px 200px;
+}
+body.leabg5
+{
+	background: -moz-linear-gradient( 45deg, navy 50%, #343434 50% );
+	background: -webkit-linear-gradient( 45deg, navy 50%, #343434 50% );
+	background: -o-linear-gradient( 45deg, navy 50%, #343434 50% );
+	background: -ms-linear-gradient( 45deg, navy 50%, #343434 50% );
+	background: linear-gradient( 45deg, navy 50%, #343434 50% );
+	background-size: 200px 200px;
+}
+body.leabg6
+{
+	background: -moz-linear-gradient( 0deg, 
+		navy 25%, #343434 25%,
+		#343434 50%, navy 50%,
+		navy 75%, #343434 75%
+  );
+	background: -webkit-linear-gradient( 0deg, 
+		navy 25%, #343434 25%,
+		#343434 50%, navy 50%,
+		navy 75%, #343434 75%
+  );
+	background: -o-linear-gradient( 0deg, 
+		navy 25%, #343434 25%,
+		#343434 50%, navy 50%,
+		navy 75%, #343434 75%
+  );
+	background: -ms-linear-gradient( 0deg, 
+		navy 25%, #343434 25%,
+		#343434 50%, navy 50%,
+		navy 75%, #343434 75%
+  );
+	background: linear-gradient( 0deg, 
+		navy 25%, #343434 25%,
+		#343434 50%, navy 50%,
+		navy 75%, #343434 75%
+  );
+	background-size: 200px 200px;
+}
+body.leabg7
+{
+	background: -moz-linear-gradient( 45deg, 
+		navy 25%, #343434 25%,
+		#343434 50%, navy 50%,
+		navy 75%, #343434 75%
+  );
+	background: -webkit-linear-gradient( 45deg, 
+		navy 25%, #343434 25%,
+		#343434 50%, navy 50%,
+		navy 75%, #343434 75%
+  );
+	background: -o-linear-gradient( 45deg, 
+		navy 25%, #343434 25%,
+		#343434 50%, navy 50%,
+		navy 75%, #343434 75%
+  );
+	background: -ms-linear-gradient( 45deg, 
+		navy 25%, #343434 25%,
+		#343434 50%, navy 50%,
+		navy 75%, #343434 75%
+  );
+	background: linear-gradient( 45deg, 
+		navy 25%, #343434 25%,
+		#343434 50%, navy 50%,
+		navy 75%, #343434 75%
+  );
+	background-size: 200px 200px;
+}
+
+ul#struc1 li, ul#struc2 li, ul#struc3 li, ul#struc4 li, ul#struc5 li, ul#struc6 li, ul#struc7 li,
+ul#struc8 li, ul#struc9 li {
+background: red;
+color: white;
+float: left;
+font-family: monospace;
+font-weight: bold;
+height: 20px;
+list-style-type: none;
+margin-right: 5px;
+text-align: center;
+width: 20px;
+}
+#struc1 li:first-child {
+background: navy;
+}
+#struc2 li:nth-child(2) {
+background: navy;
+}
+#struc3 li:nth-last-child(2) {
+background: navy;
+}
+#struc4 li:nth-child(odd) {
+background: navy;
+}
+#struc5 li:nth-child(3n+1) {
+background: navy;
+}
+#struc6 li:nth-child(8):nth-last-child(2) {
+background: navy;
+}
+#struc7 li:nth-child(7)  ~ li
+{
+background: navy;
+}
+#struc8 li:nth-child(3),
+#struc8 li:nth-child(3) ~ li
+{
+background: navy;
+}
+#struc8 li:nth-child(6),
+#struc8 li:nth-child(6) ~ li
+{
+background: red;
+}
+
+h1#carttitle {
+  background: #272727;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  height: 25px;
+  margin: 0;
+  text-align: center;
+  padding-top: 5px;
+  width: 345px;
+}
+div#cart {
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 175px;
+  overflow: hidden;
+  width: 345px;
+}
+div.cartitem {
+  background: url('../sites/default/files/images/FAMILY-DARTH-BOBBLE.gif');
+  float: left;
+  height: 80px;
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 80px;
+}
+/* at least 1 child */
+div.cartitem:first-child:nth-last-child(n + 1),
+div.cartitem:first-child:nth-last-child(n + 1) ~ div {
+  background-position: 0 0;
+  height: 165px;
+  margin-left: 80px;
+  width: 165px;
+}
+/* at least 2 children */
+div.cartitem:first-child:nth-last-child(n + 2),
+div.cartitem:first-child:nth-last-child(n + 2) ~ div {
+  margin-left: 5px;
+}
+/* at least 3 children */
+div.cartitem:first-child:nth-last-child(n + 3),
+div.cartitem:first-child:nth-last-child(n + 3) ~ div {
+  background-size: 80px;
+  height: 80px;
+  margin-top: 40px;
+  width: 80px;
+}
+/* at least 5 children */
+div.cartitem:first-child:nth-last-child(n + 5),
+div.cartitem:first-child:nth-last-child(n + 5) ~ div {
+  background-position: -40px -40px;
+  background-size: 165px;
+  margin-top: 5px;
+}
+ul#cartbuttons {
+  list-style-type: none;
+  height: 30px;
+  width: 345px;
+}
+ul#cartbuttons li {
+  color: black;
+  cursor: pointer;
+  font-size: 60px;
+  font-weight: bold;
+  float: left;
+  height: 30px;
+  line-height: 20px;
+  text-align: center;
+  width: 60px;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+ul#cartbuttons li:first-child {
+  background: #0f0;
+  margin-left: 70px;
+}
+ul#cartbuttons li:last-child {
+  background: #f00;
+}
+</style><p>
+I will make a small exception for the <a href="http://lanyrd.com/2011/fromthefront/sgfgr/#link-fptw">talk by Lea Verou on CSS</a> because it was so excellent and informative, I have instead chosen to convert her online slides to an (interactive) demo, which you'll find below. The original talk included these slides but were interactive, which doesn't seem to have made it to the online slides.</p>
+<p>The demos below should work on all latest stable versions of the major browers, except IE 9. You can check for support of individual features on <a href="http://caniuse.com">caniuse.com</a>. </p>
+<div>
+<h1>Bouncing transitions</h1>
+<p>In <a href="http://www.mdworld.nl/cms/content/fronteers-2010-css">this article</a> I already covered pure CSS transitions, but Lea has an extension on this by adding easing and even bouncing.</p>
+<p>First off, transition can be applied to lots of things outside position or size. Background color and text-shadow are also supported, just to name a few. A complete list can be found <a href="http://www.webdesignerdepot.com/2010/01/css-transitions-101/#">here</a>.</p>
+<p>When applying it to position (hover over the red balls below to see demos), it's easier to discriminate between the different forms of easing. The default setting is "ease", which eases at the start and the beginning of the transition. Try the two examples below to see the difference.</p>
+<p><code>transition: 1.5s ease;</code></p>
+<div id="bounce1" class="bounce" onmousedown="this.className='bounce bounce_touch';" onmouseup="this.className='bounce';">
+<div></div>
+</div>
+<p><code>transition: 1.5s linear;</code></p>
+<div id="bounce2" class="bounce" onmousedown="this.className='bounce bounce_touch';" onmouseup="this.className='bounce';">
+<div></div>
+</div>
+<p>There is support for making the transition follow the shape of a <a href="http://en.wikipedia.org/wiki/B%C3%A9zier_curve">cubic bezier curve</a>, which gives the transition a bouncing appearance. This bounce is not supported in Chrome 15, because of <a href="https://bugs.webkit.org/show_bug.cgi?id=45761">this bug</a>.</p>
+<p><code>transition: 1.5s cubic-bezier(0, 1, 1, 2);</code></p>
+<div id="bounce3" class="bounce" onmousedown="this.className='bounce bounce_touch';" onmouseup="this.className='bounce';">
+<div></div>
+</div>
+</div>
+<p>You can use <a href="http://cubic-bezier.com/">Lea's tool</a> to calculate nice/useful beziers.</p>
+<!--<div>ellipse</div>--><!--<div>ellipse</div>--><div>
+<h1>Box-shadow-o-rama</h1>
+<p>In <a href="http://www.mdworld.nl/cms/content/fronteers-2010-css">this article</a> I already mentioned box-shadow, in it's most basic form resulting in something like this:</p>
+<div id="shadow1" class="shadow"></div>
+<p>But it is also possible to add shadow <em>spread</em>, the "20px" in the example below. As a reminder, the first two zeroes are the horizontal and vertical offset respectively and the 10px is the blur radius.<br />
+<code>box-shadow: 0 0 10px 20px white;</code><br />
+<br/></br/></p>
+<div id="shadow2" class="shadow"></div>
+<p>In contrast to increasing the blur radius, increasing the spread will not make the shadow lighter. It is even possible to define a zero blur radius and a (high) spread, making the shadow solid and essentially emulating a border.<br />
+<br/></br/></p>
+<div id="shadow3" class="shadow"></div>
+<p>But unlike borders, multiple box-shadows can be defined. Creating this example using only the <em>border</em> attribute would have required three divs (or other HTML elements), but using multiple box shadows it can be done with just one div:</p>
+<div id="shadow4" class="shadow"></div>
+<p><code>box-shadow: 0 0 0px 5px white, 0 0 0px 8px red, 0 0 0px 11px white;</code></p>
+<p>The downside of using a box-shadow as a border is that you can't use border-style properties, like dashed or dotted. And writing this article, I've also experienced some alignment issues as the box-shadows are not counted in computing the element width like borders are (<a href="http://www.quirksmode.org/css/quirksmode.html">box model headache</a>, anyone?)
+</p></div>
+<div>
+<h1>Pass through</h1>
+<p>Working with transparency in webdesign has caused lots of troubles, one example being semi-opaque overlays. If such an overlay is rendered over an object that should be clickable (see the examples below for clarification) it is often only possible by taking a set of images or resorting to Flash.</p>
+<p>But using the attribute pointer-events, clicks can be "passed through" to the underlying element.</p>
+<p>default:<br />
+<code>pointer-events: auto;</code></p>
+<div class="through">
+		<a href="../../index.html">mdworld.nl</a>
+<div></div>
+</div>
+<p><code>pointer-events: none;</code></p>
+<div class="through" id="through2">
+		<a href="../../index.html">mdworld.nl</a>
+<div></div>
+</div>
+<p>This is also useful for customizing the styling of dropdown selectors by overlaying images, because these elements are normally <a href="http://bavotasan.com/2011/style-select-box-using-only-css/">unstylable</a>, making it necessary to make the dropdown transparent so you'll see an image below the dropdown as a workaround.</p>
+<p>Even so, support for pointer-events is <a href="http://caniuse.com/#search=pointer-events">quite limited</a> but Lea offers a workaround, compatible with a feature detection based approach, for this in <a href="http://lanyrd.com/2011/fromthefront/sgfgr/#link-fptw">her slides</a>.
+</p></div>
+<!--<div>tab-size</div>--><!--<div>tab-size</div>--><div>
+<h1>Structural pseudo classes</h1>
+<p>Something I have yet to cover are CSS structural selectors. Assuming you're in a small shock now, confused by these terms, let me clarify.</p>
+<p>Aside from HTML elements by id or CSS class, ever since CSS 2.1 there are more specific selectors, like :not (e.g. div:not for selecting all elements that are not a div) or :empty (e.g. div:empty for selecting all empty divs). And also structural selectors, selecting based on the place of an element in the structure of the page, such as :first-child for selecting the first child of an element, see this example:</p>
+<ul id="struc1">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+</ul>
+<p><br/></br/></p>
+<p>Selected with this statement:</p>
+<p><code>#struc1 li:first-child {<br />
+&nbsp;&nbsp;background: navy;<br />
+}</code></p>
+<p>The more specific :nth-child() selector can be used to select any specific child, e.g. the second, by using :nth-child(2)</p>
+<ul id="struc2">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+</ul>
+<p><br/></br/></p>
+<p>Or :nth-last-child(2), i.e. the second last child.</p>
+<ul id="struc3">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+</ul>
+<p><br/></br/></p>
+<p>But :nth-child has a more complex syntax, to be exact <a href="http://css-tricks.com/5452-how-nth-child-works/">:nth-child(an+b)</a>, and also allows the keywords even and odd, so :nth-child(odd) results in: </p>
+<ul id="struc4">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+</ul>
+<p><br/></br/></p>
+<p>And :nth-child(3n+1) matches all elements y for the n is the set of integers from 0 to infinity.<br />
+Please keep in mind that I'm not a mathematician, far from it, but y = 3n + 1 for n = 1 or higher matches children:<br />
+3 x 0 + 1 = 1, 3 x 1 + 1 = 4, 3 x 2 + 1 = 7, 3 x 3 + 1 = 10 and 10 is already beyond the total number in my example, so:</p>
+<ul id="struc5">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+</ul>
+<p><br/></br/></p>
+<p>is selected by:</p>
+<p><code>#struc1 li:nth-child(3n+1) {<br />
+&nbsp;&nbsp;background: navy;<br />
+}</code></p>
+<p>This is of course wonderful for selecting odd rows in a table, for instance. The formula is explained in greater detail <a href="http://css-tricks.com/5452-how-nth-child-works/">here</a>.</p>
+<p>Lea describes in her talk how these selectors can be chained, e.g. li:only-child is equivalent to li:first-child:last-child. This will never match in my example, because I have 9 items, but I can select an item that is the 8th child <em>and</em> the 2nd last item, with this statement li:nth-child(8):nth-last-child(2)</p>
+<ul id="struc6">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li id="struc6-9">9</li>
+</ul>
+<p><br/></br/></p>
+<p>If the list is dynamic and the 9th item would be removed, the 8th item would still be the 8th child but no longer the 2nd last and therefore it would no longer match. Test by clicking <span onclick="var x = document.getElementById('struc6-9'); x.parentNode.removeChild(x);" style="text-decoration: underline; cursor: pointer;">here</span> and removing the 9th item.</p>
+<p>Using the ~ operator, for items preceded by another item, I can select all items preceded by the 7th item using </p>
+<p><code>li:nth-child(7) ~ li</code></p>
+<ul id="struc7">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+</ul>
+<p><br/></br/></p>
+<p>I've managed to select the range from item 3 through 6 in this example:</p>
+<ul id="struc8">
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+</ul>
+<p><br/></br/></p>
+<p>by using these selectors</p>
+<p><code>#struc8 li:nth-child(3),<br />
+#struc8 li:nth-child(3) ~ li<br />
+{<br />
+&nbsp;&nbsp;background: navy;<br />
+}<br />
+#struc8 li:nth-child(6),<br />
+#struc8 li:nth-child(6) ~ li<br />
+{<br />
+&nbsp;&nbsp;background: red;<br />
+}</code></p>
+<p>The use that Lea offers is modifying the layout of your page based on the number of elements that have to be accommodated. Instead of relying on flowing the elements on the page by setting fixed widths and floating elements, you can adjust the width based on the amount of elements.</p>
+<p>Imagine a shopping cart in an online shop that shows a preview of the contents of the cart. The preview window has a fixed size. When one item is added you want it to fill up the entire preview window, but as more items are added, you want to scale them. When more items are added than can be displayed reasonably, the first 8 items are shown, plus an indicator of the remaining amount of items in the cart.</p>
+<h1 id="carttitle">Your Cart</h1>
+<div id="cart"></div>
+<p><span id="cartsurpluswrapper" style="display: none;">+ <input readonly="readonly" id="carttotal" type="hidden" value="0" /><input readonly="readonly" id="cartsurplus" size="2" value="0" /> more Stewies</span></p>
+<ul id="cartbuttons">
+<li onclick="var x = document.createElement('div'); x.className='cartitem'; document.getElementById('cart').appendChild(x); var c = document.getElementById('carttotal'); c.value = parseInt(c.value) + 1; var s = document.getElementById('cartsurplus'); s.value = c.value - 8; if( c.value > 8) {document.getElementById('cartsurpluswrapper').style.display='inline'} else {document.getElementById('cartsurpluswrapper').style.display='none'}">+</li>
+<li onclick="var x = document.getElementById('cart'); x.removeChild(x.childNodes[0]); var c = document.getElementById('carttotal'); c.value -= 1; var s = document.getElementById('cartsurplus'); s.value = c.value - 8; if( c.value > 8) {document.getElementById('cartsurpluswrapper').style.display='inline'} else {document.getElementById('cartsurpluswrapper').style.display='none'}">-</li>
+</ul>
+<p>Using nothing more for the styling of the cart items than this:</p>
+<p><code>/* at least 1 child */<br />
+div.cartitem:first-child:nth-last-child(n + 1),<br />
+div.cartitem:first-child:nth-last-child(n + 1) ~ div {<br />
+&nbsp;&nbsp;background-position: 0 0;<br />
+&nbsp;&nbsp;height: 165px;<br />
+&nbsp;&nbsp;margin-left: 80px;<br />
+&nbsp;&nbsp;width: 165px;<br />
+}<br />
+/* at least 2 children */<br />
+div.cartitem:first-child:nth-last-child(n + 2),<br />
+div.cartitem:first-child:nth-last-child(n + 2) ~ div {<br />
+&nbsp;&nbsp;margin-left: 5px;<br />
+}<br />
+/* at least 3 children */<br />
+div.cartitem:first-child:nth-last-child(n + 3),<br />
+div.cartitem:first-child:nth-last-child(n + 3) ~ div {<br />
+&nbsp;&nbsp;background-size: 80px;<br />
+&nbsp;&nbsp;height: 80px;<br />
+&nbsp;&nbsp;margin-top: 40px;<br />
+&nbsp;&nbsp;width: 80px;<br />
+}<br />
+/* at least 5 children */<br />
+div.cartitem:first-child:nth-last-child(n + 5),<br />
+div.cartitem:first-child:nth-last-child(n + 5) ~ div {<br />
+&nbsp;&nbsp;background-position: -40px -40px;<br />
+&nbsp;&nbsp;background-size: 165px;<br />
+&nbsp;&nbsp;margin-top: 5px;<br />
+}<br />
+</code></p>
+<p>Very elegant, even if I do say so myself.
+</p></div>
+<!--<div>custom checkboxes and radio buttons</div>--><!--<div>custom checkboxes and radio buttons</div>--><!--<div>more cursors</div>--><!--<div>more cursors</div>--><div>
+<h1>Background patterns</h1>
+<p>	Linear-gradient can be used to make a CSS only gradient background, instead of having to work with background pictures. The official syntax can be found <a href="http://www.css3files.com/gradient/">here</a>, but let me show some examples. <em>For all the following examples: click on the code snippet to activate the demo!</em><br />
+By the way, if you think I've gone insane in choosing the colors for this demo, I must apologize for making you feel nauseated, but it's the only non-grayscale color with the right amount of contrast I could find. Using non-grayscale is essential to make the transition between colors in the gradient clearly visible.</p>
+<p>	<code onclick="document.body.className='leabg1';">background: linear-gradient( 0deg, navy, rgba(100,100,100,0.5) );</code></p>
+<p>	Where the first (optional) parameter is the direction of the gradient, followed by the two colors of the gradient. All normal color formats are accessible, in this case I've used a color keyword and a transparency supporting rgba value.</p>
+<p>	Placing values (px or % are valid) after the colors, places a color stop at that position. In the example below <em>navy</em> will stop at 60% of the width, counting from the left of the page and <em>gray</em> will start at 90% of the width, also from the left of the page. The space between 60% and 90% is the gradient.</p>
+<p>	<code onclick="document.body.className='leabg2';">background: linear-gradient( 0deg, navy 60%, #343434 90% );</code></p>
+<p>	Using color stops, the transition area of the gradient can be made very wide (such as the default, in the first example) or so narrow that it looks like there are just two adjacent colored planes.</p>
+<p>	<code onclick="document.body.className='leabg3';">background: linear-gradient( 0deg, navy 60%, #343434 60%</code></p>
+<p>	When adding background-size, background images can be resized, this also works for gradients, so a repeating background appears.</p>
+<p>	<code onclick="document.body.className='leabg4';">background-size: 200px 200px;</code></p>
+<p>	By rotating the gradient to 45&deg;, this does not (yet) yield diagonal alterating bands of navy and gray, because the gradient exists in (repeating) 200x200px squares, and is only rotated within does squares.</p>
+<p>	<code onclick="document.body.className='leabg5';">background: linear-gradient( 45deg, navy 50%, #343434 50% );</code></p>
+<p>	Lea solves this by using a photoshop trick, adding several color stops, essentially creating multiple gradients within the 200x200px square that blends into its neighbours. Compared to <span onclick="document.body.className='leabg4';" style="text-decoration: underline; cursor: pointer;">this example</span> it just looks like narrower lanes, but remember the background size is still the same size, so now there are 4 lanes in one square.</p>
+<p><code onclick="document.body.className='leabg6';">background: linear-gradient(<br />
+&nbsp;&nbsp;0deg,<br />
+&nbsp;&nbsp;navy 25%, #343434 25%,<br />
+&nbsp;&nbsp;#343434 50%, navy 50%,<br />
+&nbsp;&nbsp;navy 75%, #343434 75%<br />
+);</code></p>
+<p>Rotating that gives the diagonally striped background.</p>
+<p><code onclick="document.body.className='leabg7';">background: linear-gradient(<br />
+&nbsp;&nbsp;45deg,<br />
+&nbsp;&nbsp;navy 25%, #343434 25%,<br />
+&nbsp;&nbsp;#343434 50%, navy 50%,<br />
+&nbsp;&nbsp;navy 75%, #343434 75%<br />
+);</code></p>
+<p>This wraps up this interactive demo, I plan to cover the rest of the CSS related material in my next article.
+</p></div>
+<!--<div>background-position (neat, but very limited support)</div>--><!--<div>background-position (neat, but very limited support)</div>--><div class="links"><ul class="links inline"><li class="taxonomy_term_6 first"><a href="../category/categories/mdworld.html" rel="tag" title="">mdworld</a></li>
+<li class="taxonomy_term_35"><a href="../category/tags/fronteers.html" rel="tag" title="">fronteers</a></li>
+<li class="taxonomy_term_36 last"><a href="../category/tags/webdevelopment.html" rel="tag" title="">webdevelopment</a></li>
+</ul>&gt; <ul class="links inline"><li class="comment_forbidden first last"><span><a href="../user/login%3Fdestination=comment%252Freply%252F192%2523comment-form.html">Login</a> to post comments</span></li>
+</ul></div>    <div class="author">by Martin @ 22:47 3 December 2011</div>
+  </article>
+	</div><!-- id=contentTop -->
+	<div id="contentBottom">
+			</div><!-- id=contentBottom -->
+
+	<aside>
+		  <div class="block block-block" id="block-block-1">
+    <h2 class="title"></h2>
+    <div class="content"><p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="../sites/default/files/images/delicious.png" /></a><br/></p>
+<!-- Unfixed: <p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="/cms/sites/default/files/images/delicious.png" /></a></br/></p>
+ --></div>
+ </div>
+	</aside>
+
+	<nav id="bulletin">
+            	  <div class="block block-mdebulletin" id="block-mdebulletin-0">
+    <h2 class="title"></h2>
+    <div class="content"><ul>
+<li><a class="bulletin-1" href='../../index.html' title='mdworld.nl'><img src='../sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="../themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='../sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+<br/><!-- Unfixed: <ul>
+<li><a class="bulletin-1" href='http://mdworld.nl' title='mdworld.nl'><img src='/cms/sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="/cms/themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='/cms/sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+ --></div>
+ </div>
+	</nav>
+	
+	<nav id="menu">
+		<ul class="links"><li class="menu-115 first"><a href="../../index.html" title="MDWorld.nl">mdworld</a></li>
+<li class="menu-116"><a href="../category/categories/mypc.html" title="">MyPC</a></li>
+<li class="menu-227"><a href="../category/categories/softcorp.html" title="Software I developed">SoftCorp</a></li>
+<li class="menu-119"><a href="../category/categories/moviecorp.html" title="">MovieCorp</a></li>
+<li class="menu-118"><a href="../category/categories/wow-blog-community.html" title="World of Warcraft fan blog">WoW</a></li>
+<li class="menu-117 last"><a href="../contact.html" title="">Contact</a></li>
+</ul>	</nav>
+	
+	<footer>
+		<p>MD Enterprises <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" src="../themes/simon/img/cc.png" /></a> 2003-2012 <a href="http://validator.w3.org/check?uri=referer"><img alt="HTML5" src="../themes/simon/img/mdworld_html5_16.png"/></a></p>
+		<div id="desktop"><a href="../node%3Fismobile=false.html">desktop version</a></div>
+	</footer>
+	<!-- Wget/1.16.1 (linux-gnu) -->
+		<script type="text/javascript">
+	<!--
+	var full_theme_path = "/cms/themes/simon";
+	
+		-->
+	</script>
+	  	<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-9626603-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+</html>

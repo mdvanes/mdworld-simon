@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - softcorp</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/32/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Software</title>
+ <link>http://mdworld.nl/cms/content/software</link>
+ <description>&lt;p&gt;This is some of the software I build on my own time and of which I think someone might want to use it. Most of it is open source, just check it out.&lt;br /&gt;
+Also see &lt;a href=&quot;/cms/category/categories/robotics&quot;&gt;Robotics&lt;/a&gt;&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/softcorp">softcorp</category>
+ <pubDate>Sun, 04 Apr 2010 11:43:56 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">145 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Polska</title>
+ <link>http://mdworld.nl/cms/content/polska</link>
+ <description>&lt;p&gt;Today I release the very small drupal module Polska. Read below for details!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/polska&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/softcorp">softcorp</category>
+ <pubDate>Tue, 24 Jul 2012 20:24:49 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">207 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Insignificant 2</title>
+ <link>http://mdworld.nl/cms/content/insignificant-2</link>
+ <description>&lt;p&gt;I released version 2 of Insignificant!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/insignificant-2&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/softcorp">softcorp</category>
+ <pubDate>Sun, 19 Feb 2012 17:48:46 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">204 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>MdeGraph</title>
+ <link>http://mdworld.nl/cms/content/mdegraph</link>
+ <description>&lt;p&gt;I&#039;ve released &lt;a href=&quot;http://bitbucket.org/mdvanes/mdegraph&quot;&gt;MdeGraph&lt;/a&gt;. It&#039;s a javascript library for creating &lt;a href=&quot;http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html&quot;&gt;canvas&lt;/a&gt; based graphs. Below is an example, with the same data as the (static) graph in &lt;a href=&quot;http://mdworld.nl/cms/content/specs-os-disk-size&quot;&gt;this article&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/mdegraph&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/softcorp">softcorp</category>
+ <pubDate>Fri, 25 Nov 2011 08:05:10 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">197 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Bottylicious</title>
+ <link>http://mdworld.nl/cms/content/bottylicious</link>
+ <description>&lt;p&gt;I have developed a Firefox add-on that, once set up correctly, can bookmark the current site to your &lt;a href=&quot;http://delicious.com&quot;&gt;delicious.com&lt;/a&gt; account with 1 click. &lt;/p&gt;
+&lt;p&gt;Download it here (right-click, Save Link As):&lt;br /&gt;
+&lt;a href=&quot;/products/bottylicious/bottylicious.xpi&quot;&gt;bottylicious.xpi 0.4 30kB&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Licensing: this is distributed under the &lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/3.0/&quot;&gt;Attribution-Noncommercial-Share Alike 3.0 Unported&lt;/a&gt; license. For as far as I know, I&#039;m in my right to do this. If Mozilla policy says different, they&#039;re right. If you like to see the source, just unzip the xpi. &lt;/p&gt;
+&lt;p&gt;This is an alpha version, I&#039;m giving out no guarantees, and it might destroy your entire Firefox installation. Just so you know ;)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/bottylicious&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/softcorp">softcorp</category>
+ <pubDate>Sat, 03 Apr 2010 15:57:55 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">144 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Insignificant</title>
+ <link>http://mdworld.nl/cms/content/insignificant</link>
+ <description>&lt;p&gt;Now, you too can be &lt;a href=&quot;/products/insignificant/&quot;&gt;insignificant!&lt;/a&gt; (31-1-2009)&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Update (5-2-2011)&lt;/b&gt; Working on a &lt;a href=&quot;https://bitbucket.org/mdvanes/mdeinsignificant/&quot;&gt;new version&lt;/a&gt;.&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/softcorp">softcorp</category>
+ <pubDate>Sat, 31 Jan 2009 20:41:00 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">127 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>The Valificator</title>
+ <link>http://mdworld.nl/cms/content/valificator-0</link>
+ <description>&lt;p&gt;Converts embed code snippets from Youtube and Google a.o. to valid XHTML 1.1.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Developed 29 september 2007.&lt;/li&gt;
+&lt;li&gt;Made in PHP.&lt;/li&gt;
+&lt;li&gt;Check the &lt;a href=&quot;/products/valificator/&quot;&gt;Valificator website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/softcorp">softcorp</category>
+ <pubDate>Sat, 29 Sep 2007 10:00:00 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">146 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Kimberlendar</title>
+ <link>http://mdworld.nl/cms/content/kimberlendar</link>
+ <description>&lt;p&gt; Using this simple tool you can calculate the date x weeks away from any date.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First version was in php (online), designed approx. 2005: &lt;a href=&quot;http://mdworld.nl/products/kimberlendar/&quot;&gt;check out PHP version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Here you can download the Java Swing version. &lt;/li&gt;
+&lt;li&gt;The Java version is wrapped for the Windows platform to help people without a JRE installed running it anyway. To that end &lt;a href=&quot;http://launch4j.sourceforge.net&quot;&gt;launch4j&lt;/a&gt; was used.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style&gt;
+table.download
+&lt;/style&gt;&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/kimberlendar&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/softcorp">softcorp</category>
+ <pubDate>Wed, 27 Dec 2006 10:00:00 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">147 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>gmailHtmlSplitter</title>
+ <link>http://mdworld.nl/cms/content/gmailhtmlsplitter</link>
+ <description>&lt;p&gt;Using GMail you can convert an PDF to HTML (by sending it to yourself, and clicking &quot;view as HTML&quot;). The result will have a separator every page, but it is still one HTML file. Sometimes you would want this split up in one file per page. This peace of software (written in Java) does exactly that, and creates a nice Table of Contents for easy navigating.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/gmailhtmlsplitter&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/softcorp">softcorp</category>
+ <pubDate>Wed, 20 Dec 2006 10:00:00 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">148 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Alexandria</title>
+ <link>http://mdworld.nl/cms/content/alexandria</link>
+ <description>&lt;p&gt;This converts the Ipod library.xml from xml to Excel sheet.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;designed 19-12-2006&lt;/li&gt;
+&lt;li&gt;version 2.1 is final (no known bugs)&lt;/li&gt;
+&lt;li&gt;Java&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;                Download&lt;/p&gt;
+&lt;p&gt;                    Release&lt;br /&gt;
+                    Filename&lt;br /&gt;
+                    Size&lt;br /&gt;
+                    Platform&lt;/p&gt;
+&lt;p&gt;                    Type&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/alexandria&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/softcorp">softcorp</category>
+ <pubDate>Tue, 19 Dec 2006 10:00:00 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">150 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

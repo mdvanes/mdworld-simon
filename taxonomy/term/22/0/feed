@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - dop solo</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/22/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Solo</title>
+ <link>http://mdworld.nl/cms/content/solo-4</link>
+ <description>Started messing around with the VMWare Workstation 3.2 demo in windows and *surpisingly* got it to work in Slackware aswell. For now, I only installed windows 3.11 to save some diskspace. It looks cool. I plan to buy a larger HD anyway, in combination with a DVD recorder.</description>
+ <comments>http://mdworld.nl/cms/content/solo-4#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop-solo">dop solo</category>
+ <pubDate>Sat, 01 Mar 2003 09:59:41 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">41 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Solo</title>
+ <link>http://mdworld.nl/cms/content/solo-1</link>
+ <description>&lt;a name=&quot;solo&quot;&gt;Installed &lt;/a&gt;&lt;a href=&quot;http://www.slackware.org/&quot;&gt;Slackware&lt;/a&gt; Linux 8.1 (dual boot, for lackofknowledge reasons)</description>
+ <comments>http://mdworld.nl/cms/content/solo-1#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop-solo">dop solo</category>
+ <pubDate>Sun, 01 Sep 2002 08:56:57 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">27 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

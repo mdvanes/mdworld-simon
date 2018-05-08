@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - solo</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/9/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Slow Internet On Karmic</title>
+ <link>http://mdworld.nl/cms/content/slow-internet-karmic</link>
+ <description>The last couple of weeks my internet has been kind of slow. Didn&#039;t pay too much attention to it, but after discussing it with a colleague I googled for a bit and presto:
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/slow-internet-karmic&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/slow-internet-karmic#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <category domain="http://mdworld.nl/cms/category/tags/solo">solo</category>
+ <pubDate>Thu, 31 Dec 2009 10:24:00 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">93 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Karmic</title>
+ <link>http://mdworld.nl/cms/content/karmic</link>
+ <description>I&#039;ve upgraded to &lt;a href=&quot;https://wiki.ubuntu.com/KarmicKoala&quot;&gt;Ubuntu 9.10 Karmic Koala&lt;/a&gt; without any problems on the first glance. I haven&#039;t tested any applications, my Java installation or third party repositories though, but dual screen works and that&#039;s a relief. Before I reinstalled for 64-bit, something was wrong with my configuration so I had to fix dual screen each time by hand.</description>
+ <comments>http://mdworld.nl/cms/content/karmic#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <category domain="http://mdworld.nl/cms/category/tags/solo">solo</category>
+ <pubDate>Sun, 13 Dec 2009 15:18:26 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">91 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>6 GB of RAM. Sorta...</title>
+ <link>http://mdworld.nl/cms/content/6-gb-ram-sorta</link>
+ <description>Because it was so insanely cheap, I bought 4gb of RAM (Kingston DChannel 4GB Kit, 2x2GB PC2-6400, CL5 @ €60,-) to complement my current 2gb.
+
+First attempt to install failed (I was too lazy to put my machine on its back and tried to press in the DIMMs sideways, so they probably wheren&#039;t seated properly).
+
+The second attempt, only 3gb of RAM shows up in the BIOS. Closer inspection reveals in some sub-menu of the BIOS (approximately):
+
+Mem.&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/6-gb-ram-sorta&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/6-gb-ram-sorta#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <category domain="http://mdworld.nl/cms/category/tags/solo">solo</category>
+ <pubDate>Fri, 03 Oct 2008 22:07:04 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">77 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>24 inches of screen</title>
+ <link>http://mdworld.nl/cms/content/24-inches-screen</link>
+ <description>I got my 24&quot; Samsung 245B+ monitor for €340, which with some tuning works perfectly with Ubuntu. I sacrificed one of my 17&quot; acer&#039;s, so now it feels a bit like a one-and-a-half desktop :P
+
+Bizarrely enough, with my new 1920x1200 resolution, WoW still has exactly the same framerate. So it can&#039;t be the videocard not working properly.
+
+Later on, I got a 100fps average on my Horde main, but my alliance main keeps getting 30fps. Well, I&#039;ll leave it for now, it&#039;s not even disturbing.</description>
+ <comments>http://mdworld.nl/cms/content/24-inches-screen#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <category domain="http://mdworld.nl/cms/category/tags/solo">solo</category>
+ <pubDate>Mon, 21 Jul 2008 09:48:15 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">76 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>9800 GTX FTL!</title>
+ <link>http://mdworld.nl/cms/content/9800-gtx-ftl</link>
+ <description>I&#039;ve upgraded my videocard to the XFX Nvidia 9800 GTX 512 MB. Altough it kind of maxes out the power requirements of my PSU, it seems to be working fine. That is, I can start Ubuntu and play WoW. Unfortunately, I have *no performance increase whatsoever*. I would&#039;ve expected more from a €200 videocard.
+
+Still get 18fps in moderately populated areas, and I&#039;m still running on a 1280x1024 resolution. Next step is to buy a new 24&quot; monitor, and that will run on 1920x1200, so I wonder what the performance will be.
+
+Ofcourse, this seems like a driver problem.&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/9800-gtx-ftl&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/9800-gtx-ftl#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <category domain="http://mdworld.nl/cms/category/tags/solo">solo</category>
+ <pubDate>Sat, 12 Jul 2008 10:23:12 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">75 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Planned maintainance</title>
+ <link>http://mdworld.nl/cms/content/planned-maintainance</link>
+ <description>So much to do, so little time to do it in...&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/planned-maintainance&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/planned-maintainance#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <category domain="http://mdworld.nl/cms/category/tags/solo">solo</category>
+ <pubDate>Mon, 07 Jul 2008 06:47:07 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">74 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Pictures!</title>
+ <link>http://mdworld.nl/cms/content/pictures</link>
+ <description>I first started this blog june 5, 2008.&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/pictures&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/pictures#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <category domain="http://mdworld.nl/cms/category/tags/jas">jas</category>
+ <category domain="http://mdworld.nl/cms/category/tags/r2d2">r2d2</category>
+ <category domain="http://mdworld.nl/cms/category/tags/solo">solo</category>
+ <pubDate>Thu, 05 Jun 2008 14:44:20 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">71 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Upgrade to Hardy</title>
+ <link>http://mdworld.nl/cms/content/upgrade-hardy</link>
+ <description>WIth fear in my heart and the memory of my last update fiasco fresh on my mind, I ran the update to &lt;a title=&quot;Hardy Heron&quot; href=&quot;http://releases.ubuntu.com/hardy/&quot;&gt;Hardy Heron&lt;/a&gt; today. I started extra early, and on a Saturday to make sure I&#039;d have enough time. An hour and a half &#039;twas done. Go figure. GG Ubuntu!
+
+I did have some minor bugs, but they are disturbing at most. Like &lt;a title=&quot;amarok&quot; href=&quot;http://amarok.kde.org/&quot;&gt;amarok&lt;/a&gt; not wanting to start on connecting my Ipod, and me being unable to find where to change that.</description>
+ <comments>http://mdworld.nl/cms/content/upgrade-hardy#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <category domain="http://mdworld.nl/cms/category/tags/solo">solo</category>
+ <pubDate>Sat, 24 May 2008 13:43:40 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">70 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Solo</title>
+ <link>http://mdworld.nl/cms/content/solo-21</link>
+ <description>Since I had a lot perfectly OK boots after I installed the S3Trio64 videocard, I thought it was time to reinstall my 7600GS, too see if the issue re-appears. Otherwise, that would just be plain strange, wouldn&#039;t it? You guessed it: it didn&#039;t re-appear. I&#039;ve booted it three times, all were OK so far. No clue what could&#039;ve caused the problems. I did install the videocard in the secundary PCI-e slot, instead of the primary, where it used to be. Maybe the mainboard is broken after all.&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/solo-21&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/solo-21#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <category domain="http://mdworld.nl/cms/category/tags/solo">solo</category>
+ <pubDate>Sat, 05 Apr 2008 08:12:59 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">69 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Solo</title>
+ <link>http://mdworld.nl/cms/content/solo-20</link>
+ <description>I fished up the videocard from DarkYoda, a S3Trio64V2 Virge. I&#039;ve booted it three times so far, and it did not freeze in POST, so that&#039;s a good sign. I must say I was pretty suprised when it started up gnome... 800x600, sure, but it worked. Unfortunately, I had another problem the first time I booted. After correctly starting and using it for a while, after leaving it unattended and returning it was showing errors when clicking any open program or starting new programs, claiming they &quot;could not be found&quot;.&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/solo-20&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/solo-20#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <category domain="http://mdworld.nl/cms/category/tags/solo">solo</category>
+ <pubDate>Wed, 02 Apr 2008 08:12:19 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">68 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

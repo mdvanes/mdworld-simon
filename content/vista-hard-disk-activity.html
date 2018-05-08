@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="ie ie6" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="ie ie7" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="ie ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+
+<meta name="keywords" content="mdworld, Martin van Es, MD Enterprises, computing" />
+<meta name="description" content="When a friend complains their PC is slow, what do you do? Some people I know would advise buying a new PC. Or a Mac. But not me, because as we all know, I am masochistic. After all, I code standard compliant HTML.  Upon inspecting the Windows Vista PC, the problem was easily identified. It was running Windows Vista." />
+<link rel="shortcut icon" href="../themes/simon/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/files/css/css_949781c8a73045c6f9458633ed41d193.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="../sites/default/files/css/css_21f24221e70ef675167103b282b815d1.css" />
+<link type="text/css" rel="stylesheet" media="handheld" href="../sites/default/files/css/css_bcb90d40d05a52204eaf0fc65b2c7e6e.css" />
+<script type="text/javascript" src="../sites/default/files/js/js_3022830f3560163bcde900bfe847cfab.js"></script>
+<script type="text/javascript" src="../sites/all/modules/mdepolska/includes/mdepolska.js%3FX"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/cms/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+  <title>Vista Hard Disk Activity | mdworld</title>
+</head>
+<body>
+	<div id="ie">
+		<div>
+			Warning: this browser doesn't support HTML5. Styling disabled.<br/>
+			Some browsers that do support HTML5:
+			<ul>
+				<li><a href="http://www.mozilla.com/firefox/">Firefox</a></li>
+				<li><a href="http://www.google.nl/chrome">Google Chrome</a></li>
+			</ul>
+
+		</div>
+	</div><!-- id=ie -->
+	<header>
+		<h1>mdworld - Vista Hard Disk Activity</h1><ul class="links"><li class="menu-127 first last"><a href="../node.html" title="">Home</a></li>
+</ul>	<div id="blogroll">
+	</div><!-- id=blogroll -->
+	</header>
+
+	<div id="contentTop">
+						<div class="tabs"></div>
+		  
+  <article class="node">
+            <p>When a friend complains their PC is slow, what do you do? Some people I know would advise buying a new PC. Or a Mac. But not me, because as we all know, I am masochistic. After all, <a href="fronteers-2010-html.html">I code standard compliant HTML</a>.</p>
+<p>Upon inspecting the Windows Vista PC, the problem was easily identified. It was running Windows Vista. Unfortunately, according to my friend, when the PC was first unboxed it did run smoothly, so there must be more to it<sup><a href="vista-hard-disk-activity.html#1">[1]</a></sup>.</p>
+<p>The system is an Intel Core 2 Quad with 2GB RAM with nearly 80GB free on the hard disk. But even basic tasks such as browsing and checking mail, or even opening control panel are accompanied by loud disk noise and enough wait time to make filter coffee. There is hardly any CPU usage and system memory is not nearly full. So, my spidersense is pointing me in the direction of hard disk failure. I ran <a href="http://www.hdtune.com/">HD Tune</a>, and the SMART status was OK.<br />
+In HD Tune's disk monitor<sup><a href="vista-hard-disk-activity.html#2">[2]</a></sup> a constant extreme disk usage is visible, and the HDD LED is not blinking, but burning constantly. <a href="http://technet.microsoft.com/en-us/sysinternals/bb896653">Procexp</a> has an IO graph, but it doesn't display the same load as HD Tune. I was misguided by that earlier, although the constant LED burning should have indicated it might not be the full IO activity. Scandisk doesn't show any errors either.</p>
+<p><a href="http://en.wikipedia.org/wiki/Software_rot">OS rot</a> then? Defragmentation, several times, the last times with <a href="http://www.piriform.com/defraggler">Defraggler</a>, didn't help. But to rule this out, a re-installation is required. After jumping through some hoops to make that happen, the entirely clean Vista immediately starts shining the HDD LED at me with great fierceness. Accessing the control panel for setting the display resolution is also very slow. HD Tune still gives extreme disk activity.</p>
+<p>By this time I have dived into the problem of slow Vista PCs and I've found DAM<sup><a href="vista-hard-disk-activity.html#3">[3]</a></sup>. <a href="http://answers.microsoft.com/en-us/windows/forum/windows_vista-performance/vista-noisy-hard-drive/ed2e1e8b-a685-4800-adb0-5cef4a99c6f6">Many</a> <a href="http://www.vistax64.com/vista-hardware-devices/41776-2-minutes-harddrive-activity-after-window-vista-load.html">people</a> <a href="http://www.vistaheads.com/forums/microsoft-public-windows-vista-performance-maintenance/59393-high-hdd-activity-after-startup.html">before</a><sup><a href="vista-hard-disk-activity.html#4">[4]</a></sup> me have noticed and <a href="http://www.howtogeek.com/howto/windows-vista/how-to-disable-superfetch-on-windows-vista/">started</a> <a href="http://www.ocmodshop.com/just-say-no-to-superfetch/">to</a> <a href="http://www.pcstats.com/articleview.cfm?articleID=2262">resist</a> the extreme disk activity caused by Vista 'features', such as SuperFetch and file indexing. Using DAM I've even seen disk fragmenting at work while I didn't request it. Some people advice to disable these features, but still: when this PC was new it was not as slow as it is now.</p>
+<p>As discussed in <a href="http://www.pcstats.com/articleview.cfm?articleID=2262">this article</a>, the excessive hard disk activity may cause wear and tear. So maybe it is a combination of Vista features in the background and the wear and tear they have caused over time to the hard drive that's making it so slow. So finally, even though the SMART status is OK, the hard disk is replaced with a Seagate Barracuda 500GB 7200.12 @ &euro;37. Reinstalled Vista and the system is back to it's old snappy behavior. When checking HD Tune, it is still working the hard disk quite a lot, but not as bad as before. So the question that remains now is how long it will take Vista to trash this disk...</p>
+<p>Footnotes</p>
+<p><span id="1">[1]</span> To be perfectly honest I am abusing poetical freedom here, I already knew the PC was running Vista, since I picked and unboxed this system.</p>
+<p><span id="2">[2]</span> <a href="http://gsmartcontrol.berlios.de/home/index.php/en/Home">gsmartcontrol</a> is an open source alternative to HD Tune based on smartmontools. It can also display SMART status, but it can't display a graph of the disk activity, such as the disk monitor in HD Tune. A free 15 day trial for HD Tune is available.</p>
+<p><span id="3">[3]</span> Launch Vista's Administrative Tools --> Reliability and Performance Monitor program --> Disk Activity. It displays disk activity and lists what files are being accessed. It's super handy, but Reliability and Performance Monitor is a rather long name so I will just refer to the Disk Activity monitor part as DAM.</p>
+<p><span id="4">[4]</span> To my amusement <a href="http://www.vistaheads.com/forums/microsoft-public-windows-vista-performance-maintenance/24701-readyboost-operating-normal-priority-bad.html">even</a> the same <a href="http://en.wikipedia.org/wiki/Microsoft_Most_Valuable_Professional">Microsoft MVP</a> that has responded to a previously mentioned post that this is normal. He is talking about ReadyBoost though, not SuperFetch, although their functions are related.</p>
+<p>PS: This concerns the PC of a friend, so it is not listed under <a href="../category/categories/mypc.html">MyPC</a>.</p>
+<div class="links"><ul class="links inline"><li class="taxonomy_term_6 first"><a href="../category/categories/mdworld.html" rel="tag" title="">mdworld</a></li>
+<li class="taxonomy_term_37 last"><a href="../category/tags/computing.html" rel="tag" title="">computing</a></li>
+</ul></div>    <div class="author">by Martin @ 10:15 20 July 2011</div>
+  </article>
+	</div><!-- id=contentTop -->
+	<div id="contentBottom">
+			</div><!-- id=contentBottom -->
+
+	<aside>
+		  <div class="block block-block" id="block-block-1">
+    <h2 class="title"></h2>
+    <div class="content"><p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="../sites/default/files/images/delicious.png" /></a><br/></p>
+<!-- Unfixed: <p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="/cms/sites/default/files/images/delicious.png" /></a></br/></p>
+ --></div>
+ </div>
+	</aside>
+
+	<nav id="bulletin">
+            	  <div class="block block-mdebulletin" id="block-mdebulletin-0">
+    <h2 class="title"></h2>
+    <div class="content"><ul>
+<li><a class="bulletin-1" href='../../index.html' title='mdworld.nl'><img src='../sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="../themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='../sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+<br/><!-- Unfixed: <ul>
+<li><a class="bulletin-1" href='http://mdworld.nl' title='mdworld.nl'><img src='/cms/sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="/cms/themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='/cms/sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+ --></div>
+ </div>
+	</nav>
+	
+	<nav id="menu">
+		<ul class="links"><li class="menu-115 first"><a href="../../index.html" title="MDWorld.nl">mdworld</a></li>
+<li class="menu-116"><a href="../category/categories/mypc.html" title="">MyPC</a></li>
+<li class="menu-227"><a href="../category/categories/softcorp.html" title="Software I developed">SoftCorp</a></li>
+<li class="menu-119"><a href="../category/categories/moviecorp.html" title="">MovieCorp</a></li>
+<li class="menu-118"><a href="../category/categories/wow-blog-community.html" title="World of Warcraft fan blog">WoW</a></li>
+<li class="menu-117 last"><a href="../contact.html" title="">Contact</a></li>
+</ul>	</nav>
+	
+	<footer>
+		<p>MD Enterprises <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" src="../themes/simon/img/cc.png" /></a> 2003-2012 <a href="http://validator.w3.org/check?uri=referer"><img alt="HTML5" src="../themes/simon/img/mdworld_html5_16.png"/></a></p>
+		<div id="desktop"><a href="../node%3Fismobile=false.html">desktop version</a></div>
+	</footer>
+	<!-- Wget/1.16.1 (linux-gnu) -->
+		<script type="text/javascript">
+	<!--
+	var full_theme_path = "/cms/themes/simon";
+	
+		-->
+	</script>
+	  	<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-9626603-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+</html>

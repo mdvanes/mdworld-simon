@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="ie ie6" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="ie ie7" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="ie ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+
+<meta name="keywords" content="mdworld, Martin van Es, MD Enterprises, mypc, broek" />
+<meta name="description" content="Harddisk prices finally having reached a more acceptable level, I have acquired a Western Digital WD Caviar Green 3TB ( WD30EZRX) for €117." />
+<link rel="shortcut icon" href="../themes/simon/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/files/css/css_949781c8a73045c6f9458633ed41d193.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="../sites/default/files/css/css_21f24221e70ef675167103b282b815d1.css" />
+<link type="text/css" rel="stylesheet" media="handheld" href="../sites/default/files/css/css_bcb90d40d05a52204eaf0fc65b2c7e6e.css" />
+<script type="text/javascript" src="../sites/default/files/js/js_3022830f3560163bcde900bfe847cfab.js"></script>
+<script type="text/javascript" src="../sites/all/modules/mdepolska/includes/mdepolska.js%3FX"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/cms/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+  <title>3TB Fileserver | mdworld</title>
+</head>
+<body>
+	<div id="ie">
+		<div>
+			Warning: this browser doesn't support HTML5. Styling disabled.<br/>
+			Some browsers that do support HTML5:
+			<ul>
+				<li><a href="http://www.mozilla.com/firefox/">Firefox</a></li>
+				<li><a href="http://www.google.nl/chrome">Google Chrome</a></li>
+			</ul>
+
+		</div>
+	</div><!-- id=ie -->
+	<header>
+		<h1>mypc - 3TB Fileserver</h1><ul class="links"><li class="menu-127 first last"><a href="../node.html" title="">Home</a></li>
+</ul>	<div id="blogroll">
+	</div><!-- id=blogroll -->
+	</header>
+
+	<div id="contentTop">
+						<div class="tabs"></div>
+		  
+  <article class="node">
+            <p>Harddisk prices finally having reached a more acceptable level, I have acquired a Western Digital WD Caviar Green 3TB ( WD30EZRX) for €117.</p>
+<p>So before starting I have my main and temporary hard drives, visualised with fdisk -l (as root)<br />
+<span class="code"><br />
+/dev/sda 80.0 gb<br />
+/dev/sdb 120.0 gb<br />
+</span></p>
+<p>After installing the new 3TB drive the server boots properly and now fdisk displays an additional:<br />
+<span class="code"><br />
+/dev/sdc: 3000.6 GB<br />
+</span><br />
+which unsurprisingly doesn't contain a valid partition table, but does displays this reassuring message:<br />
+<span class="code"><br />
+WARNING: The size of this disk is 3.0 TB (3000592982016 bytes).<br />
+DOS partition table format can not be used on drives for volumes<br />
+larger than (2199023255040 bytes) for 512-byte sectors. Use parted(1) and GUID<br />
+partition table format (GPT).<br />
+</span></p>
+<p>Instead of using webmin to create a partition (which fails) I use fdisk and format it as ext4:<br />
+<span class="code"><br />
+mkfs.ext4 /dev/sdc1<br />
+</span><br />
+And again in webmin I mount the partition on /mnt/disk3t as ext4. Now when I do df -h the partition shows up, but only 2.0T is available. This is apparently a problem with fdisk. <a href="http://superuser.com/questions/383546/how-do-i-partition-and-mount-a-3tb-hard-disk-using-the-terminal">Here</a> it is suggested to use gdisk. So I install that and run (as root):<br />
+<span class="code"><br />
+gdisk /dev/sdc<br />
+</span></p>
+<p>Using p, the partition table is listed, just as in fdisk, and here the size is listed as 2.0 TiB. I remove and re-add the partition, now the size is 2.7 TiB<br />
+Upon writing the changes to disk, it is also mentioned the MBR will be converted to GPT. Than I format the partition as mkfs.ext4 again.</p>
+<p>I remount it with (as root):<br />
+<span class="code"><br />
+mount /dev/sdc1 /mnt/disk3t<br />
+</span></p>
+<p>Unfortunately, df -h still says 2.0T, but I was warned the kernel would still be using the old partition table until reboot, so I reboot. But there is no change after the reboot, so I retry creating the partition, while first unmounting the partition. In gdisk no partitions show up.</p>
+<p>Again I get the message that the new partition table will be used at the next reboot: so first I'll reboot again.</p>
+<p>An error occurs upon booting (forcing me to connect my monitor). It has trouble mounting the new partition (how odd) and I press s to skip mounting. Now I can ssh back into the server.</p>
+<p>Now gdisk shows the correct partition. I run mkfs.ext4 again, and mount it and voila! /dev/sdc1 2.7T. I like it!</p>
+<p>I unmount it again and go to webmin, Disk and Network Filesystems, the mountpoint is still intact and I just select mount now and save.</p>
+<p>I create a symlink<br />
+<span class="code"><br />
+ln -s /mnt/disk3t/ disk3t<br />
+</span></p>
+<p>I also chown /mnt/disk3t to my user, so I can access it more easily. There is no real danger here. Than I start copying the files from the temporary 120GB drive to the new drive with rsync. Also I run this to get an idea of the progress:</p>
+<p><span class="code"><br />
+watch -n5 df --type=ext4 --type=ext3 -BM<br />
+</span></p>
+<p>In webmin, I renamed the mount point /export/disk120g to /export/disk3t and bound it to /mnt/disk3t. I modified dop's /etc/fstab, removing old mount points and adding:<br />
+<span class="code"><br />
+# Entry for broek/disk3t<br />
+broek:/export/disk3t /media/broekdisk3t nfs rsize=8192,wsize=8192,timeo=14,intr 0 0<br />
+</span></p>
+<p>And got<br />
+<span class="code"><br />
+mount.nfs: access denied by server while mounting broek:/export/disk3t<br />
+</span><br />
+Reboot doesn't work.</p>
+<p>So I first shutdown and physically remove the old temporary 120GB 2.5" drive. Now I get lots of errors when starting up:<br />
+<span class="code"><br />
+/mnt/disk120g is not found<br />
+the disk drive for export/disk3t is not ready yet or not present<br />
+the disk drive for mnt/disk3t is not ready yet or not present<br />
+</span><br />
+The first message is not a surprise, because I just removed it, but what about the other two? Apparently, as the old drive was removed, drive /etc/sdc moved to /etc/sdb, and mount points are wrong. I can't find how to remove mount points in webmin, so I just use edit /etc/fstab manually and also remove unused nfs exports mount points that are on the (still installed) 80gb disk, which has the OS on it.</p>
+<p>Just for kicks I reboot and now it is unpingable. I connect the monitor again, but there is no image. So I reboot again and now suddenly I have to press enter to pass by the grub menu. This might be caused because I used the reset button, so I will have to check rebooting later. After this the server continues to boot up correctly, and /mnt/disk3t is mounted properly.</p>
+<p>Now I remembered something from last time and I go to webmin and Networking > NFS Exports. There I remove old the old exports and rename /export/disk120g to /export/disk3t. Now I can mount it on dop! (as root). I can read and write normally to and from the network drive.</p>
+<p>I run some tests moving my files from old disks to the new disk with:<br />
+<span class="code"><br />
+rsync --progress -a source dest<br />
+</span><br />
+I didn't try to add the progress flag earlier in this post, because I already started copying, although in hindsight it might not have mattered since rsync should pick up where it has left off. Anyway, the progress flag only gives progress per file, so I also use<br />
+<span class="code"><br />
+watch -n30 df --type=ext3 --type=nfs -BG<br />
+</span><br />
+To get a more global overview of the progress. Started copying 1100GB at ca. 11:00 AM on Saturday.</p>
+<p>Now I add the new export to my Xtreamer:<br />
+<span class="code"><br />
+broekshare<br />
+192.168.0.8:/export/disk3t<br />
+rsize=8192,wsize=8192,timeo=14,intr<br />
+</span></p>
+<p>Which works, but suprisingly not when I try to access /NetShare/broekshare, but using /export/disk3t works fine. Whatever. Also removing old mountpoints doesn't work exactly great. Again whatever.</p>
+<p>Now I go back to webmin and go to Servers > Samba Windows File Sharing<br />
+First I again remove old shares (from the 80GB disk). Than I add a new share:</p>
+<p>I add /mnt/disk3t/Share with sharename bsshare<br />
+and Under security and access control I set<br />
+writable: No<br />
+Guest access: Guest only</p>
+<p>On dop I can access both under <a href="http://broek/" title="//broek/">smb://broek/</a> and the share is indeed read-only. And finally I verified that it also works great on a Windows laptop over wifi!</p>
+<p>The copying was successful somewhere on Sunday before 6:00 AM.</p>
+<div class="links"><ul class="links inline"><li class="taxonomy_term_7 first"><a href="../category/categories/mypc.html" rel="tag" title="">mypc</a></li>
+<li class="taxonomy_term_34 last"><a href="../category/tags/broek.html" rel="tag" title="">broek</a></li>
+</ul></div>    <div class="author">by Martin @ 10:25 23 February 2013</div>
+  </article>
+	</div><!-- id=contentTop -->
+	<div id="contentBottom">
+			</div><!-- id=contentBottom -->
+
+	<aside>
+		  <div class="block block-block" id="block-block-1">
+    <h2 class="title"></h2>
+    <div class="content"><p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="../sites/default/files/images/delicious.png" /></a><br/></p>
+<!-- Unfixed: <p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="/cms/sites/default/files/images/delicious.png" /></a></br/></p>
+ --></div>
+ </div>
+	</aside>
+
+	<nav id="bulletin">
+            	  <div class="block block-mdebulletin" id="block-mdebulletin-0">
+    <h2 class="title"></h2>
+    <div class="content"><ul>
+<li><a class="bulletin-1" href='../../index.html' title='mdworld.nl'><img src='../sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="../themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='../sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+<br/><!-- Unfixed: <ul>
+<li><a class="bulletin-1" href='http://mdworld.nl' title='mdworld.nl'><img src='/cms/sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="/cms/themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='/cms/sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+ --></div>
+ </div>
+	</nav>
+	
+	<nav id="menu">
+		<ul class="links"><li class="menu-115 first"><a href="../../index.html" title="MDWorld.nl">mdworld</a></li>
+<li class="menu-116"><a href="../category/categories/mypc.html" title="">MyPC</a></li>
+<li class="menu-227"><a href="../category/categories/softcorp.html" title="Software I developed">SoftCorp</a></li>
+<li class="menu-119"><a href="../category/categories/moviecorp.html" title="">MovieCorp</a></li>
+<li class="menu-118"><a href="../category/categories/wow-blog-community.html" title="World of Warcraft fan blog">WoW</a></li>
+<li class="menu-117 last"><a href="../contact.html" title="">Contact</a></li>
+</ul>	</nav>
+	
+	<footer>
+		<p>MD Enterprises <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" src="../themes/simon/img/cc.png" /></a> 2003-2012 <a href="http://validator.w3.org/check?uri=referer"><img alt="HTML5" src="../themes/simon/img/mdworld_html5_16.png"/></a></p>
+		<div id="desktop"><a href="../node%3Fismobile=false.html">desktop version</a></div>
+	</footer>
+	<!-- Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12F70 Safari/600.1.4 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) -->
+		<script type="text/javascript">
+	<!--
+	var full_theme_path = "/cms/themes/simon";
+	
+		-->
+	</script>
+	  	<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-9626603-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+</html>

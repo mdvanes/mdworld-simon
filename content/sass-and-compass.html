@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="ie ie6" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="ie ie7" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="ie ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+
+<meta name="keywords" content="mdworld, Martin van Es, MD Enterprises, fronteers, webdevelopment" />
+<meta name="description" content="Yesterday, I attended a training on Sass and Compass by Roy Tomeij organised by Fronteers. Sass is a CSS meta language and compiles to CSS, to make it easier to maintain than CSS yet still usable in the same browsers." />
+<link rel="shortcut icon" href="../themes/simon/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/files/css/css_949781c8a73045c6f9458633ed41d193.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="../sites/default/files/css/css_21f24221e70ef675167103b282b815d1.css" />
+<link type="text/css" rel="stylesheet" media="handheld" href="../sites/default/files/css/css_bcb90d40d05a52204eaf0fc65b2c7e6e.css" />
+<script type="text/javascript" src="../sites/default/files/js/js_3022830f3560163bcde900bfe847cfab.js"></script>
+<script type="text/javascript" src="../sites/all/modules/mdepolska/includes/mdepolska.js%3FX"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/cms/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+  <title>On Sass and Compass | mdworld</title>
+</head>
+<body>
+	<div id="ie">
+		<div>
+			Warning: this browser doesn't support HTML5. Styling disabled.<br/>
+			Some browsers that do support HTML5:
+			<ul>
+				<li><a href="http://www.mozilla.com/firefox/">Firefox</a></li>
+				<li><a href="http://www.google.nl/chrome">Google Chrome</a></li>
+			</ul>
+
+		</div>
+	</div><!-- id=ie -->
+	<header>
+		<h1>mdworld - On Sass and Compass</h1><ul class="links"><li class="menu-127 first last"><a href="../node.html" title="">Home</a></li>
+</ul>	<div id="blogroll">
+	</div><!-- id=blogroll -->
+	</header>
+
+	<div id="contentTop">
+						<div class="tabs"></div>
+		  
+  <article class="node">
+            <p>Yesterday, I attended a training on Sass and Compass by <a href="http://roytomeij.com/">Roy Tomeij</a> organised by <a href="http://fronteers.nl/">Fronteers</a>. <a href="http://sass-lang.com/">Sass</a> is a CSS meta language and compiles to CSS, to make it easier to maintain than CSS yet still usable in the same browsers.</p>
+<script>
+var onSassAndCompass = {
+  show: function(){
+    jQuery("body").append("<div id='compiled-css-wrapper'></div>");
+    jQuery("#compiled-css-wrapper").css({
+      "position": "fixed",
+      "width": "45%",
+      "height": "95%",
+      "z-index": "10",
+      "top": "10px",
+      "left": "10px",
+      "background-color": "#242424"
+    })
+    .html(jQuery("#compiled-css").html());
+  },
+  hide: function(){
+    jQuery("#compiled-css-wrapper").remove();
+  }
+}
+</script><p><a href="http://compass-style.org/">Compass</a> is a plugin for Sass and offers a lot of often used patterns, but it does more, which I'll explain below.</p>
+<p>Sass is a front-end meta language (or CSS preprocessor) that compiles to CSS. It has 2 syntaxes, "Original Sass" and SCSS. SCSS is easiest to start with if you already know CSS, because it just adds syntax. "Original Sass" and other CSS meta languages like LESS are <a href="http://css-tricks.com/sass-vs-less/">out of scope</a> here. How to run Sass is also out of scope, but let me just say that there is a free utility called <a href="http://mhs.github.com/scout-app/">Scout</a> that makes it easier. However, compiling <a href="http://sass-lang.com/tutorial.html">on the command line</a> is a lot faster. For debugging in the browser you can try <a href="https://addons.mozilla.org/nl/firefox/addon/firesass-for-firebug/">FireSass</a> or enable line numbers when compiling Sass.</p>
+<p>As mentioned, it's better if you already know CSS. As anyone who ever used Frontpage knows, preprocessors can result in <a href="http://freepages.genealogy.rootsweb.ancestry.com/~gearyfamily/frontpage/images/bloated-excel-code.jpg">bloated code</a>. That's why it's recommended to monitor the generated CSS, especially in the beginning. You'll need to learn how the Sass compiler works and that way you can make really clean code.</p>
+<p>Although the CSS3 spec is very much alive and new features that make the lives of developers easier are added regularly, it takes time for all browsers, particularly those that don't push new versions **cough**IE**cough**, to support these. For some of these features, Sass (e.g. in combination with the Compass CSS3 module) is a good workaround, because it results in code that works on current browsers and it is easy to incorporate fallbacks.</p>
+<p>So far I've only argued why Sass is a good idea, now I want to show that it's really easy to use and how you can profit from it as a developer. I won't go into all topics discussed in the training, but I'll add a list of links of the basic concepts in the Sass documentation.</p>
+<p>Sass supports:</p>
+<ul>
+<li><a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#variables_">Variables</a></li>
+<li><a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#nested_rules">Nesting</a></li>
+<li><a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#referencing_parent_selectors_">Parent Reference</a></li>
+<li><a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#interpolation_">Interpolation</a></li>
+<li><a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#operations">Operations</a></li>
+<li><a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#partials">Partials</a></li>
+<li><a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#extend">Selector Inheritance</a></li>
+<li><a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html">Functions</a> (including <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#function_directives">custom functions</a>!)</li>
+<li><a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#control_directives">Control directives</a></li>
+<li><a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#mixins">Mixins</a></li>
+<li><a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#output_style">Minification</a> (see compressed)</li>
+</ul>
+<p>An annotated example:</p>
+<div onmouseover="onSassAndCompass.show();" onmouseout="onSassAndCompass.hide();">
+<pre class="code">// This is a valid Sass comment. It will not be visible in the compiled CSS
+/* This comment will be visible in the CSS */
+
+// This is a variable with name maincolor and value <span style="color: #f00;">#f00</span>
+// of the data-type color.
+$maincolor: #f00;
+// A variable with the data-type number
+$val: 1;
+// Also a variable with the data-type number
+$example-size: 10px;
+
+.maincontent {
+  // Using a variable
+  color: $maincolor;
+  // Addition operator
+  width: 500px + 10px;
+  // Mixing unit types is possible, if compatible (no using % here!)
+  height: 5in + 10pt;
+  // Division operator
+  margin-left: $example-size / 3;
+  // Round function
+  margin-right: round($example-size / 3);
+  // Using / when needed in CSS, by interpolation
+  border-radius: #{$example-size} / 3px;
+
+  // Nesting. This applies to an h1 in the .maincontent
+  // Although nesting is very convenient for maintaince try
+  // to prevent nesting more than 4 levels deep, because
+  // otherwise it results in very long selector statements
+  // in the CSS. This is bad for performance.
+  h1 {
+    border: 1px solid black;
+  }
+}
+
+// Declaring a function to modify width
+// A function returns just a value
+@function new-width($width) {
+  $border-width: 1;
+  @return 10 + (2 * $border-width);
+}
+
+// Interpolation of the variable $val
+.sidebar-#{$val} {
+  // Using the function
+  width: new-width(100);
+}
+
+// Declaring a mixin to generate column rules
+// A mixin returns a block of code.
+@mixin add-columns($amount) {
+  @for $i from 1 through $amount {
+    .column-#{$i} {
+      $bgcolor: red;
+      @if $i &lt; 2 {
+        $bgcolor: blue;
+      }
+      border: $bgcolor;
+    }
+  }
+}
+
+.column-wrapper {
+  // Using the mixin
+  @include add-columns(2);
+}</pre></div>
+<div id="compiled-css">This compiles to:
+<pre class="code">/* This comment will be visible in the CSS */
+.maincontent {
+  color: red;
+  width: 510px;
+  height: 5.139in;
+  margin-left: 3.333px;
+  margin-right: 3px;
+  border-radius: 10px / 3px;
+}
+.maincontent h1 {
+  border: 1px solid black;
+}
+
+.sidebar-1 {
+  width: 12;
+}
+
+.column-wrapper .column-1 {
+  border: blue;
+}
+.column-wrapper .column-2 {
+  border: red;
+}</pre></div>
+<p>Compass is a library for Sass, and a bit more. It adds:</p>
+<ul>
+<li><a href="http://compass-style.org/help/tutorials/spriting/">Generating sprites</a> (including magic sprites, where a directory of PNG images is automatically converted to a sprite and the required CSS with positions!)</li>
+<li>A slew of mixins that automatically adds vendor-prefixes for features that require them, e.g. <a href="http://compass-style.org/reference/compass/css3/border_radius/">border-radius</a>.</li>
+<li>Much used features, such as a <a href="http://compass-style.org/reference/compass/reset/">reset style</a> or a <a href="http://compass-style.org/reference/compass/utilities/general/clearfix/#mixin-clearfix">mixin for clearfix</a>.</li>
+</ul>
+<p>Because Sass is a compiler, it will check the input for syntax errors. The compiler can even be configured to do minification. This will concatenate the included files (which is better for performance, because there is only 1 HTTP request), compress the result and also remove all comments, except those starting with /*! which is conform other minifiers.</p>
+<p>It is advised to group all variables for e.g. colors in one file and all mixins in files separated from the other code. It is easy to make a modular set-up in Sass, because you can include other Sass files that are automatically combined to one file. Because the architecture of a web project is beyond the scope of this post, I want to refer to the <a href="http://roy.io/book">book</a> that Roy is writing on this subject. He also has a presentation about modular and reusable front-end code. Another way to learn more about CSS architecture is to be guided by <a href="http://smacss.com/">Smacss</a>.</p>
+<div class="links"><ul class="links inline"><li class="taxonomy_term_6 first"><a href="../category/categories/mdworld.html" rel="tag" title="">mdworld</a></li>
+<li class="taxonomy_term_35"><a href="../category/tags/fronteers.html" rel="tag" title="">fronteers</a></li>
+<li class="taxonomy_term_36 last"><a href="../category/tags/webdevelopment.html" rel="tag" title="">webdevelopment</a></li>
+</ul></div>    <div class="author">by Martin @ 8:02 12 September 2012</div>
+  </article>
+	</div><!-- id=contentTop -->
+	<div id="contentBottom">
+			</div><!-- id=contentBottom -->
+
+	<aside>
+		  <div class="block block-block" id="block-block-1">
+    <h2 class="title"></h2>
+    <div class="content"><p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="../sites/default/files/images/delicious.png" /></a><br/></p>
+<!-- Unfixed: <p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="/cms/sites/default/files/images/delicious.png" /></a></br/></p>
+ --></div>
+ </div>
+	</aside>
+
+	<nav id="bulletin">
+            	  <div class="block block-mdebulletin" id="block-mdebulletin-0">
+    <h2 class="title"></h2>
+    <div class="content"><ul>
+<li><a class="bulletin-1" href='../../index.html' title='mdworld.nl'><img src='../sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="../themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='../sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+<br/><!-- Unfixed: <ul>
+<li><a class="bulletin-1" href='http://mdworld.nl' title='mdworld.nl'><img src='/cms/sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="/cms/themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='/cms/sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+ --></div>
+ </div>
+	</nav>
+	
+	<nav id="menu">
+		<ul class="links"><li class="menu-115 first"><a href="../../index.html" title="MDWorld.nl">mdworld</a></li>
+<li class="menu-116"><a href="../category/categories/mypc.html" title="">MyPC</a></li>
+<li class="menu-227"><a href="../category/categories/softcorp.html" title="Software I developed">SoftCorp</a></li>
+<li class="menu-119"><a href="../category/categories/moviecorp.html" title="">MovieCorp</a></li>
+<li class="menu-118"><a href="../category/categories/wow-blog-community.html" title="World of Warcraft fan blog">WoW</a></li>
+<li class="menu-117 last"><a href="../contact.html" title="">Contact</a></li>
+</ul>	</nav>
+	
+	<footer>
+		<p>MD Enterprises <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" src="../themes/simon/img/cc.png" /></a> 2003-2012 <a href="http://validator.w3.org/check?uri=referer"><img alt="HTML5" src="../themes/simon/img/mdworld_html5_16.png"/></a></p>
+		<div id="desktop"><a href="../node%3Fismobile=false.html">desktop version</a></div>
+	</footer>
+	<!-- Wget/1.16.1 (linux-gnu) -->
+		<script type="text/javascript">
+	<!--
+	var full_theme_path = "/cms/themes/simon";
+	
+		-->
+	</script>
+	  	<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-9626603-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+</html>

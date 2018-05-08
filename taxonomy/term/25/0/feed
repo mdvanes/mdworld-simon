@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - c3po</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/25/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>C3PO</title>
+ <link>http://mdworld.nl/cms/content/c3po-3</link>
+ <description>Gave the laptop and my x-micro wifi usb adapter to my brother-in-law.</description>
+ <comments>http://mdworld.nl/cms/content/c3po-3#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/c3po">c3po</category>
+ <pubDate>Thu, 02 Nov 2006 08:26:50 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">64 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>C3PO</title>
+ <link>http://mdworld.nl/cms/content/c3po-2</link>
+ <description>Discarded it, because I got my girlfriend &lt;a href=&quot;?cat=4&quot;&gt;this&lt;/a&gt;. Click &lt;a href=&quot;http://www.mdworld.nl/mypc/c3po.jpg&quot;&gt;here&lt;/a&gt; for a picture of C3PO.</description>
+ <comments>http://mdworld.nl/cms/content/c3po-2#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/c3po">c3po</category>
+ <pubDate>Fri, 07 Jul 2006 07:25:19 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">60 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>C3PO</title>
+ <link>http://mdworld.nl/cms/content/c3po-1</link>
+ <description>I havent&#039;t used C3PO for a while now, so recently I reinstalled it with Windows XP &lt;a href=&quot;http://www.nliteos.com/&quot;&gt;nLite&lt;/a&gt; (stripped version of Windows XP), so my girlfriend can use it (i.e. she *thinks* linux is complicated!). It&#039;s worth noting that the monitor only seems to work well with a resolution of 1024x768. I rigged it with a WiFi card, because soon, when we&#039;ll move, I am going to use a Linksys WRT54G router.</description>
+ <comments>http://mdworld.nl/cms/content/c3po-1#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/c3po">c3po</category>
+ <pubDate>Sun, 23 Oct 2005 07:24:34 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">57 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>C3PO</title>
+ <link>http://mdworld.nl/cms/content/c3po-0</link>
+ <description>&lt;a name=&quot;c3po&quot;&gt; installed &lt;/a&gt;&lt;a href=&quot;http://undeadlinux.com/&quot;&gt;EvilEntity 0.2.5&lt;/a&gt;! It installed perfectly |more or less. I tried Redhat 7.2 before but it somehow didn&#039;t install correctly, leaving me without a taskbar in gnome. After this I tried Peanut 9.5 but that crashed even before it could reach the installation interface. Using EvilE I only have to configure sound (haven&#039;t tested networking, though) manually. &quot;Modprobe sb&quot; works fine, but putting that in /etc/rc.d/rc.sndconfig doesn&#039;t work at all.</description>
+ <comments>http://mdworld.nl/cms/content/c3po-0#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/c3po">c3po</category>
+ <pubDate>Fri, 15 Aug 2003 07:24:04 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">45 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>C3PO</title>
+ <link>http://mdworld.nl/cms/content/c3po</link>
+ <description>&lt;a name=&quot;c3po&quot;&gt; acquired it at Super PC Discount Rotterdam for EUR 380 with pcmcia network card and shoulderbag. Came with Windows 98 pre-installed. That sucked of course, so...&lt;/a&gt;</description>
+ <comments>http://mdworld.nl/cms/content/c3po#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/c3po">c3po</category>
+ <pubDate>Sun, 15 Jun 2003 07:23:16 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">42 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

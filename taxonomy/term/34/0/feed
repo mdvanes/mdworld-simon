@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - broek</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/34/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>3TB Fileserver</title>
+ <link>http://mdworld.nl/cms/content/3tb-fileserver</link>
+ <description>&lt;p&gt;Harddisk prices finally having reached a more acceptable level, I have acquired a Western Digital WD Caviar Green 3TB ( WD30EZRX) for €117.&lt;/p&gt;
+&lt;p&gt;So before starting I have my main and temporary hard drives, visualised with fdisk -l (as root)&lt;br /&gt;
+&lt;span class=&quot;code&quot;&gt;&lt;br /&gt;
+/dev/sda 80.0 gb&lt;br /&gt;
+/dev/sdb 120.0 gb&lt;br /&gt;
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;After installing the new 3TB drive the server boots properly and now fdisk displays an additional:&lt;br /&gt;
+&lt;span class=&quot;code&quot;&gt;&lt;br /&gt;
+/dev/sdc: 3000.6 GB&lt;br /&gt;
+&lt;/span&gt;&lt;br /&gt;
+which unsurprisingly doesn&#039;t contain a valid partition table, but does displays this reassuring message:&lt;br /&gt;
+&lt;span class=&quot;code&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/3tb-fileserver&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/broek">broek</category>
+ <pubDate>Sat, 23 Feb 2013 08:25:40 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">216 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Temporary harddisk</title>
+ <link>http://mdworld.nl/cms/content/temporary-harddisk</link>
+ <description>&lt;p&gt;Since I&#039;m still waiting for hard disk prices to go down ??? I decided to temporarily increase my hard disk space by installing an old 2.5&quot; hdd. The first trick would be opening the case of this Fujitsu Siemens Esprimo. Although I did notice the tabs on both sides of the case, it took me a while to figure out I had to slide the cover forward instead of back (i.e. away from the motherboard connectors).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/temporary-harddisk&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/broek">broek</category>
+ <pubDate>Sat, 03 Nov 2012 11:47:55 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">214 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Precise Broek</title>
+ <link>http://mdworld.nl/cms/content/precise-broek</link>
+ <description>&lt;p&gt;Upgraded broek to Ubuntu 12.04.1 Precise Pangolin over ssh. No problems so far. It was important to upgrade at this time because 12.04 is an LTS version and soon 12.10 will be out and I want to have the option to stay on the LTS version.&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/broek">broek</category>
+ <pubDate>Sun, 26 Aug 2012 20:48:06 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">209 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Oneiric Broek</title>
+ <link>http://mdworld.nl/cms/content/oneiric-broek</link>
+ <description>&lt;p&gt;Just updated broek to &lt;a href=&quot;https://wiki.ubuntu.com/OneiricOcelot&quot;&gt;Ubuntu 11.10 Oneiric Ocelot&lt;/a&gt;. As usual, I always give it some time before upgrading, and this time I upgraded my server first. No strange problems so far, so I&#039;ll probably upgrade Dop soon.&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/broek">broek</category>
+ <pubDate>Fri, 04 Nov 2011 15:42:41 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">193 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>deb to ubuntu</title>
+ <link>http://mdworld.nl/cms/content/deb-ubuntu</link>
+ <description>&lt;p&gt;Reinstalling broek with Ubuntu 10.10, main reason: the NIC driver is outdated so it won&#039;t run at gigabit speed. It worked pretty good otherwise!&lt;/p&gt;
+&lt;p&gt;update: first problem after Ubuntu installation: &lt;a href=&quot;http://ubuntuforums.org/showthread.php?t=1607778&quot; title=&quot;http://ubuntuforums.org/showthread.php?t=1607778&quot;&gt;http://ubuntuforums.org/showthread.php?t=1607778&lt;/a&gt; (ignoring that for now)&lt;/p&gt;
+&lt;p&gt;Installed webmin&lt;/p&gt;
+&lt;p&gt;Configured nfs share (tested) and samba share (not yet tested). Sustained 400mbit upload, so NIC is working better than before (only 100mbit).&lt;/p&gt;
+&lt;p&gt;Added wget cron job to update status in Drupal.&lt;/p&gt;
+&lt;p&gt;Added notification for package updates.&lt;/p&gt;
+&lt;p&gt;In the future: add reverse proxy?&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/broek">broek</category>
+ <pubDate>Sat, 05 Mar 2011 09:15:58 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">175 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Broek</title>
+ <link>http://mdworld.nl/cms/content/broek</link>
+ <description>&lt;p&gt;Today service commenced for my new server: broek.&lt;/p&gt;
+&lt;p&gt;It&#039;s a Fujitsu Siemens Esprimo Pentium 4 D 3.0 GHz with 1GB that some office decommisioned recently.&lt;/p&gt;
+&lt;p&gt;Since &lt;a href=&quot;http://mdworld.nl/cms/category/tags/jas&quot;&gt;jas&lt;/a&gt; died more or less definitevly some time ago, most of my server applications have been moved to the external hosting company I already used for this site, &lt;a href=&quot;http://vdx.nl&quot;&gt;vdx.nl&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I am going to use broek as a local fileserver, for my media collection. &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/broek&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/broek">broek</category>
+ <pubDate>Sun, 26 Dec 2010 13:08:13 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">173 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

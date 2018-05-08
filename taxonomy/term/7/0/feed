@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - mypc</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/7/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>My PC&#039;s</title>
+ <link>http://mdworld.nl/cms/content/my-pcs</link>
+ <description>&lt;style type=&quot;text/css&quot;&gt;
+#mypcmap
+{
+        margin-left: 50px;
+	height: 492px;
+	width: 383px;
+	position: relative;
+}
+.mypcmap_neutral
+{
+	background: url(&#039;/cms/sites/default/files/images/mypcmap_neutral.jpg&#039;);
+}
+.mypcmap_r2d2
+{
+	background: url(&#039;/cms/sites/default/files/images/mypcmap_r2d2.jpg&#039;);
+	cursor: pointer;
+}
+.mypcmap_dop
+{
+	background: url(&#039;/cms/sites/default/files/images/mypcmap_dop.jpg&#039;);
+	cursor: pointer;
+}
+.mypcmap_jas
+{
+	background: url(&#039;/cms/sites/default/files/images/mypcmap_jas.jpg&#039;);
+	cursor: pointer;
+}
+.mypcmap_snoer
+{
+	background: url(&#039;/cms/sites/default/files/images/mypcmap_snoer.jpg&#039;);
+	cursor: pointer;
+}
+.mypcmap_darkyoda
+{
+	background: url(&#039;/cms/sites/default/files/images/mypcmap_darkyoda.jpg&#039;);
+	cursor: pointer;
+}
+#trigger_r2d2
+{
+	position: absolute;
+	left: 242px;
+	top: 202px;
+	height: 89px;
+	width: 86px;
+}
+#trigger_dop
+{
+	position: absolute;
+	left: 16px;
+	top: 127px;
+	height: 129px;
+	width: 355px;
+}
+#trigger_jas
+{
+	position: absolute;
+	left: 75px;
+	top: 62px;
+	height: 59px;
+	width: 111px;
+}
+#trigger_snoer
+{
+	position: absolute;
+	left: 19px;
+	top: 219px;
+	height: 133px;
+	width: 164px;
+}
+#trigger_darkyoda
+{
+	position: absolute;
+	left: 173px;
+	top: 377px;
+	height: 110px;
+	width: 136px;
+}
+.hidden
+{
+	display: none;
+}
+&lt;/style&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+function setMypcMap( type )
+{
+	document.getElementById(&quot;mypcmap&quot;).className=type;
+}
+&lt;/script&gt;&lt;div id=&quot;mypcmap&quot; class=&quot;mypcmap_neutral&quot;&gt;
+&lt;div class=&quot;hidden&quot;&gt;
+	background: url(&#039;/cms/sites/default/files/images/mypcmap_r2d2.jpg&#039;);&lt;br /&gt;
+	background: url(&#039;/cms/sites/default/files/images/mypcmap_dop.jpg&#039;);&lt;br /&gt;
+	background: url(&#039;/cms/sites/default/files/images/mypcmap_jas.jpg&#039;);&lt;br /&gt;
+	background: url(&#039;/cms/sites/default/files/images/mypcmap_snoer.jpg&#039;);&lt;br /&gt;
+	background: url(&#039;/cms/sites/default/files/images/mypcmap_darkyoda.jpg&#039;);&lt;br /&gt;
+&lt;img src=&quot;/cms/sites/default/files/images/mypcmap_neutral.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/cms/sites/default/files/images/mypcmap_r2d2.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/cms/sites/default/files/images/mypcmap_dop.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/cms/sites/default/files/images/mypcmap_jas.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/cms/sites/default/files/images/mypcmap_snoer.jpg&quot; /&gt;&lt;br /&gt;
+&lt;img src=&quot;/cms/sites/default/files/images/mypcmap_dop.jpg&quot; /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;trigger_dop&quot; title=&quot;dop&quot; onclick=&quot;javascript: top.location.href=&#039;http://mdworld.nl/cms/category/tags/dop&#039;;&quot; onmouseover=&quot;javascript: setMypcMap(&#039;mypcmap_dop&#039;);&quot; onmouseout=&quot;javascript: setMypcMap(&#039;mypcmap_neutral&#039;);&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;trigger_jas&quot; onclick=&quot;javascript: top.location.href=&#039;http://mdworld.nl/cms/category/tags/jas&#039;;&quot; title=&quot;jas&quot; onmouseover=&quot;javascript: setMypcMap(&#039;mypcmap_jas&#039;);&quot; onmouseout=&quot;javascript: setMypcMap(&#039;mypcmap_neutral&#039;);&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;trigger_r2d2&quot; onclick=&quot;javascript: top.location.href=&#039;http://mdworld.nl/cms/category/tags/r2d2&#039;;&quot; title=&quot;r2d2&quot; onmouseover=&quot;javascript: setMypcMap(&#039;mypcmap_r2d2&#039;);&quot; onmouseout=&quot;javascript: setMypcMap(&#039;mypcmap_neutral&#039;);&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;trigger_snoer&quot; onclick=&quot;javascript: top.location.href=&#039;http://mdworld.nl/cms/category/tags/snoer&#039;;&quot; title=&quot;snoer&quot; onmouseover=&quot;javascript: setMypcMap(&#039;mypcmap_snoer&#039;);&quot; onmouseout=&quot;javascript: setMypcMap(&#039;mypcmap_neutral&#039;);&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;trigger_darkyoda&quot; onclick=&quot;javascript: top.location.href=&#039;http://mdworld.nl/cms/category/tags/darkyoda&#039;;&quot; title=&quot;darkyoda&quot; onmouseover=&quot;javascript: setMypcMap(&#039;mypcmap_darkyoda&#039;);&quot; onmouseout=&quot;javascript: setMypcMap(&#039;mypcmap_neutral&#039;);&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/my-pcs&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <pubDate>Sun, 28 Mar 2010 10:17:28 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">139 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Lightscribe in Ubuntu</title>
+ <link>http://mdworld.nl/cms/content/lightscribe-ubuntu</link>
+ <description>&lt;p&gt;When I got my &lt;a href=&quot;http://www.mdworld.nl/cms/content/new-optical-drive&quot;&gt;new optical drive&lt;/a&gt; with lightscribe support, I thought getting lightscribe to work in Ubuntu would be a walk in the park.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/lightscribe-ubuntu&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Sat, 01 Jun 2013 12:53:13 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">229 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>New optical drive</title>
+ <link>http://mdworld.nl/cms/content/new-optical-drive</link>
+ <description>&lt;p&gt;In preparations of the coming CPU overhaul of dop, I&#039;ve anticipated the loss of PATA ports and already acquired a new optical drive and probably the last I&#039;ll buy in my life. It&#039;s an LG CH10LS28 Blu-ray reader/DVD writer combo. It also has lightscribe support, so I should finally be able to use those discs I&#039;ve kept lying around for years...&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/new-optical-drive&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Mon, 27 May 2013 08:16:39 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">228 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Raring Dop</title>
+ <link>http://mdworld.nl/cms/content/raring-dop</link>
+ <description>&lt;p&gt;I&#039;ve upgraded dop to &lt;a href=&quot;http://releases.ubuntu.com/13.04/&quot;&gt;Ubuntu 13.04 Raring Ringtail&lt;/a&gt;.&lt;br /&gt;
+First thing I noticed is the new file browser. F3 (to split into two windows) doesn&#039;t work. I don&#039;t like it.&lt;/p&gt;
+&lt;p&gt;Update: yep, it&#039;s &lt;a href=&quot;http://askubuntu.com/questions/285588/is-there-a-way-to-restore-nautilus-split-screen-f3-feature&quot;&gt;gone&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Update:&lt;br /&gt;
+more things that are now broken:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/raring-dop&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Mon, 27 May 2013 08:01:58 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">227 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>UG007 mod</title>
+ <link>http://mdworld.nl/cms/content/ug007-mod</link>
+ <description>&lt;p&gt;Some time back I bought a UG007 Android Stick on &lt;a href=&quot;http://dx.com&quot;&gt;dx.com&lt;/a&gt;. It&#039;s WIFI reception is not enough for my purposes, so I&#039;m trying to enhance the signal analogously to &lt;a href=&quot;http://vondroid.com/threads/increasing-wifi-signal-in-tv-sticks.5055/&quot;&gt;this tutorial&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/ug007-mod&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/ug007">ug007</category>
+ <pubDate>Thu, 02 May 2013 10:44:34 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">221 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Rhythmbox shortcuts</title>
+ <link>http://mdworld.nl/cms/content/rhythmbox-shortcuts</link>
+ <description>&lt;p&gt;After upgrading to Ubuntu 12.10, I have to reconfigure my keyboard shortcuts for Rhythmbox.&lt;/p&gt;
+&lt;p&gt;So I go to Keyboard &gt; Shortcuts and I add 3 shortcuts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;name: pause/play, command &lt;span class=&quot;code&quot;&gt;rhythmbox-client --play-pause&lt;/span&gt;, shortcut: Shift+Ctrl+Right&lt;/li&gt;
+&lt;li&gt;name: volume up, command &lt;span class=&quot;code&quot;&gt;rhythmbox-client --volume-up&lt;/span&gt;, shortcut: Shift+Ctrl+Up&lt;/li&gt;
+&lt;li&gt;name: volume down, command &lt;span class=&quot;code&quot;&gt;rhythmbox-client --volume-down&lt;/span&gt;, shortcut: Shift+Ctrl+Down&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/rhythmbox-shortcuts&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Sat, 06 Apr 2013 13:04:57 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">218 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Quantal Dop</title>
+ <link>http://mdworld.nl/cms/content/quantal-dop</link>
+ <description>&lt;p&gt;Upgraded dop to &lt;a href=&quot;http://releases.ubuntu.com/quantal/&quot;&gt;Ubuntu 12.10&lt;/a&gt; just in time (before 13.04 comes out).&lt;/p&gt;
+&lt;p&gt;Update: Of course I had to &lt;a href=&quot;http://lifehacker.com/5953180/how-to-remove-amazon-ads-from-ubuntu-1210&quot;&gt;uninstall that obnoxious Amazon lens&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;And finally I can set the Launcher bar only on my left monitor again! Hurray!&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Sat, 30 Mar 2013 12:37:16 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">217 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>3TB Fileserver</title>
+ <link>http://mdworld.nl/cms/content/3tb-fileserver</link>
+ <description>&lt;p&gt;Harddisk prices finally having reached a more acceptable level, I have acquired a Western Digital WD Caviar Green 3TB ( WD30EZRX) for €117.&lt;/p&gt;
+&lt;p&gt;So before starting I have my main and temporary hard drives, visualised with fdisk -l (as root)&lt;br /&gt;
+&lt;span class=&quot;code&quot;&gt;&lt;br /&gt;
+/dev/sda 80.0 gb&lt;br /&gt;
+/dev/sdb 120.0 gb&lt;br /&gt;
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;After installing the new 3TB drive the server boots properly and now fdisk displays an additional:&lt;br /&gt;
+&lt;span class=&quot;code&quot;&gt;&lt;br /&gt;
+/dev/sdc: 3000.6 GB&lt;br /&gt;
+&lt;/span&gt;&lt;br /&gt;
+which unsurprisingly doesn&#039;t contain a valid partition table, but does displays this reassuring message:&lt;br /&gt;
+&lt;span class=&quot;code&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/3tb-fileserver&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/broek">broek</category>
+ <pubDate>Sat, 23 Feb 2013 08:25:40 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">216 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Quantal Snoer and Wifi</title>
+ <link>http://mdworld.nl/cms/content/quantal-snoer-and-wifi</link>
+ <description>&lt;p&gt;Upgraded snoer to Ubuntu &lt;a href=&quot;http://releases.ubuntu.com/quantal/&quot;&gt;12.10 Quantal Quetzal&lt;/a&gt;. Other than the warning that my video card was no longer supported which could make the system unusable, there was no noticeable difference.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/quantal-snoer-and-wifi&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/snoer">snoer</category>
+ <pubDate>Thu, 21 Feb 2013 07:31:49 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">215 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Temporary harddisk</title>
+ <link>http://mdworld.nl/cms/content/temporary-harddisk</link>
+ <description>&lt;p&gt;Since I&#039;m still waiting for hard disk prices to go down ??? I decided to temporarily increase my hard disk space by installing an old 2.5&quot; hdd. The first trick would be opening the case of this Fujitsu Siemens Esprimo. Although I did notice the tabs on both sides of the case, it took me a while to figure out I had to slide the cover forward instead of back (i.e. away from the motherboard connectors).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/temporary-harddisk&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/broek">broek</category>
+ <pubDate>Sat, 03 Nov 2012 11:47:55 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">214 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

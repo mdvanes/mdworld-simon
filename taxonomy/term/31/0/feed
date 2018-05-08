@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - darkyoda</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/31/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Koffermod</title>
+ <link>http://mdworld.nl/cms/content/koffermod</link>
+ <description>&lt;p&gt;[19 apr 2004] Finished the Koffermod (fan, on/off button). For the complete show, check out &lt;a href=&quot;http://www.mdworld.nl/mypc/darkyoda/index.html&quot;&gt;http://www.mdworld.nl/mypc/darkyoda/.&lt;/a&gt;&lt;br /&gt;
+[01 jul 2004] Keep getting kernel panics. Upgraded from slackware 8.1 to 9.1, but doesn&#039;t seem to help. Maybe its the&lt;br /&gt;
+harddrive.&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/darkyoda">darkyoda</category>
+ <pubDate>Mon, 19 Apr 2004 10:00:00 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">143 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Yoda&#039;s old log entries</title>
+ <link>http://mdworld.nl/cms/content/yodas-old-log-entries</link>
+ <description>&lt;p&gt;[jan 2003] installed &lt;a href=&quot;http://www.redhat.com&quot;&gt;Red Hat&lt;/a&gt; Linux 7.2 (got it lying around). Works like a charm.&lt;br /&gt;
+[28 jan 2003] after studying of man&#039;s and usenet finally got Samba working the way I wanted it.&lt;br /&gt;
+[02 feb 2003] trying to install a 3rd(!) harddisk using a 3,5&quot;-&amp;gt;5,1/4&quot; bracket. Always wanted to try this. Unfortunately can&#039;t find what jumper sets is to slave, so it overrules the cd-rom drive.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/yodas-old-log-entries&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/darkyoda">darkyoda</category>
+ <pubDate>Wed, 01 Jan 2003 11:00:00 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">142 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Aquired Yoda</title>
+ <link>http://mdworld.nl/cms/content/aquired-yoda</link>
+ <description>&lt;p&gt;Acquired it. M$ Windows 95 was installed. I decide to use it as a fileserver for the M$ pc&#039;s in the network. Perhaps later as a printer server.&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/darkyoda">darkyoda</category>
+ <pubDate>Wed, 01 Jan 2003 10:00:00 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">141 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

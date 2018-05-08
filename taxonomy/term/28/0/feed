@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - organa</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/28/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Out of Reach</title>
+ <link>http://mdworld.nl/cms/content/out-reach-0</link>
+ <description>Because in our new house there is an actual steel reinforced concrete wall between my router and most of my house, there&#039;s no WLAN signal anywhere but in my study. That&#039;s why, with pain in my heart, I had to say goodbye to my old trusted Linksys WRT54g router and got a Linksys WRT320N dual channel 802.11n router. Because the old adapter I used in &lt;em&gt;snoer&lt;/em&gt; didn&#039;t support WPA, I also got a new USB adapter, a Linksys WUSB600N.
+
+Too bad, off course there&#039;s no Linux driver for the adapter.&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/out-reach-0&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/out-reach-0#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/organa">organa</category>
+ <category domain="http://mdworld.nl/cms/category/tags/snoer">snoer</category>
+ <pubDate>Mon, 28 Sep 2009 18:33:10 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">89 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Organa</title>
+ <link>http://mdworld.nl/cms/content/organa</link>
+ <description>This used to be my work laptop, Dell 800, pretty heavy specs. Got a new one from work (Dell 820, even heavier specs!!). I got the chance to buy it for a *special price*.&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/organa&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/organa#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/organa">organa</category>
+ <category domain="http://mdworld.nl/cms/category/tags/snoer">snoer</category>
+ <pubDate>Fri, 07 Jul 2006 07:22:33 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">59 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

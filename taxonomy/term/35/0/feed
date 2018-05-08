@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - fronteers</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/35/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Fronteers 2012: CSS</title>
+ <link>http://mdworld.nl/cms/content/fronteers-2012-css</link>
+ <description>&lt;p&gt;Just like last year, this post is an reduced version of the talk by the inimitable Lea Verou with inline demo&#039;s. It&#039;s based on &lt;a href=&quot;https://vimeo.com/52882799&quot;&gt;the video recording of her talk&lt;/a&gt; and &lt;a href=&quot;http://lea.verou.me/more-css-secrets/&quot;&gt;her slides&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/fronteers-2012-css&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/fronteers-2012-css#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/fronteers">fronteers</category>
+ <category domain="http://mdworld.nl/cms/category/tags/webdevelopment">webdevelopment</category>
+ <pubDate>Tue, 09 Apr 2013 12:50:58 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">219 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>On Sass and Compass</title>
+ <link>http://mdworld.nl/cms/content/sass-and-compass</link>
+ <description>&lt;p&gt;Yesterday, I attended a training on Sass and Compass by &lt;a href=&quot;http://roytomeij.com/&quot;&gt;Roy Tomeij&lt;/a&gt; organised by &lt;a href=&quot;http://fronteers.nl/&quot;&gt;Fronteers&lt;/a&gt;. &lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass&lt;/a&gt; is a CSS meta language and compiles to CSS, to make it easier to maintain than CSS yet still usable in the same browsers.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/sass-and-compass&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/fronteers">fronteers</category>
+ <category domain="http://mdworld.nl/cms/category/tags/webdevelopment">webdevelopment</category>
+ <pubDate>Wed, 12 Sep 2012 06:02:36 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">210 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Fronteers 2011: Experimental Features</title>
+ <link>http://mdworld.nl/cms/content/fronteers-2011-experimental-features</link>
+ <description>&lt;p&gt;This article discusses some experimental browser features from several talks at &lt;a href=&quot;http://fronteers.nl/congres/2011&quot;&gt;Fronteers 2011&lt;/a&gt;. Since these are experimental features it doesn&#039;t work predictably across all browsers. Try Firefox 10+ or Chrome 17+ to see it the way I intended it to work.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/fronteers-2011-experimental-features&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/fronteers">fronteers</category>
+ <category domain="http://mdworld.nl/cms/category/tags/webdevelopment">webdevelopment</category>
+ <pubDate>Sat, 28 Jan 2012 15:21:07 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">203 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Fronteers 2011: CSS</title>
+ <link>http://mdworld.nl/cms/content/fronteers-2011-css</link>
+ <description>&lt;div class=&quot;error&quot;&gt;Warning! This article might crash Internet Explorer!&lt;/div&gt;
+&lt;p&gt;This is the first in - what I hope will be - a series of articles on the useful information I received from visiting the &lt;a href=&quot;http://fronteers.nl/congres/2011&quot;&gt;Fronteers 2011 conference&lt;/a&gt; in Amsterdam last October. Like my &lt;a href=&quot;http://www.mdworld.nl/cms/category/tags/fronteers&quot;&gt;articles of last year&#039;s conference&lt;/a&gt;, I will not give a talk-by-talk summary, but rather pick out the subjects that interest me most and expand on those subjects, while referring to the original talks to give credits due.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/fronteers-2011-css&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://mdworld.nl/cms/content/fronteers-2011-css#comments</comments>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/fronteers">fronteers</category>
+ <category domain="http://mdworld.nl/cms/category/tags/webdevelopment">webdevelopment</category>
+ <pubDate>Sat, 03 Dec 2011 20:47:18 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">192 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Fronteers 2010: CSS</title>
+ <link>http://mdworld.nl/cms/content/fronteers-2010-css</link>
+ <description>&lt;p&gt;Before I dive into some spectacular features of CSS3, let me say something about CSS attributes.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/fronteers-2010-css&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/fronteers">fronteers</category>
+ <category domain="http://mdworld.nl/cms/category/tags/webdevelopment">webdevelopment</category>
+ <pubDate>Fri, 21 Jan 2011 10:06:13 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">171 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Fronteers 2010: JavaScript</title>
+ <link>http://mdworld.nl/cms/content/fronteers-2010-javascript</link>
+ <description>&lt;p&gt;You can ask anyone that I used to be quite sceptical on building sites that depend on the use of JavaScript. Time has not stood still however.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/fronteers-2010-javascript&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/fronteers">fronteers</category>
+ <category domain="http://mdworld.nl/cms/category/tags/webdevelopment">webdevelopment</category>
+ <pubDate>Thu, 18 Nov 2010 20:41:04 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">170 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Fronteers 2010: HTML</title>
+ <link>http://mdworld.nl/cms/content/fronteers-2010-html</link>
+ <description>&lt;p&gt;This is a transcription of a presentation I held recently concerning my visit to the &lt;a href=&quot;http://fronteers.nl/congres/2010&quot;&gt;Fronteers 2010 conference&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/fronteers-2010-html&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/fronteers">fronteers</category>
+ <category domain="http://mdworld.nl/cms/category/tags/webdevelopment">webdevelopment</category>
+ <pubDate>Mon, 15 Nov 2010 10:55:33 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">168 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

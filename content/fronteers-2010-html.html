@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="ie ie6" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="ie ie7" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="ie ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+
+<meta name="keywords" content="mdworld, Martin van Es, MD Enterprises, fronteers, webdevelopment" />
+<meta name="description" content="This is a transcription of a presentation I held recently concerning my visit to the Fronteers 2010 conference." />
+<link rel="shortcut icon" href="../themes/simon/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/files/css/css_949781c8a73045c6f9458633ed41d193.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="../sites/default/files/css/css_21f24221e70ef675167103b282b815d1.css" />
+<link type="text/css" rel="stylesheet" media="handheld" href="../sites/default/files/css/css_bcb90d40d05a52204eaf0fc65b2c7e6e.css" />
+<script type="text/javascript" src="../sites/default/files/js/js_3022830f3560163bcde900bfe847cfab.js"></script>
+<script type="text/javascript" src="../sites/all/modules/mdepolska/includes/mdepolska.js%3FX"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/cms/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+  <title>Fronteers 2010: HTML | mdworld</title>
+</head>
+<body>
+	<div id="ie">
+		<div>
+			Warning: this browser doesn't support HTML5. Styling disabled.<br/>
+			Some browsers that do support HTML5:
+			<ul>
+				<li><a href="http://www.mozilla.com/firefox/">Firefox</a></li>
+				<li><a href="http://www.google.nl/chrome">Google Chrome</a></li>
+			</ul>
+
+		</div>
+	</div><!-- id=ie -->
+	<header>
+		<h1>mdworld - Fronteers 2010: HTML</h1><ul class="links"><li class="menu-127 first last"><a href="../node.html" title="">Home</a></li>
+</ul>	<div id="blogroll">
+	</div><!-- id=blogroll -->
+	</header>
+
+	<div id="contentTop">
+						<div class="tabs"></div>
+		  
+  <article class="node">
+            <p>This is a transcription of a presentation I held recently concerning my visit to the <a href="http://fronteers.nl/congres/2010">Fronteers 2010 conference</a>.</p>
+<style type="text/css">
+quote
+{
+  color: white;
+  font-family: serif;
+  font-style: italic;
+}
+.code
+{
+  background: #000;
+  color: rgb(255,129,0);
+  font-family: monospace;
+}
+</style><p>Visitors included, amongst others, my heroes <a href="http://people.opera.com/howcome/">Håkon Wium Lie</a>, <a href="http://www.quirksmode.org">Peter Paul Koch</a>, and <a href="http://annevankesteren.nl">Anne van Kesteren</a>. <a href="http://fronteers.nl/">Fronteers</a> is the dutch organisation for front-end web development. This article is mostly based on the following talks:</p>
+<ul>
+<li>The Design of HTML5 by Jeremy Keith</li>
+<li>JavaScript - Like a box of chocolates by Robert Nyman</li>
+<li>Reusable Code, for good or for awesome! by Jake Archibald</li>
+<li>A CSS3 talk by Håkon Wium Lie</li>
+<li>CSS Workflow by Jina Bolton</li>
+<li>Progressive Downloads and Rendering by Stoyan Stefanov</li>
+</ul>
+<p>Due to some special effects, this article is best viewed in <a href="http://www.opera.com/">Opera 10+</a>, although fallbacks are available for other browsers (not IE, I said "browsers").</p>
+<p>This article is heavily biased, but that is my opinion, not that of the authors of the talks mentioned before.</p>
+<h2>HTML</h2>
+<p>In the early nineties the first HTML spec, being HTML 2.0, was published. The development on the spec stabilized quickly, at least quickly in the market of specs. In 1997 HTML 4.0 was introduced and in 1999 <a href="http://www.w3.org/TR/html401/">HTML 4.01</a>. This was the last spec for HTML that the <a href="http://www.w3.org/">W3C</a> published, although it is quite commonly found in use today. </p>
+<p>The W3C opted for something less lenient in coding style and introduced the <a href="http://www.w3.org/TR/xhtml1/">XHTML 1.0</a> spec in 2000. Semantically it is nearly identical to HTML 4.01, but it requires a much stricter coding style, since it is an XML serialization, with all the pros and cons of XML. I like XML, so I use XHTML 1.0 Strict. Because it is more strict, it gives you more handles for consistency, making your code easier to maintain. Also, you can use a DTD to validate it, although more recent developments seem to think that is a bad idea (see <a href="http://about.validator.nu/#faq">What’s wrong with DTDs?</a>)</p>
+<p>The next spec was XHTML 1.1. Although it's differences from XHTML 1.0 Strict are <a href="http://www.w3.org/TR/xhtml11/changes.html">minor</a>, the fact that the server <a href="http://www.w3.org/TR/xhtml-media-types/#application-xhtml-xml">must serve it to the browser as application/xhtml+xml or application/xml</a> <a href="http://www.webstandards.org/learn/articles/askw3c/sep2003/">and not as text/html</a>, makes it practically inusable. For two reasons. First, IE only supports documents served as application/xhtml+xml or application/xml from version 9 onwards. This means the larger part of browser users won't be able to view a truly valid XHTML 1.1 document with their default browser.</p>
+<p>Second, even when using a browser that does understand application/xhtml+xml or application/xml, you'll be exposed to the full blown mindnumbing force of the XML Error Model, which means as much that you'll be seeing a lot of this:</p>
+<p><a href="../sites/default/files/images/xml-error.png"><img src="../sites/default/files/images/xml-error.preview.png" alt="xml-error" border="0" /></a></p>
+<p>You might think "OK, so <a href="http://xhtml.com/en/xhtml/serving-xhtml-as-xml/">make validate XML documents</a>, and the browser won't cry and break down. Suits you right for being so lazy!" But please note that if content is injected in any way, e.g. from a CMS, that might leave a stray unescaped <span style="font-family: mono;">&amp;</span> somewhere and you're dead. Our at least your site will be. The two of which may coincide depending how strict your boss validates you.</p>
+<p>The W3C continued to work on the XHTML 2.0 spec, but never finished it. Conceived by briljant minds it suffers the fate of being practically unusable. Instead, the <a href="http://www.whatwg.org/">WHATWG</a> started work on the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/">HTML5 spec</a> and suggested it to the W3C. So that spec has both the W3C and WHATWG working on it. It's not finished yet, but it offers an interesting new approach. The first being the design principle of <a href="http://www.w3.org/TR/html-design-principles/#priority-of-constituencies">Priorities of Constituencies</a>:</p>
+<p><quote>In case of conflict, consider users over authors over implementors over specifiers over theoretical purity.</quote></p>
+<p>In other words, we (as webdevelopers) are important! If it is far easier for authors if the implementors handle some element in another way than they would like, we should get the priority. HTML5 is pragmatic by design.</p>
+<p>Let me mention too, that the term HTML5 is being abused in the same way as Web 2.0 and AJAX used to be. I'm talking about the spec HTML5 here, not just "doing anything cool in the browser" (OK, I blatantly stole that line from Jeremy Keith).</p>
+<p>So, HTML5 is pragmatic. What does that mean in practice? Let's take a look at the XHTML 1.0 Strict doctype declaration:</p>
+<p><span class="code">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"></span></p>
+<p>DTD's can be used to validate the document. But, this is not something you typically want your browser to do. In fact, the only reason the doctype needs to be in the document is because <a href="http://www.quirksmode.org/css/quirksmode.html">someone thought it would be a nice flag to require if one wants to enforce strict mode</a>. To make it worse <a href="http://www.w3.org/International/articles/serving-xhtml/Overview.en.php#declaration">version 6 of a certain browser doesn't allow the XML declaration before a doctype to trigger Strict Mode</a>. Fortunately, XHTML 1.0 Strict allows the XML declaration to be ommited, as long as the encoding is UTF-8 or UTF-16.</p>
+<p>So the doctype is still needed, but in HTML5 it is as short as possible:</p>
+<p><span class="code"><!DOCTYPE html></!doctype></span></p>
+<p>The same goes for the encoding declaration. Compare XHTML 1.0:</p>
+<p><span class="code">&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></span></p>
+<p>to HTML5:</p>
+<p><span class="code">&lt;meta charset="UTF-8"></span></p>
+<p>Looks good, huh?</p>
+<p>There is also an XHTML serialization of HTML5. It is just as strict as XHTML 1.1 and it should be served XML. So it is not recommended for IE before version 9. It <em>is</em> recommended to use the stricter XML coding style, but serving it as XML, will prevent it from being rendered in IE &lt; 9. If you're really bent on serving XML, you might want to take a look at <a href="http://dev.w3.org/html5/html-author/#polyglot-documents">polyglot documents</a>.</p>
+<p>Another pragmatic aspect of HTML5 is the support for fallbacks. Consider the new video tag. It works just like the img tag to embed videos:</p>
+<p><span class="code">&lt;video src="movie.ogg"/></span></p>
+<p>But to provide optimal backwards compatibility, it can also be used as such:</p>
+<p><span class="code">&lt;video><br />
+&nbsp; &lt;source src="movie.mp4"/><br />
+&nbsp;  &lt;source src="movie.ogv"/><br />
+&nbsp;  &lt;object data="movie.swf"><br />
+&nbsp;&nbsp;    &lt;a href="movie.mp4">download&lt;/a><br />
+&nbsp;  &lt;/object><br />
+&lt;/video></span></p>
+<p>It will first offer an h264 encoded version of the movie, as a fallback for that an <a href="http://www.theora.org/">Ogg Theora</a> video, as a fallback for that a Flash movie, and if all else fails, a download link.</p>
+<p>HTML5 also introduces some <a href="http://diveintohtml5.org/semantics.html">new semantic elements</a>. So the ubiquitous <span class="code">&lt;div class=&quot;header&quot;></span> can be replaced by the semantically much more pleasing <span class="code">&lt;header></span>. And what's more, if you want to use it in old versions of IE, you can use the <a href="http://www.modernizr.com/">Modernizr javascript library</a>. It will register certain elements, e.g. &lt;header>, so you can format them with CSS.</p>
+<p>There are also new input types. Try to count the times you needed a date field and had to format it using CSS and JavaScript. Well, now we have <span class="code">&lt;input type=&quot;date&quot;/></span>, behold:</p>
+<p><input type="date" /></p>
+<p>You should be seeing something quite spectacular above. If you're using <a href="http://diveintohtml5.org/forms.html#type-date">Opera 9+</a>. Otherwise, it just falls back to <span class="code">&lt;input type=&quot;text&quot;/></span> so you can format it with <a href="http://jqueryui.com/demos/datepicker/">jQuery</a> or something.</p>
+<p>So, even though HTML5 is still a draft at this moment, it's already usable. If you're running XHTML 1.0 Strict at the moment, it's just a matter of slimming it down and using the new elements.</p>
+<p>You may also be interested in the related articles on <a href="fronteers-2010-javascript.html">javascript</a> and <a href="fronteers-2010-css.html">css</a>.</p>
+<div class="links"><ul class="links inline"><li class="taxonomy_term_6 first"><a href="../category/categories/mdworld.html" rel="tag" title="">mdworld</a></li>
+<li class="taxonomy_term_35"><a href="../category/tags/fronteers.html" rel="tag" title="">fronteers</a></li>
+<li class="taxonomy_term_36 last"><a href="../category/tags/webdevelopment.html" rel="tag" title="">webdevelopment</a></li>
+</ul></div>    <div class="author">by Martin @ 12:55 15 November 2010</div>
+  </article>
+	</div><!-- id=contentTop -->
+	<div id="contentBottom">
+			</div><!-- id=contentBottom -->
+
+	<aside>
+		  <div class="block block-block" id="block-block-1">
+    <h2 class="title"></h2>
+    <div class="content"><p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="../sites/default/files/images/delicious.png" /></a><br/></p>
+<!-- Unfixed: <p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="/cms/sites/default/files/images/delicious.png" /></a></br/></p>
+ --></div>
+ </div>
+	</aside>
+
+	<nav id="bulletin">
+            	  <div class="block block-mdebulletin" id="block-mdebulletin-0">
+    <h2 class="title"></h2>
+    <div class="content"><ul>
+<li><a class="bulletin-1" href='../../index.html' title='mdworld.nl'><img src='../sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="../themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='../sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+<br/><!-- Unfixed: <ul>
+<li><a class="bulletin-1" href='http://mdworld.nl' title='mdworld.nl'><img src='/cms/sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="/cms/themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='/cms/sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+ --></div>
+ </div>
+	</nav>
+	
+	<nav id="menu">
+		<ul class="links"><li class="menu-115 first"><a href="../../index.html" title="MDWorld.nl">mdworld</a></li>
+<li class="menu-116"><a href="../category/categories/mypc.html" title="">MyPC</a></li>
+<li class="menu-227"><a href="../category/categories/softcorp.html" title="Software I developed">SoftCorp</a></li>
+<li class="menu-119"><a href="../category/categories/moviecorp.html" title="">MovieCorp</a></li>
+<li class="menu-118"><a href="../category/categories/wow-blog-community.html" title="World of Warcraft fan blog">WoW</a></li>
+<li class="menu-117 last"><a href="../contact.html" title="">Contact</a></li>
+</ul>	</nav>
+	
+	<footer>
+		<p>MD Enterprises <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" src="../themes/simon/img/cc.png" /></a> 2003-2012 <a href="http://validator.w3.org/check?uri=referer"><img alt="HTML5" src="../themes/simon/img/mdworld_html5_16.png"/></a></p>
+		<div id="desktop"><a href="../node%3Fismobile=false.html">desktop version</a></div>
+	</footer>
+	<!-- Wget/1.16.1 (linux-gnu) -->
+		<script type="text/javascript">
+	<!--
+	var full_theme_path = "/cms/themes/simon";
+	
+		-->
+	</script>
+	  	<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-9626603-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+</html>

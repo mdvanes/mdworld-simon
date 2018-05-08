@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - computing</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/37/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Vista Hard Disk Activity</title>
+ <link>http://mdworld.nl/cms/content/vista-hard-disk-activity</link>
+ <description>&lt;p&gt;When a friend complains their PC is slow, what do you do? Some people I know would advise buying a new PC. Or a Mac. But not me, because as we all know, I am masochistic. After all, &lt;a href=&quot;http://mdworld.nl/cms/content/fronteers-2010-html&quot;&gt;I code standard compliant HTML&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/vista-hard-disk-activity&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/computing">computing</category>
+ <pubDate>Wed, 20 Jul 2011 08:15:03 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">188 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>On Specs: OS Disk Size</title>
+ <link>http://mdworld.nl/cms/content/specs-os-disk-size</link>
+ <description>&lt;p&gt;I recently wondered if the required disk space for common operating systems was stagnating. Yes, I must agree that I sometimes wonder about weird stuff.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/specs-os-disk-size&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mdworld">mdworld</category>
+ <category domain="http://mdworld.nl/cms/category/tags/computing">computing</category>
+ <pubDate>Tue, 19 Jul 2011 14:26:51 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">187 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>

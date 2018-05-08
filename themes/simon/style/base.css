@@ -1,0 +1,644 @@
+/* 
+Colors:
+
+dark yellow: #e2e3a6; 
+light yellow: #feffcd;
+olive green: #8db11f;  
+*/
+
+/* start fonts */
+@font-face 
+{
+	font-family: Delicious Roman;
+	src: url(Delicious-Roman.otf) format("opentype");
+} 
+@font-face 
+{
+	font-family: Delicious Heavy;
+	src: url(Delicious-Heavy.otf) format("opentype");
+}
+@font-face 
+{
+	font-family: HellaFont;
+	src: url(hellafont.ttf) format("truetype");
+} 
+@font-face 
+{
+	font-family: Impacted;
+	src: url(IMPACTED.ttf) format("truetype");
+} 
+/* end fonts */
+
+html,body
+{
+	background: fixed #242424 url("../img/bg.png") no-repeat 60px -50px; /* charcoal */
+	color: #e2e3a6;
+	font-family: Delicious Roman;
+}
+
+img
+{
+	border: none;
+}
+
+/* header */
+header h1
+{
+	color: white;
+	font-family: HellaFont, "Delicious Heavy"; 
+	font-weight: normal; 
+	font-size: 3.5em; 
+	margin-left: 200px; 
+	margin-bottom: 0;
+}
+header ul.links
+{
+	display: inline;
+	margin-left: 250px;
+}
+header ul.links li
+{
+	padding-top: none;
+	display: inline;
+	font-family: Impacted; 
+	font-size: 2em;
+}
+header ul.links li a
+{
+	color: white;
+	text-decoration: none;
+}
+header ul.links li a:hover
+{
+	color: #8db11f; /* olive green */
+}
+
+
+/* start blogroll */
+#blogroll
+{
+	overflow: hidden;
+	max-height: 150px; 
+	width: 100%;
+}
+#blogroll .status
+{
+	padding-top: 40px;
+	padding-left: 20px;
+}
+#blogroll .rotated
+{
+	float: left;
+	height: 1.2em;
+	width: 150px;
+	overflow: hidden;
+	margin-left: -130px; /* minimize space between blocks */
+	margin-bottom: 100px; /* special! when links break to the next line, they are pushed into the hidden overflow */
+	margin-top: 70px; /* distance from inner top of parent to middle of this line, because it is rotated around the center */
+	transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	-webkit-transform: rotate(-60deg);
+}
+#blogroll .first, #blogroll div:first-child
+{
+	margin-left: -30px;
+}
+div.rotated a
+{
+	color: white;
+	text-decoration: none;
+	font-size: 1em;
+}
+div.rotated a:hover
+{
+	color: #8db11f; /* olive green */
+}
+/* end blogroll */
+
+nav#menu
+{
+	width: 150px; 
+	margin-left: 25px; 
+	margin-right: 25px; 
+	height: 400px; 
+	float: left;
+}
+nav#menu ul
+{
+	list-style-type: none;
+}
+nav#menu ul li
+{
+	margin-bottom: 1em;
+}
+nav#menu a
+{
+	font-family: Impacted; 
+	font-size: 3em;
+	line-height: 0.8em;
+	color: white;
+	text-decoration: none;
+}
+nav#menu a:hover
+{
+	color: #8db11f; /* olive green */
+}
+
+/* start bulletin */
+#bulletin a:hover
+{
+	color: white;
+}
+#bulletin h2.title
+{
+	display: none;
+}
+#bulletin ul
+{ 
+	list-style: none;
+}
+#bulletin ul li a 
+{
+	position: relative;
+	float: left;
+	padding: 5px 5px 10px 5px;
+	background: #eee;
+	border: 1px solid #fff;
+	box-shadow: 0px 2px 15px #333;
+	-webkit-box-shadow: 0px 2px 15px #333;
+}
+#bulletin ul li a.bulletin-1 
+{
+	margin-left: -100px;
+	z-index: 3;
+	transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	-webkit-transform: rotate(-10deg);
+}
+#bulletin ul li a.bulletin-2 
+{
+	margin-left: -30px;
+	margin-top: -40px;
+	z-index: 2;
+	transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	-webkit-transform: rotate(-3deg);
+}
+#bulletin ul li a.bulletin-3
+{
+	margin-left: -50px;
+	z-index: 1;
+	transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+	-ms-transform: rotate(4deg);
+	-o-transform: rotate(4deg);
+	-webkit-transform: rotate(4deg);
+}
+#bulletin ul li a:hover 
+{
+	z-index: 10;
+	box-shadow: 3px 5px 15px #333;
+	-webkit-box-shadow: 3px 5px 15px #333;
+}
+
+/* end bulletin */
+
+#figure p 
+{
+	float: right;
+	width: 150px;
+	height: 200px;
+	margin: .5em;
+	padding: .5em;
+	background: #000;
+	color: white;
+}
+
+p a
+{
+	color: #8db11f; /* olive green */
+	padding-left: 2px;
+	padding-right: 2px;
+	text-decoration: none;	
+}
+p a:hover 
+{
+	background: #8db11f; /* olive green (maybe use dark brown) */
+	color: #fff;
+	text-shadow:1px 1px 1px #000;
+}
+div#ie
+{
+	display: none;
+}
+
+div.messages
+{
+	font-size: 2em;
+	font-weight: bold;
+}
+div.status
+{
+	color: #385ac8; /* blue;*/
+}
+div.warning
+{
+	color: #fcdb00; /* yellow/orange */
+}
+div.error
+{
+	color: #dd0000; /* red */
+}
+
+article
+{
+	float: left;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+article:hover
+{
+	background: rgba(0,0,0,0.2);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+article h3
+{
+	color: white;
+	display: inline; 
+	font-family: HellaFont, "Delicious Heavy"; 
+	font-weight: normal; 
+	font-size: 2.5em; 
+	line-height: 1em; 
+	margin-left: 20px; 
+	margin-right: 10px;
+}
+article h3 a
+{
+	color: white;
+}
+article h3 a:hover
+{
+	background: none;
+	color: white;
+	text-shadow: 1px 1px 1px #000;
+}
+article div.author
+{
+	color: white;
+	text-align: right;
+	width: 600px;
+}
+article a
+{
+	color: #8db11f;/* olive green */
+	padding-left: 2px;
+	padding-right: 2px;
+	text-decoration: none;	
+}
+article a:hover 
+{
+	background: #8db11f; /* olive green */
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+article ul.links
+{
+	display: inline;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+article ul.links li
+{
+	display: inline;
+}
+
+/* start: comments */
+.comment
+{
+	margin-bottom: 10px;
+	padding: 5px;
+
+	background: rgba(0,0,0,0.2);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#comments h3
+{
+	color: white;
+	display: inline; 
+	font-family: Delicious Roman; 
+	font-weight: normal; 
+	font-size: 1.5em; 
+	line-height: 1em; 
+	margin-left: 20px; 
+	margin-right: 10px;
+}
+#comments h3 a
+{
+	color: white;
+	text-decoration: none;
+}
+#comments h3 a:hover
+{
+	background: none;
+	color: white;
+	text-shadow: 1px 1px 1px #000;
+}
+#comments a
+{
+	color: #8db11f;/* olive green */
+	padding-left: 2px;
+	padding-right: 2px;
+	text-decoration: none;	
+}
+#comments a:hover 
+{
+	background: #8db11f; /* olive green */
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+#comments ul.links
+{
+	display: inline;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+#comments ul.links li
+{
+	display: inline;
+}
+/* end: comments */
+
+/* start: tabs */
+ul.tabs
+{
+	clear: both;
+	display: block;
+	list-style: none;
+}
+ul.tabs li
+{
+	border: 1px solid white;
+	color: white;
+	float: left;
+	height: 20px;
+	min-width: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+ul.tabs li.pager-current
+{
+	color: black;
+	background: white;
+}
+ul.tabs a
+{
+	color: #8db11f; /* olive green */
+	text-decoration: none;
+}
+ul.tabs a:hover 
+{
+	background: #8db11f; /* olive green */
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+/* end: tabs */
+
+/* start: pager */
+ul.pager
+{
+	clear: both;
+	display: block;
+	list-style: none;
+}
+ul.pager li
+{
+	border: 1px solid white;
+	color: white;
+	float: left;
+	height: 20px;
+	min-width: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+ul.pager li.pager-current
+{
+	color: black;
+	background: white;
+}
+ul.pager a
+{
+	color: #8db11f; /* olive green */
+	text-decoration: none;
+}
+ul.pager a:hover 
+{
+	background: #8db11f; /* olive green */
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+/* end: pager */
+
+/* start aside */
+aside
+{
+	background: rgba(0,0,0,0.2);
+	min-height: 300px;
+	padding: 30px;
+	text-align: right;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+aside:hover
+{
+	background: rgba(0,0,0,0.6);
+}
+aside h2
+{
+	color: white;
+	font-family: HellaFont, "Delicious Heavy";
+	font-weight: normal; 
+	font-size: 2em; 
+	margin-bottom: 0;
+}
+aside ul
+{
+	list-style-type: none;
+	margin-top: 0;
+}
+aside a
+{
+	color: #8db11f;/* olive green */
+	padding-left: 2px;
+	padding-right: 2px;
+	text-decoration: none;	
+}
+aside a:hover 
+{
+	background: #8db11f; /* olive green */
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+/* end aside */
+
+footer
+{
+	border-top: 1px solid white;
+}
+footer a
+{
+	color: #8db11f;/* olive green */
+	padding-left: 2px;
+	padding-right: 2px;
+	text-decoration: none;	
+}
+footer a:hover 
+{
+	background: #8db11f; /* olive green */
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+footer #desktop
+{
+	display: none;
+}
+
+/* start contact form */
+form#contact-mail-page
+{
+	font-size: 1.5em;
+	line-height: 3em;
+	width: 300px;
+}
+form#contact-mail-page div
+{
+	font-size: 15px;
+	line-height: 1em;
+	margin-bottom: 5px;
+	width: 450px;
+}
+form#contact-mail-page .form-item
+{
+	font-size: 15px;
+	line-height: 1em;
+}
+form#contact-mail-page .form-item label
+{
+	display: block;
+	float: left;
+	margin-left: 50px;
+	width: 150px;
+}
+form#contact-mail-page #edit-captcha-response-wrapper label
+{
+	margin-left: 0px;
+	width: 250px;
+}
+form#contact-mail-page #edit-copy-wrapper label
+{
+	width: 250px;
+}
+form#contact-mail-page .form-item input
+{
+	width: 450px;
+}
+form#contact-mail-page .form-item textarea
+{
+	width: 450px;
+}
+/* end contact form */
+/* start block configuration screen */
+tr.region-left td.region
+{
+	border: 2px dashed blue;
+}
+div.block-region
+{
+	background: none;
+	border: 2px dashed blue;
+}
+/* end block configuration screen */
+
+/* @group Article styling for code snippets and quotes etc */
+quote
+{
+  color: white;
+  font-family: serif;
+  font-style: italic;
+}
+.code
+{
+  background: #000;
+  color: rgb(255,129,0);
+  font-family: monospace;
+}
+/* @end */
+
+/* @group IE warning */
+html.ie *
+{
+	color: black;
+	background: white;
+	font-family: sans-serif;
+}
+html.ie img
+{
+	filter: gray;
+
+}
+html.ie ul,
+html.ie ul li,
+html.ie ul li a,
+html.ie ul li a:hover
+{
+	background: white;
+	color: black;
+}
+html.ie div#blogroll
+{
+	display: none;
+}
+html.ie div#ie
+{
+	background: red;
+	display: block;
+	width: 100%;
+}
+html.ie div#ie div
+{
+	background: red;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	height: 220px;
+	margin: 0 auto;
+	padding: 10px;
+	width: 900px;
+}
+html.ie div#ie ul,
+html.ie div#ie ul li,
+html.ie div#ie ul li a
+{
+	background: red;
+	color: white;
+}
+/* @end IE warning */

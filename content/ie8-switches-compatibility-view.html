@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="ie ie6" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="ie ie7" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="ie ie8" xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+
+<meta name="keywords" content="mdworld, Martin van Es, MD Enterprises, webdevelopment" />
+<meta name="description" content="I&#039;ve said it before and I&#039;ll say it again: This is the life! Struggling for days with some obscure IE bug!  This time I&#039;ve seen IE8 switching to compatibility view after an AJAX update of the DOM." />
+<link rel="shortcut icon" href="../themes/simon/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" media="all" href="../sites/default/files/css/css_949781c8a73045c6f9458633ed41d193.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="../sites/default/files/css/css_21f24221e70ef675167103b282b815d1.css" />
+<link type="text/css" rel="stylesheet" media="handheld" href="../sites/default/files/css/css_bcb90d40d05a52204eaf0fc65b2c7e6e.css" />
+<script type="text/javascript" src="../sites/default/files/js/js_3022830f3560163bcde900bfe847cfab.js"></script>
+<script type="text/javascript" src="../sites/all/modules/mdepolska/includes/mdepolska.js%3FX"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/cms/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+  <title>IE8 Switches To Compatibility View | mdworld</title>
+</head>
+<body>
+	<div id="ie">
+		<div>
+			Warning: this browser doesn't support HTML5. Styling disabled.<br/>
+			Some browsers that do support HTML5:
+			<ul>
+				<li><a href="http://www.mozilla.com/firefox/">Firefox</a></li>
+				<li><a href="http://www.google.nl/chrome">Google Chrome</a></li>
+			</ul>
+
+		</div>
+	</div><!-- id=ie -->
+	<header>
+		<h1>mdworld - IE8 Switches To Compatibility View</h1><ul class="links"><li class="menu-127 first last"><a href="../node.html" title="">Home</a></li>
+</ul>	<div id="blogroll">
+	</div><!-- id=blogroll -->
+	</header>
+
+	<div id="contentTop">
+						<div class="tabs"></div>
+		  
+  <article class="node">
+            <p>I've said it <a href="onchange-fired-twice-ie.html">before</a> and I'll say it again: This is the <i>life</i>! Struggling for days with some obscure IE bug!</p>
+<p>This time I've seen IE8 switching to <a href="http://blogs.msdn.com/b/ie/archive/2008/08/27/introducing-compatibility-view.aspx">compatibility view</a> after an AJAX update of the DOM. The official <a href="http://support.microsoft.com/kb/956197/en-Us/">KB article</a> just says this occurs when the page that's trying to be rendered is invalid (or as they like to call it "designed for older browsers", which I can only assume means older versions of IE that are even <a href="http://nl.wikipedia.org/wiki/Bestand:Acid3_ie7.png">less</a> <a href="http://en.wikipedia.org/wiki/File:Acid3ie8rc1.png">standards</a> <a href="http://en.wikipedia.org/wiki/File:Ie9preview4acid3.png">compliant</a>). Or in this case, when it <i>becomes</i> invalid, because before the AJAX update, it is rendered in IE8 standards mode without problems.</p>
+<p>The first step would be to find the validation error(s) that upsets IE8 Standard Mode so badly it feels the need to revert to IE7 Quirks Mode. As it turned out in the end, the first step would the first of two, and comprised 99.5% of the 8 hours I needed to fix the bug.</p>
+<p>So, how do you check the page source in IE after the AJAX update? Remember that IE reverts to Compatibility view and reloads the page, so it is very hard to determine the generated source. <a href="http://social.msdn.microsoft.com/Forums/en-US/iewebdevelopment/thread/26bf7ab3-4ee2-4e10-be16-21c5ffd8c8f6/">Here</a> it is suggested to turn of "Automatically recover from rendering errors with Compatibility View" in IEs settings. But I can't access these setting because it is locked by the administrator, so I tried to add the force IE8 rendering meta tag, because <a href="http://blogs.msdn.com/b/ie/archive/2009/06/17/compatibility-view-and-smart-defaults.aspx">"The presence of an IE8 X-UA-Compatible tag / HTTP header (e.g. ‘IE=8’ or ‘IE=EmulateIE8’ + a Standards DOCTYPE) forces a page to stay in IE8 mode regardless of the auto-recovery setting value on the client"</a>.</p>
+<p>For good order, we're talking about this tag:<br />
+<span class="code"><br />
+&lt;meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" /&gt;<br />
+</span></p>
+<p>Surprisingly (because it is documented to behave otherwise) or unsurprisingly (because it is IE), this doesn't help. In the same situation it still changes back to compatibility view. Same with IE=8.</p>
+<p>What seems to help is to open the developer tools screen (F12) and switch back to IE8 Standards Mode. It remains in that mode even after reproducing the steps that would normally switch the browser back to compatibility view mode.</p>
+<p>Upon <a href="http://validator.w3.org">validation</a> I find numerous deviations from the XHTML 1.0 Strict standard, for which I will blame my colleagues, naturally. Step by step I solved these errors, devising one elegant highlight of <a href="http://www.alistapart.com/articles/behavioralseparation">behavioral separation</a> after another. </p>
+<p>E.g. I've replaced this:<br />
+<span class="code"><br />
+&lt;input type="text" ondrop="return false;"/&gt;<br />
+</span><br />
+with this:<br />
+<span class="code"><br />
+&lt;input type="text" class="preventdrop"/&gt;<br />
+<br/><br />
+jQuery(".preventdrop").bind({<br />
+&nbsp;&nbsp;drop: function(){<br />
+&nbsp;&nbsp;&nbsp;&nbsp;return false;<br />
+&nbsp;&nbsp;}<br />
+});<br />
+</br/></span><br />
+In HTML and js files respectively, of course. Additionally, ondrop is not valid in XHTML 1.0 Strict, so mimicking its behaviour as shown above is not only cleaner, but actually solves a validation error.</p>
+<p>Another example was applying the <a href="http://www.alistapart.com/articles/flashsatay">Satay method</a> for Flash, because the Flash snippet used was also not standards compliant. If I had more advanced needs in including the Flash movie, I could have used a jQuery Flash embedding library, e.g. <a href="http://jquery.thewikies.com/swfobject/">jQuery SWFObject</a>, but that would have been overkill in this case (I only have one Flash movie, and it is really small).</p>
+<p>When I finally validate the page, there are no errors, it's valid XHTML 1.0 Strict. And of course, the compatibility view switching still occurs. I'm not surprised. Not even disappointed. I'm just developing qwerty shaped imprints on my forehead by banging my face into my keyboard...</p>
+<p>I turn to a different approach, I start commenting out pieces of the HTML returned by the AJAX query, until the switching stops. Just to see if it can be stopped at all. After commenting out the entire reply it stopped. This confirms something is wrong in the reply. Then I try to comment out smaller and smaller pieces and finally this leads to step two, a:<br />
+<span class="code"><br />
+&lt;span/&gt;<br />
+</span><br />
+that should be a:<br />
+<span class="code"><br />
+&lt;span&gt;&lt;/span&gt;<br />
+</span></p>
+<p>Or (in this case) leaving out the span tag entirely when it has no content.</p>
+<p>A collapsed span tag is invalid in XHTML 1.0 Strict. I know this. I've seen it many, many times before. In IE8 it tends to break alignment of all following elements. I've never seen it force IE into compatibility view mode before. And why didn't it turn up validating the page before? I might have pretty printed the snippets in my XML editor before pasting it into the validator. The editor would recognize it as XML and expand the collapsed span tag. But I can't tell for sure if that is what I did.</p>
+<div class="links"><ul class="links inline"><li class="taxonomy_term_6 first"><a href="../category/categories/mdworld.html" rel="tag" title="">mdworld</a></li>
+<li class="taxonomy_term_36 last"><a href="../category/tags/webdevelopment.html" rel="tag" title="">webdevelopment</a></li>
+</ul></div>    <div class="author">by Martin @ 10:03 15 July 2011</div>
+  </article>
+	</div><!-- id=contentTop -->
+	<div id="contentBottom">
+			</div><!-- id=contentBottom -->
+
+	<aside>
+		  <div class="block block-block" id="block-block-1">
+    <h2 class="title"></h2>
+    <div class="content"><p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="../sites/default/files/images/delicious.png" /></a><br/></p>
+<!-- Unfixed: <p><br/><br />
+<a href="http://delicious.com/mdvanes" title="My Delicious"><img alt="My Delicious" src="/cms/sites/default/files/images/delicious.png" /></a></br/></p>
+ --></div>
+ </div>
+	</aside>
+
+	<nav id="bulletin">
+            	  <div class="block block-mdebulletin" id="block-mdebulletin-0">
+    <h2 class="title"></h2>
+    <div class="content"><ul>
+<li><a class="bulletin-1" href='../../index.html' title='mdworld.nl'><img src='../sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="../themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='../sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+<br/><!-- Unfixed: <ul>
+<li><a class="bulletin-1" href='http://mdworld.nl' title='mdworld.nl'><img src='/cms/sites/default/files/images/times_square.jpg' alt='mdworld.nl'/></a></li>
+<li><a class="bulletin-2" href='http://www.vimeo.com/user2302213/videos' title='Vimeo'><video src="/cms/themes/simon/video/MDE_Leader-web-no_audio.ogv" onmouseover="this.play();" onmouseout="this.pause();" loop="loop" width="300" height="200">Your browser does not support the <code>video</code> element.</video></a></li>
+<li><a class="bulletin-3" href='http://www.flickr.com/photos/mdvanes/' title='Flickr'><img src='/cms/sites/default/files/images/ss_enterprise.jpg' alt='Flickr'/></a></li>
+</ul>
+ --></div>
+ </div>
+	</nav>
+	
+	<nav id="menu">
+		<ul class="links"><li class="menu-115 first"><a href="../../index.html" title="MDWorld.nl">mdworld</a></li>
+<li class="menu-116"><a href="../category/categories/mypc.html" title="">MyPC</a></li>
+<li class="menu-227"><a href="../category/categories/softcorp.html" title="Software I developed">SoftCorp</a></li>
+<li class="menu-119"><a href="../category/categories/moviecorp.html" title="">MovieCorp</a></li>
+<li class="menu-118"><a href="../category/categories/wow-blog-community.html" title="World of Warcraft fan blog">WoW</a></li>
+<li class="menu-117 last"><a href="../contact.html" title="">Contact</a></li>
+</ul>	</nav>
+	
+	<footer>
+		<p>MD Enterprises <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" src="../themes/simon/img/cc.png" /></a> 2003-2012 <a href="http://validator.w3.org/check?uri=referer"><img alt="HTML5" src="../themes/simon/img/mdworld_html5_16.png"/></a></p>
+		<div id="desktop"><a href="../node%3Fismobile=false.html">desktop version</a></div>
+	</footer>
+	<!-- Wget/1.16.1 (linux-gnu) -->
+		<script type="text/javascript">
+	<!--
+	var full_theme_path = "/cms/themes/simon";
+	
+		-->
+	</script>
+	  	<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-9626603-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+</html>

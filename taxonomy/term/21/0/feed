@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://mdworld.nl/cms"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>mdworld - dop</title>
+ <link>http://mdworld.nl/cms/taxonomy/term/21/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Lightscribe in Ubuntu</title>
+ <link>http://mdworld.nl/cms/content/lightscribe-ubuntu</link>
+ <description>&lt;p&gt;When I got my &lt;a href=&quot;http://www.mdworld.nl/cms/content/new-optical-drive&quot;&gt;new optical drive&lt;/a&gt; with lightscribe support, I thought getting lightscribe to work in Ubuntu would be a walk in the park.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/lightscribe-ubuntu&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Sat, 01 Jun 2013 12:53:13 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">229 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>New optical drive</title>
+ <link>http://mdworld.nl/cms/content/new-optical-drive</link>
+ <description>&lt;p&gt;In preparations of the coming CPU overhaul of dop, I&#039;ve anticipated the loss of PATA ports and already acquired a new optical drive and probably the last I&#039;ll buy in my life. It&#039;s an LG CH10LS28 Blu-ray reader/DVD writer combo. It also has lightscribe support, so I should finally be able to use those discs I&#039;ve kept lying around for years...&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/new-optical-drive&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Mon, 27 May 2013 08:16:39 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">228 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Raring Dop</title>
+ <link>http://mdworld.nl/cms/content/raring-dop</link>
+ <description>&lt;p&gt;I&#039;ve upgraded dop to &lt;a href=&quot;http://releases.ubuntu.com/13.04/&quot;&gt;Ubuntu 13.04 Raring Ringtail&lt;/a&gt;.&lt;br /&gt;
+First thing I noticed is the new file browser. F3 (to split into two windows) doesn&#039;t work. I don&#039;t like it.&lt;/p&gt;
+&lt;p&gt;Update: yep, it&#039;s &lt;a href=&quot;http://askubuntu.com/questions/285588/is-there-a-way-to-restore-nautilus-split-screen-f3-feature&quot;&gt;gone&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Update:&lt;br /&gt;
+more things that are now broken:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/raring-dop&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Mon, 27 May 2013 08:01:58 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">227 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Rhythmbox shortcuts</title>
+ <link>http://mdworld.nl/cms/content/rhythmbox-shortcuts</link>
+ <description>&lt;p&gt;After upgrading to Ubuntu 12.10, I have to reconfigure my keyboard shortcuts for Rhythmbox.&lt;/p&gt;
+&lt;p&gt;So I go to Keyboard &gt; Shortcuts and I add 3 shortcuts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;name: pause/play, command &lt;span class=&quot;code&quot;&gt;rhythmbox-client --play-pause&lt;/span&gt;, shortcut: Shift+Ctrl+Right&lt;/li&gt;
+&lt;li&gt;name: volume up, command &lt;span class=&quot;code&quot;&gt;rhythmbox-client --volume-up&lt;/span&gt;, shortcut: Shift+Ctrl+Up&lt;/li&gt;
+&lt;li&gt;name: volume down, command &lt;span class=&quot;code&quot;&gt;rhythmbox-client --volume-down&lt;/span&gt;, shortcut: Shift+Ctrl+Down&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/rhythmbox-shortcuts&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Sat, 06 Apr 2013 13:04:57 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">218 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Quantal Dop</title>
+ <link>http://mdworld.nl/cms/content/quantal-dop</link>
+ <description>&lt;p&gt;Upgraded dop to &lt;a href=&quot;http://releases.ubuntu.com/quantal/&quot;&gt;Ubuntu 12.10&lt;/a&gt; just in time (before 13.04 comes out).&lt;/p&gt;
+&lt;p&gt;Update: Of course I had to &lt;a href=&quot;http://lifehacker.com/5953180/how-to-remove-amazon-ads-from-ubuntu-1210&quot;&gt;uninstall that obnoxious Amazon lens&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;And finally I can set the Launcher bar only on my left monitor again! Hurray!&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Sat, 30 Mar 2013 12:37:16 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">217 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Darkness</title>
+ <link>http://mdworld.nl/cms/content/darkness</link>
+ <description>&lt;p&gt;A weird problem: when booting the system, nothing appears. I mean, the monitors get no input. I can hear the hard disks whirring and the keyboard leds light up, so I suppose it is the videocard. This is the second time in about a week. I&#039;ve rebooted several times to no avail.&lt;/p&gt;
+&lt;p&gt;In the end, while it was on, I jiggled one of the DVI ports on the side of the videocard. The machine rebooted and I saw the BIOS loading screen again. Everything proceeded as normal from there on.&lt;/p&gt;
+&lt;p&gt;Update 16 sep 2012: exactly the same problem, exactly the same solution.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/darkness&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Tue, 31 Jul 2012 16:59:10 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">208 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Precise Dop</title>
+ <link>http://mdworld.nl/cms/content/precise-dop</link>
+ <description>&lt;p&gt;Just upgraded dop to Ubuntu 12.04 Precise Pangolin. The improved multi-monitor support is immediately apparent, because the login screen now displays something on both monitors, where before one was left black.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/precise-dop&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Thu, 28 Jun 2012 17:48:28 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">206 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Oneiric Dop</title>
+ <link>http://mdworld.nl/cms/content/oneiric-dop</link>
+ <description>&lt;p&gt;Upgrading dop to Ubuntu 11.10 Oneiric Ocelot.&lt;/p&gt;
+&lt;p&gt;Dual screen works great, the &quot;menubar&quot; has moved to the far left of my left monitor (instead of the left of my right monitor as it was before) which is all great. But weirdly enough my space themed wallpapers are gone! Now trying to find if I can get pictures from a 500px.com rss feed or something.&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Mon, 21 Nov 2011 19:09:03 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">196 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>Narwhal</title>
+ <link>http://mdworld.nl/cms/content/narwhal</link>
+ <description>&lt;p&gt;After my usual lull after a new Ubuntu release, waiting for people to scream their newly updated machines where melting MELTING!!!, yesterday I felt comfortable to upgrade to &lt;a href=&quot;https://wiki.ubuntu.com/NattyNarwhal&quot;&gt;Ubuntu 11.04 Natty Narwhal&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Upgrade went pretty well, but as expected the new Unity desktop manager made me feel like when I was using linux for the first time.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://mdworld.nl/cms/content/narwhal&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Fri, 27 May 2011 19:13:58 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">182 at http://mdworld.nl/cms</guid>
+</item>
+<item>
+ <title>New battery</title>
+ <link>http://mdworld.nl/cms/content/new-battery</link>
+ <description>&lt;p&gt;I&#039;ve replaced the CMOS battery. Hopefully this will also resolve disk errors while booting my root partition. I also wonder why BIOS has not yet traded CMOS for persistent flash memory.&lt;/p&gt;
+</description>
+ <category domain="http://mdworld.nl/cms/category/categories/mypc">mypc</category>
+ <category domain="http://mdworld.nl/cms/category/tags/dop">dop</category>
+ <pubDate>Sun, 03 Apr 2011 09:49:32 +0000</pubDate>
+ <dc:creator>mdvanes</dc:creator>
+ <guid isPermaLink="false">181 at http://mdworld.nl/cms</guid>
+</item>
+</channel>
+</rss>
