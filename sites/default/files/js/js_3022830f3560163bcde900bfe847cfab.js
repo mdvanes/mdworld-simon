@@ -1,4 +1,4 @@
-
+full_theme_path = "/mdworld-simon/themes/simon"
 /*
  * jQuery 1.2.6 - New Wave Javascript
  *
