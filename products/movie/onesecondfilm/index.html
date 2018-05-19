@@ -1,0 +1,27 @@
+<html>
+<head>
+<!-- 2010-05-19 -->
+<script type='text/javascript' src='swfobject.js'></script>
+<script type="text/javascript">
+function startMovie()
+{
+  var so = new SWFObject('player.swf','ply','960','720','9','#f5f5f5');
+  so.addParam('allowfullscreen','true');
+  so.addParam('allowscriptaccess','always');
+  so.addParam('wmode','opaque');
+  so.addVariable('file','Halo-frag.mp3');
+  so.addVariable('image','heeelooo.png');
+  so.addVariable('repeat','always');
+  so.addVariable('stretching','fill');
+  so.addVariable('autostart','true');
+  so.addVariable('controlbar','none');
+  so.addVariable('volume','100');
+  so.write('mediaspace');
+}
+</script>
+</head>
+<body>
+	<div id="mediaspace">This text will be replaced</div>
+	<script type="text/javascript">startMovie();</script>
+</body>
+</html>
