@@ -1,4 +1,4 @@
-
+var patched_full_theme_path = "/mdworld-simon/themes/simon"
 /*
  * jQuery 1.2.6 - New Wave Javascript
  *
@@ -705,7 +705,7 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
 var simon =
 {
 	getRssFeed : function(){
-		var rssUrl = full_theme_path + "/functions/cache.xml";
+		var rssUrl = patched_full_theme_path + "/functions/cache.xml";
 
 		//clear the content in the div for the next feed.
 		$("#blogroll").empty();
@@ -774,7 +774,7 @@ if( !simon.isIe() ) {
 $(function() {
 	if( !simon.isIe() ) {
     	//alert("in cms/sites/default/files/js/js_320... ---- " + full_theme_path + "/style/position.css")
-		$.setTemplateLayout( full_theme_path + "/style/position.css" );
+		$.setTemplateLayout( patched_full_theme_path + "/style/position.css" );
 	}
 });
 /********* End Initialization ************/
