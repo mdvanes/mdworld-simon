@@ -1,0 +1,28 @@
+planning scriptie
+
+"Finally, it is imporant to find effective methods of allowing the possibility of explicit communication among the agents." (Crites and Barto, 1997 last line of section 6)
+
+
+
+hypothese: het gebruik van intelligente agenten in liftcontrole en vooral de toevoeging van expliciete communicatie
+tussen de intelligente agenten zal de wachttijden in hoge gebouwen drastisch verlagen.
+
+
+scriptie naam: OTIS
+programma werknaam: bellboy
+
+- bepaal planning
+- bepaal taal scriptie (engels/nederlands)
+
+- onderzoek liftcontrole
+- onderzoek additionele parameters voor liftcontrole in hoge gebouwen
+
+- verantwoording gebruik Haskell (verwijzing naar artikel GAframeworkHaskell: Brown, Gamendia-Doval, McCall)
+- onderzoek represenatie v.h. probleem in Haskell
+            * onderzoek reinforcement NN in Haskell
+- onderzoek grafische representatie v.h. probleem in Haskell
+
+                                             <---------|
+- implementatie bellboy                                |refinement phase
+- implementatie concurrende systemen ter vergelijking  |
+- test fase                                          --|
